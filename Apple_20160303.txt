@@ -1,0 +1,542 @@
+Rumour Output 
+--------------------------
+1.
+--------------------------
+ID: 705426912345194500
+Text: "Apple \"march 18th\"!?:) https://t.co/vburUJJUoU"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: "Dublin City, Ireland"
+Tweet Time: "Thu Mar 03 16:17:36 +0000 2016"
+Tweet Length: 46
+Hashtags: false
+URLs: false
+User Mentions: false
+Media: true
+'Retweet': false
+'RT': false
+Question Mark: true
+Explanation Mark: true
+Quote: true
+Smiling Emoticon: true
+Default Profile: true
+Default Profile Image: true
+User Created At: "Mon Dec 07 16:21:52 +0000 2015"
+Followers Count: 0
+Friends Count: 0
+Statuses Count: 1
+Account Location: ""
+Account Verified: false
+--------------------------
+2.
+--------------------------
+ID: 705198640869019600
+Text: "Apple plans to release the 4-inch iPhone 5se and iPad Air 3 tablet on Friday, March 18th. https://t.co/yqzeM60l0I https://t.co/6Kxahs6hhc"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Thu Mar 03 01:10:32 +0000 2016"
+Tweet Length: 137
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: true
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: true
+Default Profile Image: false
+User Created At: "Mon Nov 18 22:38:50 +0000 2013"
+Followers Count: 288
+Friends Count: 800
+Statuses Count: 723
+Account Location: ""
+Account Verified: false
+--------------------------
+3.
+--------------------------
+ID: 705198640235733000
+Text: "Apple plans to release the 4-inch iPhone 5se and iPad Air 3 tablet on Friday, March 18th. https://t.co/pQeYSxmH4V https://t.co/uwpNttTyYc"
+~~~~~
+Favourite Count: 1
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Thu Mar 03 01:10:32 +0000 2016"
+Tweet Length: 137
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: true
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: true
+Default Profile Image: false
+User Created At: "Tue Nov 19 20:04:00 +0000 2013"
+Followers Count: 120
+Friends Count: 404
+Statuses Count: 610
+Account Location: ""
+Account Verified: false
+--------------------------
+4.
+--------------------------
+ID: 705115691398127600
+Text: "Apple plans to release the 4-inch iPhone 5se and iPad Air 3 tablet on Friday, March 18th. https://t.co/oXsspO5p67 https://t.co/rpgFK78own"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Wed Mar 02 19:40:55 +0000 2016"
+Tweet Length: 137
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: true
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Wed May 28 19:35:54 +0000 2014"
+Followers Count: 131
+Friends Count: 459
+Statuses Count: 458
+Account Location: ""
+Account Verified: false
+--------------------------
+5.
+--------------------------
+ID: 704701476321390600
+Text: "Listening to Back &amp; Forth by Aaliyah on @AppleMusic. #NinetiesByNature returns on Friday March 18th. https://t.co/s8Opev7U0E"
+~~~~~
+Favourite Count: 1
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Tue Mar 01 16:14:59 +0000 2016"
+Tweet Length: 128
+Hashtags: true
+URLs: true
+User Mentions: true
+Media: false
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Sat Mar 28 21:25:27 +0000 2009"
+Followers Count: 2430
+Friends Count: 1080
+Statuses Count: 16551
+Account Location: "Toronto, Canada"
+Account Verified: false
+--------------------------
+6.
+--------------------------
+ID: 704257898176602100
+Text: "Apple’s iPhone 5se will go on sale on March 18th with iPad Air 3 and new watch bands – Daily Mail https://t.co/vyqMCF3Bcw"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Mon Feb 29 10:52:22 +0000 2016"
+Tweet Length: 121
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: false
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Thu Sep 30 13:21:42 +0000 2010"
+Followers Count: 1416
+Friends Count: 1385
+Statuses Count: 44159
+Account Location: "London"
+Account Verified: false
+--------------------------
+7.
+--------------------------
+ID: 704257897870413800
+Text: "Apple’s iPhone 5se will go on sale on March 18th with iPad Air 3 and new watch bands – Daily Mail https://t.co/AHmpwNrEMe"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Mon Feb 29 10:52:21 +0000 2016"
+Tweet Length: 121
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: false
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Tue Nov 30 14:50:04 +0000 2010"
+Followers Count: 1135
+Friends Count: 871
+Statuses Count: 54300
+Account Location: "London"
+Account Verified: false
+--------------------------
+8.
+--------------------------
+ID: 704257897425842200
+Text: "Apple’s iPhone 5se will go on sale on March 18th with iPad Air 3 and new watch bands – Daily Mail https://t.co/2a76BCEiBa"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Mon Feb 29 10:52:21 +0000 2016"
+Tweet Length: 121
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: false
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Tue Nov 30 10:57:22 +0000 2010"
+Followers Count: 828
+Friends Count: 864
+Statuses Count: 46663
+Account Location: ""
+Account Verified: false
+--------------------------
+9.
+--------------------------
+ID: 704169512698949600
+Text: "iPhone Jobs USA: Apple’s iPhone 5se will go on sale on March 18th with iPad Air 3 and new watch bands – Daily Mail https://t.co/raI3dAao0D"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Mon Feb 29 05:01:09 +0000 2016"
+Tweet Length: 138
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: false
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Wed Oct 06 18:35:45 +0000 2010"
+Followers Count: 2975
+Friends Count: 2980
+Statuses Count: 41344
+Account Location: "Birmingham"
+Account Verified: false
+--------------------------
+10.
+--------------------------
+ID: 704169512187211800
+Text: "iPhone news: Apple’s iPhone 5se will go on sale on March 18th with iPad Air 3 and new watch bands – Daily Mail https://t.co/5tFTUAZeMy"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Mon Feb 29 05:01:09 +0000 2016"
+Tweet Length: 134
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: false
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: true
+Default Profile Image: true
+User Created At: "Thu Mar 12 08:40:36 +0000 2009"
+Followers Count: 3736
+Friends Count: 4084
+Statuses Count: 42089
+Account Location: "wales"
+Account Verified: false
+--------------------------
+11.
+--------------------------
+ID: 704169511868497900
+Text: "iPhone news: Apple’s iPhone 5se will go on sale on March 18th with iPad Air 3 and new watch bands – Daily Mail https://t.co/zhpc8t0bGj"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Mon Feb 29 05:01:09 +0000 2016"
+Tweet Length: 134
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: false
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Fri Feb 12 17:39:05 +0000 2010"
+Followers Count: 4650
+Friends Count: 4699
+Statuses Count: 73826
+Account Location: "Shropshire"
+Account Verified: false
+--------------------------
+12.
+--------------------------
+ID: 704169511675539500
+Text: "iPhone news: Apple’s iPhone 5se will go on sale on March 18th with iPad Air 3 and new watch bands – Daily Mail https://t.co/Xbopjc1BeX"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Mon Feb 29 05:01:09 +0000 2016"
+Tweet Length: 134
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: false
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Mon Jan 04 11:07:37 +0000 2010"
+Followers Count: 12229
+Friends Count: 12102
+Statuses Count: 85573
+Account Location: "wales"
+Account Verified: false
+--------------------------
+14.
+--------------------------
+ID: 704169510790496300
+Text: "iPhone news: Apple’s iPhone 5se will go on sale on March 18th with iPad Air 3 and new watch bands – Daily Mail https://t.co/MissIFm2Fq"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Mon Feb 29 05:01:08 +0000 2016"
+Tweet Length: 134
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: false
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Sat Oct 23 12:30:47 +0000 2010"
+Followers Count: 3552
+Friends Count: 3539
+Statuses Count: 69372
+Account Location: "London"
+Account Verified: false
+--------------------------
+13.
+--------------------------
+ID: 704169511059005400
+Text: "iPhone news: Apple’s iPhone 5se will go on sale on March 18th with iPad Air 3 and new watch bands – Daily Mail https://t.co/uiaCMtgTBg"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Mon Feb 29 05:01:08 +0000 2016"
+Tweet Length: 134
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: false
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Tue Jul 07 09:16:33 +0000 2009"
+Followers Count: 8588
+Friends Count: 8686
+Statuses Count: 102599
+Account Location: "UK"
+Account Verified: false
+--------------------------
+15.
+--------------------------
+ID: 704169510190710800
+Text: "iPhone news: Apple’s iPhone 5se will go on sale on March 18th with iPad Air 3 and new watch bands – Daily Mail https://t.co/cs157mjF3c"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Mon Feb 29 05:01:08 +0000 2016"
+Tweet Length: 134
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: false
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Sat Nov 20 19:56:25 +0000 2010"
+Followers Count: 1662
+Friends Count: 1438
+Statuses Count: 73797
+Account Location: "Birmingham"
+Account Verified: false
+--------------------------
+16.
+--------------------------
+ID: 704020284215394300
+Text: "Apple's iPhone 5se will go on sale on March 18th with iPad Air 3 ... - Daily Mail https://t.co/noBmH9KYyh"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Sun Feb 28 19:08:10 +0000 2016"
+Tweet Length: 105
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: false
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Thu Jul 26 22:25:53 +0000 2012"
+Followers Count: 441
+Friends Count: 172
+Statuses Count: 54715
+Account Location: ""
+Account Verified: false
+--------------------------
+17.
+--------------------------
+ID: 704020281270992900
+Text: "Apple's iPhone 5se will go on sale on March 18th with iPad Air 3 ... - Daily Mail https://t.co/QrqtTH5Vqe"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Sun Feb 28 19:08:09 +0000 2016"
+Tweet Length: 105
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: false
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Sun Oct 21 14:31:09 +0000 2012"
+Followers Count: 228
+Friends Count: 121
+Statuses Count: 53557
+Account Location: ""
+Account Verified: false
+--------------------------
+18.
+--------------------------
+ID: 704020275604553700
+Text: "Apple's iPhone 5se will go on sale on March 18th with iPad Air 3 ... - Daily Mail https://t.co/kDcDKyd4ut"
+~~~~~
+Favourite Count: 0
+Retweet Count: 0
+~~~~~
+Tweet Location: null
+Tweet Time: "Sun Feb 28 19:08:08 +0000 2016"
+Tweet Length: 105
+Hashtags: false
+URLs: true
+User Mentions: false
+Media: false
+'Retweet': false
+'RT': false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: true
+Default Profile Image: false
+User Created At: "Thu Sep 20 20:46:41 +0000 2012"
+Followers Count: 306
+Friends Count: 151
+Statuses Count: 53443
+Account Location: "Balikpapan"
+Account Verified: false
+--------------------------

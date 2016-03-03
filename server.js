@@ -54,7 +54,7 @@ app.post('/tweet', function(req, res) {
 
 app.get('/search', function(req, res) {
 
-  q = "iwatch2";
+  q = "apple march 18th";
 
   client.get('search/tweets', {q: q, count: 100}, function(error, tweets, response){
     match_count = 0;
