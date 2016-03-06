@@ -54,27 +54,26 @@ app.post('/tweet', function(req, res) {
 
 app.get('/search', function(req, res) {
 
-  q = "apple march 18th";
+  q = "starbucks";
+  requests_received = 0;
+  match_count = 0;
+  lowest_id = 0;
 
-  client.get('search/tweets', {q: q, count: 100}, function(error, tweets, response){
-    match_count = 0;
+  client.get('search/tweets', {q: q, count: 1}, function(error, tweets, response){
+    requests_received = tweets.statuses.length;
 
-    for (i = 0; i < tweets.statuses.length; i++) {
-      tweet_text = JSON.stringify(tweets.statuses[i].text);
-      
-      if ((tweet_text.search(/apple/i)) != -1 && (tweet_text.search(/march 18th/i)) != -1){
-        tweet_number = match_count + 1;
-        tweet_string = tweet_number + '.\n' + tweet_divider + '\n' + parseTweet(tweets.statuses[i]);
+    if (requests_received != 0) {
+      lowest_id = getLowestID(tweets);
+      match_count = findRumourHits(tweets, match_count);
+    }
+  });
 
-        fs.appendFile(filepath, tweet_string, function (err) {
-          if(err) {
-            return console.log(err);
-          }
-
-        console.log("tweet added to Output.txt!");
-        });
-        match_count += 1;
-      }
+  client.get('search/tweets', {q: q, count: 2, max_id: lowest_id}, function(error, tweets, response){
+    requests_received = tweets.statuses.length;
+    
+    if (requests_received != 0) {
+      lowest_id = getLowestID(tweets);
+      match_count = findRumourHits(tweets, match_count);
     }
   });
 });
@@ -91,7 +90,7 @@ app.get('/stream', function(req, res) {
       tweet_string = parseTweet(tweet);
 
       fs.appendFile(filepath, tweet_string, function (err) {
-        if(err) {
+        if (err) {
           return console.log(err);
         }
 
@@ -104,6 +103,43 @@ app.get('/stream', function(req, res) {
     });
   });
 });
+
+// Go through requests received from Search API and get lowest id.
+function getLowestID(tweets) {
+  lowest_id = tweets.statuses[0].id;
+
+  for (i = 1; i < tweets.length; i++) {
+    tweet_id = JSON.stringify(tweets[i].id);
+    
+    if (tweet_id < lowest_id) {
+      lowest_id = tweet_id;
+    }
+  }
+  return lowest_id;
+}
+
+// Go through requests received from Search API and add to file those that match our search query.
+function findRumourHits(tweets, match_count) {
+  for (i = 0; i < tweets.statuses.length; i++) {
+    tweet_text = JSON.stringify(tweets.statuses[i].text);
+
+    if ((tweet_text.search(/starbucks/i))){
+      console.log(match_count)
+      tweet_number = match_count + 1;
+      tweet_string = tweet_number + '.\n' + tweet_divider + '\n' + parseTweet(tweets.statuses[i]);
+
+      fs.appendFile(filepath, tweet_string, function (err) {
+        if(err) {
+          return console.log(err);
+        }
+
+      console.log("tweet added to Output.txt!");
+      });
+      match_count += 1;
+    }
+  }
+  return match_count;
+}
 
 // Parse relevant data including impact features from Tweet
 function parseTweet(tweet) {
@@ -123,7 +159,6 @@ function parseTweet(tweet) {
   entities_user_mentions = JSON.stringify(tweet.entities.user_mentions) == '[]' ? false : true;
   entities_media = tweet.entities.media ? true : false;
   word_retweet = tweet_text.search(/retweet/i) > -1 ? true : false;
-  abbrev_RT = tweet_text.search(/RT/) > -1 ? true : false;
   question_mark = tweet_text.indexOf('?') > -1 ? true : false;
   explanation_mark = tweet_text.indexOf('!') > -1 ? true : false;
   quote = tweet.text.replace(/[^\""]/g, "").length == 2 ? true : false;
@@ -151,7 +186,6 @@ function parseTweet(tweet) {
                  'User Mentions: ' + entities_user_mentions + '\n' + 
                  'Media: ' + entities_media + '\n' + 
                  '\'Retweet\': ' + word_retweet + '\n' + 
-                 '\'RT\': ' + abbrev_RT + '\n' + 
                  'Question Mark: ' + question_mark + '\n' + 
                  'Explanation Mark: ' + explanation_mark + '\n' + 
                  'Quote: ' + quote + '\n' + 
