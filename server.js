@@ -50,38 +50,9 @@ app.post('/tweet', function(req, res) {
   });  
 });
 
-// Search API
-
-app.get('/search', function(req, res) {
-
-  q = "starbucks";
-  requests_received = 0;
-  match_count = 0;
-  lowest_id = 0;
-
-  client.get('search/tweets', {q: q, count: 1}, function(error, tweets, response){
-    requests_received = tweets.statuses.length;
-
-    if (requests_received != 0) {
-      lowest_id = getLowestID(tweets);
-      match_count = findRumourHits(tweets, match_count);
-    }
-  });
-
-  client.get('search/tweets', {q: q, count: 2, max_id: lowest_id}, function(error, tweets, response){
-    requests_received = tweets.statuses.length;
-    
-    if (requests_received != 0) {
-      lowest_id = getLowestID(tweets);
-      match_count = findRumourHits(tweets, match_count);
-    }
-  });
-});
-
 // Streaming API
 
 app.get('/stream', function(req, res) {
-
   track = "apple march 18th";
 
   client.stream('statuses/filter', {track: track}, function(stream) {
@@ -104,7 +75,35 @@ app.get('/stream', function(req, res) {
   });
 });
 
-// Go through requests received from Search API and get lowest id.
+// Search API
+
+app.get('/search', function(req, res) {
+  q = "obama vacation dubai";
+  requests_received = 0;
+  match_count = 0;
+  run_number = 1;
+
+  client.get('search/tweets', {q: q, count: 1}, function(error, tweets, response){
+    requests_received = tweets.statuses.length;
+    
+    if (requests_received != 0) {
+      lowest_id = getLowestID(tweets);
+      match_count = analyseRumourHits(tweets, match_count, run_number);
+
+      client.get('search/tweets', {q: q, count: (15 - requests_received), max_id: lowest_id}, function(error, tweets, response){
+        requests_received = tweets.statuses.length;
+    
+        if (requests_received != 0) {
+          run_number = 2;
+          analyseRumourHits(tweets, match_count, run_number);
+        }
+      });
+    }
+  });
+});
+
+// Find lowest ID of messages returned by the Search API.
+
 function getLowestID(tweets) {
   lowest_id = tweets.statuses[0].id;
 
@@ -118,36 +117,49 @@ function getLowestID(tweets) {
   return lowest_id;
 }
 
-// Go through requests received from Search API and add to file those that match our search query.
-function findRumourHits(tweets, match_count) {
+// Find rumour hits from messages returned by the Search API.
+
+function analyseRumourHits(tweets, match_count, run_number) {
+  file_string = "";
+
   for (i = 0; i < tweets.statuses.length; i++) {
     tweet_text = JSON.stringify(tweets.statuses[i].text);
 
-    if ((tweet_text.search(/starbucks/i))){
-      console.log(match_count)
-      tweet_number = match_count + 1;
-      tweet_string = tweet_number + '.\n' + tweet_divider + '\n' + parseTweet(tweets.statuses[i]);
-
-      fs.appendFile(filepath, tweet_string, function (err) {
-        if(err) {
-          return console.log(err);
-        }
-
-      console.log("tweet added to Output.txt!");
-      });
+    if ((tweet_text.search(/obama/i)) && (tweet_text.search(/vacation/i)) && (tweet_text.search(/dubai/i))){
+      tweet_string = (match_count + 1) + '.\n' + tweet_divider + '\n' + parseTweet(tweets.statuses[i]);
+      file_string += tweet_string;
       match_count += 1;
     }
   }
-  return match_count;
+  
+  addToFile(file_string);
+
+  if (run_number == 1) {
+    return match_count;
+  }
 }
 
-// Parse relevant data including impact features from Tweet
-function parseTweet(tweet) {
+// --------------- Helper Functions ---------------
 
+// Add rumour tweet data to Output.txt.
+
+function addToFile(file_string) {
+  fs.appendFile(filepath, file_string, function (err) {
+    if(err) {
+      return console.log(err);
+    }
+    console.log("tweet data added to Output.txt!");
+  });
+}
+
+// Parse relevant data including impact features from Tweet.
+
+function parseTweet(tweet) {
   tweet_id = JSON.stringify(tweet.id);
   tweet_text = JSON.stringify(tweet.text);
 
   // Impact / Engagement
+  impact_score = calculateImpact(tweet.favorite_count, tweet.retweet_count, tweet.user.followers_count);
   favorite_count = JSON.stringify(tweet.favorite_count);
   retweet_count = JSON.stringify(tweet.retweet_count);
 
@@ -175,6 +187,7 @@ function parseTweet(tweet) {
   tweet_string = 'ID: ' + tweet_id + '\n' + 
                  'Text: ' + tweet_text + '\n' + 
                  sub_div + '\n' +
+                 '**Impact Score: ' + impact_score + '%\n' + 
                  'Favourite Count: ' + favorite_count + '\n' + 
                  'Retweet Count: ' + retweet_count + '\n' + 
                  sub_div + '\n' +
@@ -203,7 +216,15 @@ function parseTweet(tweet) {
   return (tweet_string);
 }
 
-// Start the Web Server on port 3000
+// Calculate impact score by user engagement measures.
+
+function calculateImpact(favourites, retweets, followers) {
+  engagements = (retweets + favourites) / followers;
+  return (engagements);
+}
+
+// Start the Web Server on port 3000.
+
 var server = app.listen(3000, function() {
   var host = server.address().address;
   var port = server.address().port;
