@@ -1,99 +1,6 @@
 Rumour Output 
 --------------------------
-TWEET
---------------------------
-ID: 707920751115034600
-Text: "&amp;#039;The Notebook&amp;#039; Sequel Isn&amp;#039;t in Production #states https://t.co/CZUBCZ7TIA"
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Thu Mar 10 13:27:14 +0000 2016"
-Tweet Length: 100
-Hashtags: true
-URLs: true
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: true
-Default Profile Image: false
-User Created At: "Fri Jun 20 10:38:14 +0000 2014"
-Followers Count: 528
-Friends Count: 1897
-Statuses Count: 4405
-Account Location: ""
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707920748044755000
-Text: "&amp;#039;The Notebook&amp;#039; Sequel Isn&amp;#039;t in Production #states https://t.co/cj1nF92EBH"
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Thu Mar 10 13:27:13 +0000 2016"
-Tweet Length: 100
-Hashtags: true
-URLs: true
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: true
-Default Profile Image: false
-User Created At: "Fri Jun 20 10:38:14 +0000 2014"
-Followers Count: 528
-Friends Count: 1897
-Statuses Count: 4405
-Account Location: ""
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707920744924246000
-Text: "&amp;#039;The Notebook&amp;#039; Sequel Isn&amp;#039;t in Production #states https://t.co/AY8A7XmGQf"
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Thu Mar 10 13:27:12 +0000 2016"
-Tweet Length: 100
-Hashtags: true
-URLs: true
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: true
-Default Profile Image: false
-User Created At: "Fri Jun 20 10:38:14 +0000 2014"
-Followers Count: 528
-Friends Count: 1897
-Statuses Count: 4405
-Account Location: ""
-Account Verified: false
---------------------------
-TWEET
+1.
 --------------------------
 ID: 707811774280634400
 Text: "Breaking news: \"Notebook\" sequel will not be made in Tucson #thenotebook2 #atleasttherewascantbuymelove #theunnews"
@@ -124,7 +31,7 @@ Statuses Count: 11
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+2.
 --------------------------
 ID: 707788249977086000
 Text: "'Notebook' sequel will not be made in Tucson - KVOA | https://t.co/a7rTptj075 ... - KVOA Tucson News https://t.co/wE3Z4EhhwK"
@@ -151,11 +58,11 @@ Default Profile Image: false
 User Created At: "Sun May 06 03:17:47 +0000 2012"
 Followers Count: 1853
 Friends Count: 2242
-Statuses Count: 17502
+Statuses Count: 17499
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+3.
 --------------------------
 ID: 707768338882007000
 Text: "According to snopes 'The Notebook' Sequel Isn't in Production https://t.co/EO1pLWjkby https://t.co/7pMb6DJG00"
@@ -182,16 +89,16 @@ Default Profile Image: false
 User Created At: "Fri Jan 15 19:36:34 +0000 2016"
 Followers Count: 77
 Friends Count: 197
-Statuses Count: 8107
+Statuses Count: 8090
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+4.
 --------------------------
 ID: 707763578212843500
 Text: "#Notebook sequel will not be made in #Tucson. Are you disappointed by this hoax? https://t.co/oA17FuIwNF https://t.co/yKGfNd0Vm6"
 ~~~~~
-**Impact Score: 0.006028090903610827%
+**Impact Score: 0.006028999487535044%
 Favourite Count: 2
 Retweet Count: 0
 ~~~~~
@@ -211,13 +118,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Thu Nov 20 23:17:55 +0000 2008"
-Followers Count: 33178
+Followers Count: 33173
 Friends Count: 1570
-Statuses Count: 72156
+Statuses Count: 72142
 Account Location: "Tucson, Arizona"
 Account Verified: true
 --------------------------
-TWEET
+5.
 --------------------------
 ID: 707763096102707200
 Text: "'Notebook' sequel will not be made in Tucson https://t.co/V84dG6jVu0"
@@ -242,13 +149,13 @@ Smiling Emoticon: false
 Default Profile: true
 Default Profile Image: false
 User Created At: "Wed Dec 30 13:08:15 +0000 2015"
-Followers Count: 132
+Followers Count: 127
 Friends Count: 18
-Statuses Count: 103352
+Statuses Count: 103092
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+6.
 --------------------------
 ID: 707756486357717000
 Text: "EMAIL HOAX: ‘The Notebook 2’ Movie Claims are a Hoax: Circulating reports suggest that a sequel to the popular... https://t.co/JfkjzSLIWd"
@@ -279,12 +186,12 @@ Statuses Count: 2959
 Account Location: "Tubes"
 Account Verified: false
 --------------------------
-TWEET
+7.
 --------------------------
 ID: 707754023210725400
 Text: "UNIQUE ARTICLE CREATOR create #SEO articles in JUST A CLICK https://t.co/Rq0rnP8kOP #BlogTool #WebDesign 'Notebook' sequel ..."
 ~~~~~
-**Impact Score: 0.06901311249137336%
+**Impact Score: 0.07507507507507508%
 Favourite Count: 1
 Retweet Count: 0
 ~~~~~
@@ -304,13 +211,13 @@ Smiling Emoticon: false
 Default Profile: true
 Default Profile Image: false
 User Created At: "Tue Sep 30 02:17:21 +0000 2014"
-Followers Count: 1449
-Friends Count: 2090
-Statuses Count: 17666
+Followers Count: 1332
+Friends Count: 1912
+Statuses Count: 17571
 Account Location: "WorldWide"
 Account Verified: false
 --------------------------
-TWEET
+8.
 --------------------------
 ID: 707748824257679400
 Text: "‘The Notebook 2’ Movie Claims are a Hoax: Circulating reports suggest that a sequel to the popular movie ‘The ... https://t.co/3DLiMeV19M"
@@ -337,11 +244,11 @@ Default Profile Image: false
 User Created At: "Mon Oct 12 14:38:15 +0000 2009"
 Followers Count: 175
 Friends Count: 70
-Statuses Count: 24753
+Statuses Count: 24752
 Account Location: "Jacksonville, Florida"
 Account Verified: false
 --------------------------
-TWEET
+9.
 --------------------------
 ID: 707744215208300500
 Text: "‘The Notebook 2’ Movie Claims are a Hoax: Circulating reports suggest that a sequel to th... https://t.co/LeeSmsi5fr #InfoSec #Scam #Hoax"
@@ -366,13 +273,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Thu Feb 13 18:40:29 +0000 2014"
-Followers Count: 670
-Friends Count: 518
-Statuses Count: 17861
+Followers Count: 666
+Friends Count: 514
+Statuses Count: 17851
 Account Location: "#InfoSec  #Security  #CISO"
 Account Verified: false
 --------------------------
-TWEET
+10.
 --------------------------
 ID: 707692650455904300
 Text: "Snopes- 'The Notebook' Sequel Isn't in Production https://t.co/U5WBR8Xobo"
@@ -399,11 +306,11 @@ Default Profile Image: false
 User Created At: "Wed Oct 29 14:35:02 +0000 2008"
 Followers Count: 119
 Friends Count: 13
-Statuses Count: 16511
+Statuses Count: 16506
 Account Location: "Random"
 Account Verified: false
 --------------------------
-TWEET
+11.
 --------------------------
 ID: 707692638871298000
 Text: "Snopes: 'The Notebook' Sequel Isn't in Production: A hoax claimed that \"The Notebook 2\" had started filming in... https://t.co/8sCX2emjOv"
@@ -434,7 +341,7 @@ Statuses Count: 18649
 Account Location: "Everywhere"
 Account Verified: false
 --------------------------
-TWEET
+12.
 --------------------------
 ID: 707688634716061700
 Text: "'The Notebook' Sequel Isn't in Production: A hoax claimed that \"The Notebook 2\" had started filming in various... https://t.co/jP2sMu7VQM"
@@ -459,13 +366,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Mon May 16 17:15:31 +0000 2011"
-Followers Count: 2397
+Followers Count: 2398
 Friends Count: 2143
-Statuses Count: 213638
+Statuses Count: 213577
 Account Location: "Chicago, IL"
 Account Verified: false
 --------------------------
-TWEET
+13.
 --------------------------
 ID: 707682198632079400
 Text: "Boo! No notebook sequel. 󾌺 https://t.co/555JF6J6oR"
@@ -491,12 +398,12 @@ Default Profile: false
 Default Profile Image: false
 User Created At: "Thu Feb 05 18:25:49 +0000 2009"
 Followers Count: 84
-Friends Count: 279
-Statuses Count: 1366
+Friends Count: 278
+Statuses Count: 1365
 Account Location: "Texas"
 Account Verified: false
 --------------------------
-TWEET
+14.
 --------------------------
 ID: 707680109155782700
 Text: "#lgbtbiz #lgbtpro #econpride ☆ 'The Notebook' Sequel Isn't in Production https://t.co/xJ8jpkn8Fs"
@@ -521,13 +428,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Sun Feb 08 23:50:19 +0000 2015"
-Followers Count: 2303
-Friends Count: 1862
-Statuses Count: 11032
+Followers Count: 2302
+Friends Count: 1858
+Statuses Count: 11006
 Account Location: "#LGBTpoverty #endLGBTIpoverty"
 Account Verified: false
 --------------------------
-TWEET
+15.
 --------------------------
 ID: 707679392755884000
 Text: "'The Notebook' Sequel Isn't in Production https://t.co/jkYDthpd2x https://t.co/nrp4O20MWi"
@@ -553,12 +460,12 @@ Default Profile: false
 Default Profile Image: false
 User Created At: "Tue Nov 11 20:09:34 +0000 2014"
 Followers Count: 399
-Friends Count: 1751
-Statuses Count: 2125
+Friends Count: 1752
+Statuses Count: 2123
 Account Location: "San Diego, CA"
 Account Verified: false
 --------------------------
-TWEET
+16.
 --------------------------
 ID: 707677078913728500
 Text: "They're making a sequel to the notebook with Rachel mcadams and Ryan gosling omg 😍😭"
@@ -589,7 +496,7 @@ Statuses Count: 5067
 Account Location: "brookwood '18"
 Account Verified: false
 --------------------------
-TWEET
+17.
 --------------------------
 ID: 707669374837137400
 Text: "Man!! The Sequel to the #notebook sure looks pretty awesome! #batmanvsuperman #batman #superman… https://t.co/eD51xIxOzL"
@@ -620,7 +527,7 @@ Statuses Count: 638
 Account Location: "austin texas"
 Account Verified: false
 --------------------------
-TWEET
+18.
 --------------------------
 ID: 707667983649235000
 Text: "@midevenings Good news Jay, one of ur fav movies is getting a sequel! https://t.co/dBbXB5wvrj"
@@ -651,7 +558,7 @@ Statuses Count: 3022
 Account Location: "Up Your Ass And To The Left! "
 Account Verified: false
 --------------------------
-TWEET
+19.
 --------------------------
 ID: 707652692966051800
 Text: "@MegaLoweManiac you want to come over to my moms house and watch the notebook with me. It's my favorite. I heard they are making a sequel."
@@ -682,7 +589,7 @@ Statuses Count: 11
 Account Location: "Tampa, FL"
 Account Verified: false
 --------------------------
-TWEET
+20.
 --------------------------
 ID: 707642408012415000
 Text: "Not all movies are meant to have a sequel and the Notebook is one of them."
@@ -713,12 +620,12 @@ Statuses Count: 7199
 Account Location: "Riff Ram Bah Zoo"
 Account Verified: false
 --------------------------
-TWEET
+21.
 --------------------------
 ID: 707641114875060200
 Text: "The sequel to The Notebook will be filmed in Tucson!"
 ~~~~~
-**Impact Score: 0.048590864917395525%
+**Impact Score: 0.04856726566294317%
 Favourite Count: 0
 Retweet Count: 1
 ~~~~~
@@ -738,13 +645,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Fri Jan 08 05:53:40 +0000 2010"
-Followers Count: 2058
+Followers Count: 2059
 Friends Count: 223
-Statuses Count: 4545
+Statuses Count: 4543
 Account Location: "Tucson"
 Account Verified: true
 --------------------------
-TWEET
+22.
 --------------------------
 ID: 707605911267905500
 Text: "How can there be a sequel to the notebook when they both died at the end? Don't ruin it 😭"
@@ -775,7 +682,7 @@ Statuses Count: 12296
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+23.
 --------------------------
 ID: 707596460339155000
 Text: "Don't know how I feel about a sequel to The Notebook, but Ryan Gosling in Portland?!!  Yes please :)  ~Rachelle... https://t.co/U4Pojhee0G"
@@ -802,11 +709,11 @@ Default Profile Image: false
 User Created At: "Tue Mar 02 18:32:15 +0000 2010"
 Followers Count: 298
 Friends Count: 107
-Statuses Count: 3989
+Statuses Count: 3988
 Account Location: "Roseburg, OR"
 Account Verified: false
 --------------------------
-TWEET
+24.
 --------------------------
 ID: 707591143224119300
 Text: "They're making a sequel to The Notebook, Trump is the front runner for the republican candidacy, I don't want to live in this world anymore."
@@ -837,7 +744,7 @@ Statuses Count: 6522
 Account Location: "BG"
 Account Verified: false
 --------------------------
-TWEET
+25.
 --------------------------
 ID: 707539412641407000
 Text: "@thatguypeng and this is the sequel to the last assignment. Don't forget to do 2. And 3. in your notebook. https://t.co/1TOUknwCCp"
@@ -864,16 +771,16 @@ Default Profile Image: false
 User Created At: "Thu Mar 03 05:51:10 +0000 2011"
 Followers Count: 546
 Friends Count: 409
-Statuses Count: 22995
+Statuses Count: 22979
 Account Location: "space dumpster "
 Account Verified: false
 --------------------------
-TWEET
+26.
 --------------------------
 ID: 707528353251762200
 Text: "@maria_alexaxo omg they are making a sequel to the notebook 😍"
 ~~~~~
-**Impact Score: 1.8518518518518516%
+**Impact Score: 1.8867924528301887%
 Favourite Count: 1
 Retweet Count: 0
 ~~~~~
@@ -893,13 +800,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Thu Sep 08 19:26:45 +0000 2011"
-Followers Count: 54
+Followers Count: 53
 Friends Count: 489
 Statuses Count: 5541
 Account Location: "Boston, Massachusetts"
 Account Verified: false
 --------------------------
-TWEET
+27.
 --------------------------
 ID: 707432427359227900
 Text: "Do not ruin another movie by make a sequel ....... I just read there will be a notebook two .... I hope this is a joke"
@@ -924,13 +831,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Fri Jan 17 13:08:22 +0000 2014"
-Followers Count: 457
-Friends Count: 403
-Statuses Count: 15224
+Followers Count: 458
+Friends Count: 404
+Statuses Count: 15223
 Account Location: "Richmond, VA"
 Account Verified: false
 --------------------------
-TWEET
+28.
 --------------------------
 ID: 707425700224049200
 Text: "Why are they making The Notebook sequel? Why."
@@ -961,7 +868,7 @@ Statuses Count: 18419
 Account Location: "828"
 Account Verified: false
 --------------------------
-TWEET
+29.
 --------------------------
 ID: 707408961180454900
 Text: "PSA: THEYRE FILMING A SEQUEL TO THE NOTEBOOK 😍😍😍😍"
@@ -992,7 +899,7 @@ Statuses Count: 8467
 Account Location: "UofSC '20"
 Account Verified: false
 --------------------------
-TWEET
+30.
 --------------------------
 ID: 707376002687754200
 Text: "I could care less ab a sequel but OMG Ryan Gosling will be in Jacksonville for an extended period of time😍😍😍😍😍😍😍😍\nhttps://t.co/BXSLWmIrzS"
@@ -1023,7 +930,7 @@ Statuses Count: 1638
 Account Location: "Sunshine State☀️"
 Account Verified: false
 --------------------------
-TWEET
+31.
 --------------------------
 ID: 707372697794306000
 Text: "first kims bathroom selfie and now a notebook sequel?! thank you march of 2016."
@@ -1054,7 +961,7 @@ Statuses Count: 1733
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+32.
 --------------------------
 ID: 707351010600210400
 Text: "How can there be a sequel to The Notebook? It was literally a story from them being teenagers to them dying"
@@ -1085,7 +992,7 @@ Statuses Count: 3153
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+33.
 --------------------------
 ID: 707338077153308700
 Text: "@NicholasSparks Is it true that there will be a sequel to #notebook?"
@@ -1116,7 +1023,7 @@ Statuses Count: 2225
 Account Location: "Dallas, TX"
 Account Verified: false
 --------------------------
-TWEET
+34.
 --------------------------
 ID: 707328902847447000
 Text: "@SandRproduction I just read an article that said they're making a sequel to The Notebook and they're gonna film it in Des Moines, IA 😄"
@@ -1147,12 +1054,12 @@ Statuses Count: 79
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+35.
 --------------------------
 ID: 707327277973921800
 Text: "There's going to be a sequel to The Notebook why is Nicholas Sparks trying to kill me 😭"
 ~~~~~
-**Impact Score: 0.24752475247524752%
+**Impact Score: 0.2472187886279357%
 Favourite Count: 2
 Retweet Count: 0
 ~~~~~
@@ -1172,13 +1079,13 @@ Smiling Emoticon: false
 Default Profile: true
 Default Profile Image: false
 User Created At: "Thu Aug 11 07:38:20 +0000 2011"
-Followers Count: 808
+Followers Count: 809
 Friends Count: 1015
-Statuses Count: 17129
+Statuses Count: 17127
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+36.
 --------------------------
 ID: 707312215750119400
 Text: "How can you make a sequel to The Notebook??? They dead."
@@ -1205,11 +1112,11 @@ Default Profile Image: false
 User Created At: "Mon May 24 02:42:23 +0000 2010"
 Followers Count: 1485
 Friends Count: 407
-Statuses Count: 21188
+Statuses Count: 21182
 Account Location: "Tennessee, USA"
 Account Verified: false
 --------------------------
-TWEET
+37.
 --------------------------
 ID: 707311876279906300
 Text: "This is super-duper exciting! They're going to film the sequel in Clearwater, Florida!... https://t.co/Vu7ABBGTr5"
@@ -1240,7 +1147,7 @@ Statuses Count: 244
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+38.
 --------------------------
 ID: 707279758225113100
 Text: "@AlondraKayy they're making a sequel to The Notebook!!!! 😍😍😍"
@@ -1271,7 +1178,7 @@ Statuses Count: 1423
 Account Location: "Dumas, TX"
 Account Verified: false
 --------------------------
-TWEET
+39.
 --------------------------
 ID: 707261754368245800
 Text: "they are making a sequel to the notebook? oh HAPPY FLIPPIN DAY."
@@ -1302,7 +1209,7 @@ Statuses Count: 14681
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+40.
 --------------------------
 ID: 707259755723681800
 Text: "I will be so mad if they make \"The Notebook 2\" Don't ruin a fantastic movie with an unnecessary sequel. #StopNicholasSparks2k16"
@@ -1333,7 +1240,7 @@ Statuses Count: 6235
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+41.
 --------------------------
 ID: 707257515914956800
 Text: "They are making a second notebook film. 1) there's no actual sequel the book 2) you're going to ruin Allie &amp; Noah"
@@ -1364,12 +1271,12 @@ Statuses Count: 4248
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+42.
 --------------------------
 ID: 707253317269737500
 Text: "So there's going to be a sequel to the notebook. Sparks wrote the screen play and it's going to be original cast. Set after their wedding😭"
 ~~~~~
-**Impact Score: 0.11449133137062481%
+**Impact Score: 0.11454753722794961%
 Favourite Count: 7
 Retweet Count: 0
 ~~~~~
@@ -1389,13 +1296,13 @@ Smiling Emoticon: false
 Default Profile: true
 Default Profile Image: false
 User Created At: "Thu Jul 25 14:01:44 +0000 2013"
-Followers Count: 6114
+Followers Count: 6111
 Friends Count: 2362
 Statuses Count: 56869
 Account Location: "hiding from responsibility "
 Account Verified: false
 --------------------------
-TWEET
+43.
 --------------------------
 ID: 707250321274355700
 Text: "First Love Story na napanood ko, may sequel na &lt;3 #TheNotebook2 https://t.co/gBxEX2I2D7"
@@ -1422,11 +1329,11 @@ Default Profile Image: false
 User Created At: "Sat Jan 16 07:49:11 +0000 2010"
 Followers Count: 269
 Friends Count: 372
-Statuses Count: 4297
+Statuses Count: 4296
 Account Location: "Makati City"
 Account Verified: false
 --------------------------
-TWEET
+44.
 --------------------------
 ID: 707236286889906200
 Text: "THEY ARE MAKING A SEQUEL TO THE NOTEBOOK. this isn't real life. crying."
@@ -1457,7 +1364,7 @@ Statuses Count: 2045
 Account Location: "936|205"
 Account Verified: false
 --------------------------
-TWEET
+45.
 --------------------------
 ID: 707232155936690200
 Text: "Saw something about making a sequel to the notebook... The main characters died...... https://t.co/b4vrI0MIa9"
@@ -1484,11 +1391,11 @@ Default Profile Image: false
 User Created At: "Tue Nov 29 02:03:38 +0000 2011"
 Followers Count: 1042
 Friends Count: 880
-Statuses Count: 25919
+Statuses Count: 25915
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+46.
 --------------------------
 ID: 707225794653855700
 Text: "It honestly infuriates me that they ruin every classic movie by making a sequel. Seriously, The Notebook 2? No. Just no."
@@ -1515,11 +1422,11 @@ Default Profile Image: false
 User Created At: "Tue Dec 20 05:10:44 +0000 2011"
 Followers Count: 465
 Friends Count: 458
-Statuses Count: 4434
+Statuses Count: 4433
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+47.
 --------------------------
 ID: 707225439635415000
 Text: "Just read that they're making \"The Notebook 2\". Dumb bc there's actually a sequel to the book called \"The Wedding\" about their kids"
@@ -1546,16 +1453,16 @@ Default Profile Image: false
 User Created At: "Mon Jul 16 00:10:43 +0000 2012"
 Followers Count: 201
 Friends Count: 256
-Statuses Count: 14198
+Statuses Count: 14197
 Account Location: "New Jersey"
 Account Verified: false
 --------------------------
-TWEET
+48.
 --------------------------
 ID: 707215068778332200
 Text: "I need someone to confirm that they are making a sequel to the Notebook! #rachelandryan4eva"
 ~~~~~
-**Impact Score: 2.727272727272727%
+**Impact Score: 2.7522935779816518%
 Favourite Count: 3
 Retweet Count: 0
 ~~~~~
@@ -1575,13 +1482,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Wed Mar 16 05:10:42 +0000 2011"
-Followers Count: 110
+Followers Count: 109
 Friends Count: 152
 Statuses Count: 3487
 Account Location: "Gulf Breeze, FL"
 Account Verified: false
 --------------------------
-TWEET
+49.
 --------------------------
 ID: 707213767847886800
 Text: "THE NOTEBOOK IS GETTING A SEQUEL?! BUT THE BOTH DIED. I DON'T UNDERSTAND."
@@ -1608,11 +1515,11 @@ Default Profile Image: false
 User Created At: "Tue Aug 03 19:36:19 +0000 2010"
 Followers Count: 397
 Friends Count: 396
-Statuses Count: 13555
+Statuses Count: 13551
 Account Location: "Columbus, OH"
 Account Verified: false
 --------------------------
-TWEET
+50.
 --------------------------
 ID: 707211386200285200
 Text: "A sequel?! Whaaaattt? Yes!!! The Notebook 2 to be Filmed in Clearwater, Florida – ALY News https://t.co/HFPBYjPOzc"
@@ -1643,7 +1550,7 @@ Statuses Count: 13689
 Account Location: "Virginia"
 Account Verified: false
 --------------------------
-TWEET
+51.
 --------------------------
 ID: 707208797434077200
 Text: "Apparently there's a sequel to The Notebook being made with Ryan Gosling and Rachel McAdams. If this happens my life will be made 😄"
@@ -1668,18 +1575,18 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Wed Mar 11 15:23:23 +0000 2009"
-Followers Count: 241
+Followers Count: 240
 Friends Count: 587
 Statuses Count: 5532
 Account Location: "Philly"
 Account Verified: false
 --------------------------
-TWEET
+52.
 --------------------------
 ID: 707195060975226900
 Text: "they're making a sequel to the notebook...... I'm pumped af"
 ~~~~~
-**Impact Score: 0.8097165991902834%
+**Impact Score: 0.8064516129032258%
 Favourite Count: 1
 Retweet Count: 1
 ~~~~~
@@ -1699,18 +1606,18 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Mon Dec 24 02:28:16 +0000 2012"
-Followers Count: 247
-Friends Count: 142
-Statuses Count: 5575
+Followers Count: 248
+Friends Count: 141
+Statuses Count: 5574
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+53.
 --------------------------
 ID: 707192874618724400
 Text: "And now our hopes are dashed... The notebook sequel could be a hoax. Boo!!"
 ~~~~~
-**Impact Score: 0.034211426616489904%
+**Impact Score: 0.03419972640218878%
 Favourite Count: 1
 Retweet Count: 0
 ~~~~~
@@ -1730,18 +1637,18 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Sun Nov 21 22:43:55 +0000 2010"
-Followers Count: 2923
+Followers Count: 2924
 Friends Count: 1235
 Statuses Count: 10393
 Account Location: "Jacksonville, FL"
 Account Verified: true
 --------------------------
-TWEET
+54.
 --------------------------
 ID: 707192188241911800
 Text: "The sequel to the Notebook to be filmed in #Jax?!? Say it isn't so.. #RyanGosling woot woot!"
 ~~~~~
-**Impact Score: 0.06842285323297981%
+**Impact Score: 0.06839945280437756%
 Favourite Count: 1
 Retweet Count: 1
 ~~~~~
@@ -1761,18 +1668,18 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Sun Nov 21 22:43:55 +0000 2010"
-Followers Count: 2923
+Followers Count: 2924
 Friends Count: 1235
 Statuses Count: 10393
 Account Location: "Jacksonville, FL"
 Account Verified: true
 --------------------------
-TWEET
+55.
 --------------------------
 ID: 707187915026276400
 Text: "They're making a sequel for the Notebook and idk I just feel so alive"
 ~~~~~
-**Impact Score: 0.5952380952380952%
+**Impact Score: 0.5988023952095809%
 Favourite Count: 1
 Retweet Count: 0
 ~~~~~
@@ -1792,13 +1699,13 @@ Smiling Emoticon: false
 Default Profile: true
 Default Profile Image: false
 User Created At: "Mon Aug 13 15:29:37 +0000 2012"
-Followers Count: 168
+Followers Count: 167
 Friends Count: 132
-Statuses Count: 2143
+Statuses Count: 2141
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+56.
 --------------------------
 ID: 707182902036078600
 Text: "Sooooo @999gatorcountry just announced they're filming @NicholasSparks upcoming sequel to The Notebook around Jacksonville 😍😍😍  #loveit"
@@ -1829,12 +1736,12 @@ Statuses Count: 376
 Account Location: "Florida, USA"
 Account Verified: false
 --------------------------
-TWEET
+57.
 --------------------------
 ID: 707181821017120800
 Text: "THE SEQUEL TO THE NOTEBOOK IS BEING FILMED IN JACKSONVILLE IM COMING FOR YOU RYAN"
 ~~~~~
-**Impact Score: 1.4851485148514851%
+**Impact Score: 1.486988847583643%
 Favourite Count: 10
 Retweet Count: 2
 ~~~~~
@@ -1854,13 +1761,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Sat Jun 09 01:13:07 +0000 2012"
-Followers Count: 808
+Followers Count: 807
 Friends Count: 376
 Statuses Count: 28434
 Account Location: "jax, FL"
 Account Verified: false
 --------------------------
-TWEET
+58.
 --------------------------
 ID: 707112946325790700
 Text: "The Notebook is such a sweet movie and is to not be tampered with even things such as making a sequel to it."
@@ -1887,11 +1794,11 @@ Default Profile Image: false
 User Created At: "Mon Nov 16 09:31:31 +0000 2015"
 Followers Count: 35
 Friends Count: 31
-Statuses Count: 529
+Statuses Count: 528
 Account Location: "San Antonio, TX"
 Account Verified: false
 --------------------------
-TWEET
+59.
 --------------------------
 ID: 707093904693317600
 Text: "The Notebook sequel will be shot in Clearwater, Florida 😍💙💙💙"
@@ -1918,11 +1825,11 @@ Default Profile Image: false
 User Created At: "Fri May 25 20:49:40 +0000 2012"
 Followers Count: 301
 Friends Count: 77
-Statuses Count: 11797
+Statuses Count: 11771
 Account Location: "Dubai, United Arab Emirates"
 Account Verified: false
 --------------------------
-TWEET
+60.
 --------------------------
 ID: 707077139422650400
 Text: "I just found out that they're making a sequel to The Notebook and I've never heard better news in my entire life ❤💑📖"
@@ -1949,11 +1856,11 @@ Default Profile Image: false
 User Created At: "Sat Nov 13 19:36:35 +0000 2010"
 Followers Count: 602
 Friends Count: 457
-Statuses Count: 32974
+Statuses Count: 32972
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+61.
 --------------------------
 ID: 707065836318683100
 Text: "rumor has it they're making The Notebook 2.... Sorry but that's the kind of movie that shouldn't have a sequel at all"
@@ -1984,12 +1891,12 @@ Statuses Count: 10600
 Account Location: "Pennsylvania, USA"
 Account Verified: false
 --------------------------
-TWEET
+62.
 --------------------------
 ID: 707061324883349500
 Text: "Why didn't I know there was a sequel to The Notebook 😩"
 ~~~~~
-**Impact Score: 0.1543805480509456%
+**Impact Score: 0.1544998068752414%
 Favourite Count: 3
 Retweet Count: 1
 ~~~~~
@@ -2009,13 +1916,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Mon Nov 21 00:02:15 +0000 2011"
-Followers Count: 2591
+Followers Count: 2589
 Friends Count: 1521
-Statuses Count: 86668
+Statuses Count: 86662
 Account Location: "NYC"
 Account Verified: false
 --------------------------
-TWEET
+63.
 --------------------------
 ID: 707060162234859500
 Text: "Also, wondering why there's going to be a sequel to The Notebook? 🤔 #WorstIdeaEver"
@@ -2042,11 +1949,11 @@ Default Profile Image: false
 User Created At: "Wed Jan 09 22:34:46 +0000 2013"
 Followers Count: 205
 Friends Count: 125
-Statuses Count: 6505
+Statuses Count: 6497
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+64.
 --------------------------
 ID: 707035480282538000
 Text: "😠😠😠 (the Notebook sequel thing is for real though) #GoslingsComingForMe https://t.co/YO4Dh2qGtM"
@@ -2077,7 +1984,7 @@ Statuses Count: 14318
 Account Location: "Florida"
 Account Verified: false
 --------------------------
-TWEET
+65.
 --------------------------
 ID: 707034942446968800
 Text: "THEYRE MAKING A SEQUEL TO THE NOTEBOOK HAHAHA OMG LIFE IS GREAT"
@@ -2108,7 +2015,7 @@ Statuses Count: 1974
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+66.
 --------------------------
 ID: 707030175041527800
 Text: "@nicholassparks I just heard about a sequel to the notebook being filmed in jacksonville, FL. Any truth to that?"
@@ -2134,12 +2041,12 @@ Default Profile: false
 Default Profile Image: false
 User Created At: "Fri Mar 20 00:22:32 +0000 2009"
 Followers Count: 830
-Friends Count: 1236
-Statuses Count: 61647
+Friends Count: 1234
+Statuses Count: 61642
 Account Location: "VA"
 Account Verified: false
 --------------------------
-TWEET
+67.
 --------------------------
 ID: 707024202977554400
 Text: "Someone tell my mother that there is not actually going to be a sequel to The Notebook https://t.co/h11uQkkBh6"
@@ -2170,12 +2077,12 @@ Statuses Count: 3366
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+68.
 --------------------------
 ID: 707014835050049500
 Text: "THEY ARE FILMING A SEQUEL TO THE NOTEBOOK IN WINSTON RYAN GOSLING WILL BE IN WINSTON THIS IS NOT A DRILL THIS IS NOT A DRILL OH MY GOD"
 ~~~~~
-**Impact Score: 1.0432190760059614%
+**Impact Score: 1.0416666666666665%
 Favourite Count: 3
 Retweet Count: 4
 ~~~~~
@@ -2195,13 +2102,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Fri Dec 09 02:53:51 +0000 2011"
-Followers Count: 671
+Followers Count: 672
 Friends Count: 466
-Statuses Count: 35626
+Statuses Count: 35620
 Account Location: "North Carolina"
 Account Verified: false
 --------------------------
-TWEET
+69.
 --------------------------
 ID: 707010881905774600
 Text: "It took me way too long to realize that there is a sequel to the Notebook. Now I know what I'm going to be doing for the night."
@@ -2227,12 +2134,12 @@ Default Profile: false
 Default Profile Image: false
 User Created At: "Thu Apr 16 23:43:06 +0000 2015"
 Followers Count: 195
-Friends Count: 358
-Statuses Count: 265
+Friends Count: 357
+Statuses Count: 260
 Account Location: "Reidsville, North Carolina"
 Account Verified: false
 --------------------------
-TWEET
+70.
 --------------------------
 ID: 707005323991765000
 Text: "they're making a sequel to the notebook 😍😍😍 my heart is happy"
@@ -2263,7 +2170,7 @@ Statuses Count: 17562
 Account Location: "081 | 094"
 Account Verified: false
 --------------------------
-TWEET
+71.
 --------------------------
 ID: 706997415623045100
 Text: "They're making a sequel to The Notebook and it's being filmed in the town I used to live in 😻😻"
@@ -2294,7 +2201,7 @@ Statuses Count: 11658
 Account Location: "film & journalism "
 Account Verified: false
 --------------------------
-TWEET
+72.
 --------------------------
 ID: 706990957389029400
 Text: "PSA: the notebook sequel will be filmed in Clearwater!!!"
@@ -2325,7 +2232,7 @@ Statuses Count: 3892
 Account Location: " ◡̈ "
 Account Verified: false
 --------------------------
-TWEET
+73.
 --------------------------
 ID: 706928210462830600
 Text: "They're going to ruin the notebook by making a sequel 😒"
@@ -2356,7 +2263,7 @@ Statuses Count: 2995
 Account Location: "FWB~Orlando"
 Account Verified: false
 --------------------------
-TWEET
+74.
 --------------------------
 ID: 706912847830212600
 Text: "So there is going to be The Notebook 2 a sequel to the first movie. I'm soooo excited 😭😍😍😍😍😍"
@@ -2387,7 +2294,7 @@ Statuses Count: 5480
 Account Location: "Roll Tide "
 Account Verified: false
 --------------------------
-TWEET
+75.
 --------------------------
 ID: 706853288864407600
 Text: "The Notebook 2, really? Does it show how degenerative her Alzheimer's has grown? Not everything needs a damn sequel."
@@ -2418,7 +2325,7 @@ Statuses Count: 2628
 Account Location: "Tulsa, OK"
 Account Verified: false
 --------------------------
-TWEET
+76.
 --------------------------
 ID: 706522819257958400
 Text: "@fangirlhekate The Wedding (sequel to The Notebook) is my fave. Iba yun from all his works. \nREIDY TO WIN\n#VoteJamesFPP #KCA"
@@ -2445,11 +2352,11 @@ Default Profile Image: false
 User Created At: "Thu Dec 03 20:14:33 +0000 2015"
 Followers Count: 64
 Friends Count: 55
-Statuses Count: 7956
+Statuses Count: 7958
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+77.
 --------------------------
 ID: 706103353114144800
 Text: "#Breaking- The incredibly popular Nicholas Sparks film The Notebook from 2004 is returning with a sequel... https://t.co/tqT9SlRbXW"
@@ -2476,11 +2383,11 @@ Default Profile Image: false
 User Created At: "Tue Jan 18 23:48:53 +0000 2011"
 Followers Count: 962
 Friends Count: 1836
-Statuses Count: 33508
+Statuses Count: 33507
 Account Location: "FLORIDA"
 Account Verified: false
 --------------------------
-TWEET
+78.
 --------------------------
 ID: 705211309630033900
 Text: "We were JUST talking about this movie and now they're making a sequel...here???\n#Mindblown https://t.co/lSFIsWplXk"
@@ -2511,7 +2418,7 @@ Statuses Count: 2680
 Account Location: "My Own Little World..."
 Account Verified: false
 --------------------------
-TWEET
+79.
 --------------------------
 ID: 704853079452061700
 Text: "They're filming a sequel to the notebook in Des Moines🙀"
@@ -2538,11 +2445,11 @@ Default Profile Image: false
 User Created At: "Tue Feb 21 23:28:18 +0000 2012"
 Followers Count: 1276
 Friends Count: 597
-Statuses Count: 16499
+Statuses Count: 16497
 Account Location: "Dubuque, Iowa"
 Account Verified: false
 --------------------------
-TWEET
+80.
 --------------------------
 ID: 704725758044930000
 Text: "reading the sequel to The Notebook - it's so cute I cry😭"
@@ -2567,26 +2474,57 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Tue Jun 02 16:57:22 +0000 2015"
-Followers Count: 76
+Followers Count: 75
 Friends Count: 477
 Statuses Count: 956
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+81.
 --------------------------
-ID: 707920751115034600
-Text: "&amp;#039;The Notebook&amp;#039; Sequel Isn&amp;#039;t in Production #states https://t.co/CZUBCZ7TIA"
+ID: 704567484121088000
+Text: "@NicholasSparks #Rumor: Dakota Johnson and Liam Hemsworth filming sequel of The Notebook. True or false?"
 ~~~~~
 **Impact Score: 0%
 Favourite Count: 0
 Retweet Count: 0
 ~~~~~
 Tweet Location: null
-Tweet Time: "Thu Mar 10 13:27:14 +0000 2016"
-Tweet Length: 100
+Tweet Time: "Tue Mar 01 07:22:33 +0000 2016"
+Tweet Length: 104
 Hashtags: true
-URLs: true
+URLs: false
+User Mentions: true
+Media: false
+'Retweet': false
+All Caps: false
+Question Mark: true
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Thu Jan 07 05:06:13 +0000 2016"
+Followers Count: 316
+Friends Count: 197
+Statuses Count: 6716
+Account Location: "United States"
+Account Verified: false
+--------------------------
+82.
+--------------------------
+ID: 704564712755871700
+Text: "Apparently there is going to be a sequel to The Notebook with Dakota and Chris Hemsworth, I will believe it when it happens."
+~~~~~
+**Impact Score: 0.8928571428571428%
+Favourite Count: 4
+Retweet Count: 1
+~~~~~
+Tweet Location: null
+Tweet Time: "Tue Mar 01 07:11:32 +0000 2016"
+Tweet Length: 124
+Hashtags: false
+URLs: false
 User Mentions: false
 Media: false
 'Retweet': false
@@ -2597,27 +2535,27 @@ Quote: false
 Smiling Emoticon: false
 Default Profile: true
 Default Profile Image: false
-User Created At: "Fri Jun 20 10:38:14 +0000 2014"
-Followers Count: 528
-Friends Count: 1897
-Statuses Count: 4405
-Account Location: ""
+User Created At: "Wed Aug 12 10:13:03 +0000 2015"
+Followers Count: 560
+Friends Count: 2461
+Statuses Count: 2942
+Account Location: "nottingham"
 Account Verified: false
 --------------------------
-TWEET
+83.
 --------------------------
-ID: 707920748044755000
-Text: "&amp;#039;The Notebook&amp;#039; Sequel Isn&amp;#039;t in Production #states https://t.co/cj1nF92EBH"
+ID: 704543056809209900
+Text: "Who tf told these people it was okay to make a notebook 2😑😑 bitch we don't need a sequel just ruined my whole night"
 ~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
+**Impact Score: 0.18359853121175032%
+Favourite Count: 2
+Retweet Count: 1
 ~~~~~
 Tweet Location: null
-Tweet Time: "Thu Mar 10 13:27:13 +0000 2016"
-Tweet Length: 100
-Hashtags: true
-URLs: true
+Tweet Time: "Tue Mar 01 05:45:29 +0000 2016"
+Tweet Length: 117
+Hashtags: false
+URLs: false
 User Mentions: false
 Media: false
 'Retweet': false
@@ -2626,47 +2564,16 @@ Question Mark: false
 Explanation Mark: false
 Quote: false
 Smiling Emoticon: false
-Default Profile: true
+Default Profile: false
 Default Profile Image: false
-User Created At: "Fri Jun 20 10:38:14 +0000 2014"
-Followers Count: 528
-Friends Count: 1897
-Statuses Count: 4405
+User Created At: "Thu Oct 06 14:29:07 +0000 2011"
+Followers Count: 1634
+Friends Count: 1034
+Statuses Count: 35905
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
---------------------------
-ID: 707920744924246000
-Text: "&amp;#039;The Notebook&amp;#039; Sequel Isn&amp;#039;t in Production #states https://t.co/AY8A7XmGQf"
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Thu Mar 10 13:27:12 +0000 2016"
-Tweet Length: 100
-Hashtags: true
-URLs: true
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: true
-Default Profile Image: false
-User Created At: "Fri Jun 20 10:38:14 +0000 2014"
-Followers Count: 528
-Friends Count: 1897
-Statuses Count: 4405
-Account Location: ""
-Account Verified: false
---------------------------
-TWEET
+84.
 --------------------------
 ID: 707811774280634400
 Text: "Breaking news: \"Notebook\" sequel will not be made in Tucson #thenotebook2 #atleasttherewascantbuymelove #theunnews"
@@ -2697,7 +2604,7 @@ Statuses Count: 11
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+85.
 --------------------------
 ID: 707788249977086000
 Text: "'Notebook' sequel will not be made in Tucson - KVOA | https://t.co/a7rTptj075 ... - KVOA Tucson News https://t.co/wE3Z4EhhwK"
@@ -2724,11 +2631,11 @@ Default Profile Image: false
 User Created At: "Sun May 06 03:17:47 +0000 2012"
 Followers Count: 1853
 Friends Count: 2242
-Statuses Count: 17502
+Statuses Count: 17499
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+86.
 --------------------------
 ID: 707768338882007000
 Text: "According to snopes 'The Notebook' Sequel Isn't in Production https://t.co/EO1pLWjkby https://t.co/7pMb6DJG00"
@@ -2755,16 +2662,16 @@ Default Profile Image: false
 User Created At: "Fri Jan 15 19:36:34 +0000 2016"
 Followers Count: 77
 Friends Count: 197
-Statuses Count: 8107
+Statuses Count: 8090
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+87.
 --------------------------
 ID: 707763578212843500
 Text: "#Notebook sequel will not be made in #Tucson. Are you disappointed by this hoax? https://t.co/oA17FuIwNF https://t.co/yKGfNd0Vm6"
 ~~~~~
-**Impact Score: 0.006028090903610827%
+**Impact Score: 0.006028999487535044%
 Favourite Count: 2
 Retweet Count: 0
 ~~~~~
@@ -2784,13 +2691,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Thu Nov 20 23:17:55 +0000 2008"
-Followers Count: 33178
+Followers Count: 33173
 Friends Count: 1570
-Statuses Count: 72156
+Statuses Count: 72142
 Account Location: "Tucson, Arizona"
 Account Verified: true
 --------------------------
-TWEET
+88.
 --------------------------
 ID: 707763096102707200
 Text: "'Notebook' sequel will not be made in Tucson https://t.co/V84dG6jVu0"
@@ -2815,13 +2722,13 @@ Smiling Emoticon: false
 Default Profile: true
 Default Profile Image: false
 User Created At: "Wed Dec 30 13:08:15 +0000 2015"
-Followers Count: 132
+Followers Count: 127
 Friends Count: 18
-Statuses Count: 103352
+Statuses Count: 103092
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+89.
 --------------------------
 ID: 707756486357717000
 Text: "EMAIL HOAX: ‘The Notebook 2’ Movie Claims are a Hoax: Circulating reports suggest that a sequel to the popular... https://t.co/JfkjzSLIWd"
@@ -2852,12 +2759,12 @@ Statuses Count: 2959
 Account Location: "Tubes"
 Account Verified: false
 --------------------------
-TWEET
+90.
 --------------------------
 ID: 707754023210725400
 Text: "UNIQUE ARTICLE CREATOR create #SEO articles in JUST A CLICK https://t.co/Rq0rnP8kOP #BlogTool #WebDesign 'Notebook' sequel ..."
 ~~~~~
-**Impact Score: 0.06901311249137336%
+**Impact Score: 0.07507507507507508%
 Favourite Count: 1
 Retweet Count: 0
 ~~~~~
@@ -2877,13 +2784,13 @@ Smiling Emoticon: false
 Default Profile: true
 Default Profile Image: false
 User Created At: "Tue Sep 30 02:17:21 +0000 2014"
-Followers Count: 1449
-Friends Count: 2090
-Statuses Count: 17666
+Followers Count: 1332
+Friends Count: 1912
+Statuses Count: 17571
 Account Location: "WorldWide"
 Account Verified: false
 --------------------------
-TWEET
+91.
 --------------------------
 ID: 707748824257679400
 Text: "‘The Notebook 2’ Movie Claims are a Hoax: Circulating reports suggest that a sequel to the popular movie ‘The ... https://t.co/3DLiMeV19M"
@@ -2910,11 +2817,11 @@ Default Profile Image: false
 User Created At: "Mon Oct 12 14:38:15 +0000 2009"
 Followers Count: 175
 Friends Count: 70
-Statuses Count: 24753
+Statuses Count: 24752
 Account Location: "Jacksonville, Florida"
 Account Verified: false
 --------------------------
-TWEET
+92.
 --------------------------
 ID: 707744215208300500
 Text: "‘The Notebook 2’ Movie Claims are a Hoax: Circulating reports suggest that a sequel to th... https://t.co/LeeSmsi5fr #InfoSec #Scam #Hoax"
@@ -2939,13 +2846,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Thu Feb 13 18:40:29 +0000 2014"
-Followers Count: 670
-Friends Count: 518
-Statuses Count: 17861
+Followers Count: 666
+Friends Count: 514
+Statuses Count: 17851
 Account Location: "#InfoSec  #Security  #CISO"
 Account Verified: false
 --------------------------
-TWEET
+93.
 --------------------------
 ID: 707692650455904300
 Text: "Snopes- 'The Notebook' Sequel Isn't in Production https://t.co/U5WBR8Xobo"
@@ -2972,11 +2879,11 @@ Default Profile Image: false
 User Created At: "Wed Oct 29 14:35:02 +0000 2008"
 Followers Count: 119
 Friends Count: 13
-Statuses Count: 16511
+Statuses Count: 16506
 Account Location: "Random"
 Account Verified: false
 --------------------------
-TWEET
+94.
 --------------------------
 ID: 707692638871298000
 Text: "Snopes: 'The Notebook' Sequel Isn't in Production: A hoax claimed that \"The Notebook 2\" had started filming in... https://t.co/8sCX2emjOv"
@@ -3007,7 +2914,7 @@ Statuses Count: 18649
 Account Location: "Everywhere"
 Account Verified: false
 --------------------------
-TWEET
+95.
 --------------------------
 ID: 707688634716061700
 Text: "'The Notebook' Sequel Isn't in Production: A hoax claimed that \"The Notebook 2\" had started filming in various... https://t.co/jP2sMu7VQM"
@@ -3032,13 +2939,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Mon May 16 17:15:31 +0000 2011"
-Followers Count: 2397
+Followers Count: 2398
 Friends Count: 2143
-Statuses Count: 213638
+Statuses Count: 213577
 Account Location: "Chicago, IL"
 Account Verified: false
 --------------------------
-TWEET
+96.
 --------------------------
 ID: 707682198632079400
 Text: "Boo! No notebook sequel. 󾌺 https://t.co/555JF6J6oR"
@@ -3064,12 +2971,12 @@ Default Profile: false
 Default Profile Image: false
 User Created At: "Thu Feb 05 18:25:49 +0000 2009"
 Followers Count: 84
-Friends Count: 279
-Statuses Count: 1366
+Friends Count: 278
+Statuses Count: 1365
 Account Location: "Texas"
 Account Verified: false
 --------------------------
-TWEET
+97.
 --------------------------
 ID: 707680109155782700
 Text: "#lgbtbiz #lgbtpro #econpride ☆ 'The Notebook' Sequel Isn't in Production https://t.co/xJ8jpkn8Fs"
@@ -3094,13 +3001,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Sun Feb 08 23:50:19 +0000 2015"
-Followers Count: 2303
-Friends Count: 1862
-Statuses Count: 11032
+Followers Count: 2302
+Friends Count: 1858
+Statuses Count: 11006
 Account Location: "#LGBTpoverty #endLGBTIpoverty"
 Account Verified: false
 --------------------------
-TWEET
+98.
 --------------------------
 ID: 707679392755884000
 Text: "'The Notebook' Sequel Isn't in Production https://t.co/jkYDthpd2x https://t.co/nrp4O20MWi"
@@ -3126,12 +3033,12 @@ Default Profile: false
 Default Profile Image: false
 User Created At: "Tue Nov 11 20:09:34 +0000 2014"
 Followers Count: 399
-Friends Count: 1751
-Statuses Count: 2125
+Friends Count: 1752
+Statuses Count: 2123
 Account Location: "San Diego, CA"
 Account Verified: false
 --------------------------
-TWEET
+99.
 --------------------------
 ID: 707677078913728500
 Text: "They're making a sequel to the notebook with Rachel mcadams and Ryan gosling omg 😍😭"
@@ -3162,7 +3069,38 @@ Statuses Count: 5067
 Account Location: "brookwood '18"
 Account Verified: false
 --------------------------
-TWEET
+100.
+--------------------------
+ID: 707671141213544400
+Text: "RT @KIIM995: The sequel to The Notebook will be filmed in Tucson!"
+~~~~~
+**Impact Score: 2.7777777777777777%
+Favourite Count: 0
+Retweet Count: 1
+~~~~~
+Tweet Location: null
+Tweet Time: "Wed Mar 09 20:55:22 +0000 2016"
+Tweet Length: 65
+Hashtags: false
+URLs: false
+User Mentions: true
+Media: false
+'Retweet': false
+All Caps: false
+Question Mark: false
+Explanation Mark: true
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Wed Dec 17 02:31:36 +0000 2014"
+Followers Count: 36
+Friends Count: 81
+Statuses Count: 1417
+Account Location: "Tucson, AZ"
+Account Verified: false
+--------------------------
+101.
 --------------------------
 ID: 707669374837137400
 Text: "Man!! The Sequel to the #notebook sure looks pretty awesome! #batmanvsuperman #batman #superman… https://t.co/eD51xIxOzL"
@@ -3193,7 +3131,7 @@ Statuses Count: 638
 Account Location: "austin texas"
 Account Verified: false
 --------------------------
-TWEET
+102.
 --------------------------
 ID: 707667983649235000
 Text: "@midevenings Good news Jay, one of ur fav movies is getting a sequel! https://t.co/dBbXB5wvrj"
@@ -3224,7 +3162,7 @@ Statuses Count: 3022
 Account Location: "Up Your Ass And To The Left! "
 Account Verified: false
 --------------------------
-TWEET
+103.
 --------------------------
 ID: 707652692966051800
 Text: "@MegaLoweManiac you want to come over to my moms house and watch the notebook with me. It's my favorite. I heard they are making a sequel."
@@ -3255,7 +3193,7 @@ Statuses Count: 11
 Account Location: "Tampa, FL"
 Account Verified: false
 --------------------------
-TWEET
+104.
 --------------------------
 ID: 707642408012415000
 Text: "Not all movies are meant to have a sequel and the Notebook is one of them."
@@ -3286,12 +3224,12 @@ Statuses Count: 7199
 Account Location: "Riff Ram Bah Zoo"
 Account Verified: false
 --------------------------
-TWEET
+105.
 --------------------------
 ID: 707641114875060200
 Text: "The sequel to The Notebook will be filmed in Tucson!"
 ~~~~~
-**Impact Score: 0.048590864917395525%
+**Impact Score: 0.04856726566294317%
 Favourite Count: 0
 Retweet Count: 1
 ~~~~~
@@ -3311,13 +3249,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Fri Jan 08 05:53:40 +0000 2010"
-Followers Count: 2058
+Followers Count: 2059
 Friends Count: 223
-Statuses Count: 4545
+Statuses Count: 4543
 Account Location: "Tucson"
 Account Verified: true
 --------------------------
-TWEET
+106.
 --------------------------
 ID: 707605911267905500
 Text: "How can there be a sequel to the notebook when they both died at the end? Don't ruin it 😭"
@@ -3348,7 +3286,7 @@ Statuses Count: 12296
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+107.
 --------------------------
 ID: 707596460339155000
 Text: "Don't know how I feel about a sequel to The Notebook, but Ryan Gosling in Portland?!!  Yes please :)  ~Rachelle... https://t.co/U4Pojhee0G"
@@ -3375,11 +3313,11 @@ Default Profile Image: false
 User Created At: "Tue Mar 02 18:32:15 +0000 2010"
 Followers Count: 298
 Friends Count: 107
-Statuses Count: 3989
+Statuses Count: 3988
 Account Location: "Roseburg, OR"
 Account Verified: false
 --------------------------
-TWEET
+108.
 --------------------------
 ID: 707591143224119300
 Text: "They're making a sequel to The Notebook, Trump is the front runner for the republican candidacy, I don't want to live in this world anymore."
@@ -3410,7 +3348,7 @@ Statuses Count: 6522
 Account Location: "BG"
 Account Verified: false
 --------------------------
-TWEET
+109.
 --------------------------
 ID: 707539412641407000
 Text: "@thatguypeng and this is the sequel to the last assignment. Don't forget to do 2. And 3. in your notebook. https://t.co/1TOUknwCCp"
@@ -3437,16 +3375,16 @@ Default Profile Image: false
 User Created At: "Thu Mar 03 05:51:10 +0000 2011"
 Followers Count: 546
 Friends Count: 409
-Statuses Count: 22995
+Statuses Count: 22979
 Account Location: "space dumpster "
 Account Verified: false
 --------------------------
-TWEET
+110.
 --------------------------
 ID: 707528353251762200
 Text: "@maria_alexaxo omg they are making a sequel to the notebook 😍"
 ~~~~~
-**Impact Score: 1.8518518518518516%
+**Impact Score: 1.8867924528301887%
 Favourite Count: 1
 Retweet Count: 0
 ~~~~~
@@ -3466,13 +3404,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Thu Sep 08 19:26:45 +0000 2011"
-Followers Count: 54
+Followers Count: 53
 Friends Count: 489
 Statuses Count: 5541
 Account Location: "Boston, Massachusetts"
 Account Verified: false
 --------------------------
-TWEET
+111.
 --------------------------
 ID: 707432427359227900
 Text: "Do not ruin another movie by make a sequel ....... I just read there will be a notebook two .... I hope this is a joke"
@@ -3497,13 +3435,44 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Fri Jan 17 13:08:22 +0000 2014"
-Followers Count: 457
-Friends Count: 403
-Statuses Count: 15224
+Followers Count: 458
+Friends Count: 404
+Statuses Count: 15223
 Account Location: "Richmond, VA"
 Account Verified: false
 --------------------------
-TWEET
+112.
+--------------------------
+ID: 707425775855607800
+Text: "RT @muryburry: Why are they making The Notebook sequel? Why."
+~~~~~
+**Impact Score: 0.09551098376313276%
+Favourite Count: 0
+Retweet Count: 1
+~~~~~
+Tweet Location: null
+Tweet Time: "Wed Mar 09 04:40:22 +0000 2016"
+Tweet Length: 60
+Hashtags: false
+URLs: false
+User Mentions: true
+Media: false
+'Retweet': false
+All Caps: false
+Question Mark: true
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Thu Nov 15 03:23:16 +0000 2012"
+Followers Count: 1047
+Friends Count: 1466
+Statuses Count: 23068
+Account Location: "The Waystone Inn"
+Account Verified: false
+--------------------------
+113.
 --------------------------
 ID: 707425700224049200
 Text: "Why are they making The Notebook sequel? Why."
@@ -3534,7 +3503,7 @@ Statuses Count: 18419
 Account Location: "828"
 Account Verified: false
 --------------------------
-TWEET
+114.
 --------------------------
 ID: 707408961180454900
 Text: "PSA: THEYRE FILMING A SEQUEL TO THE NOTEBOOK 😍😍😍😍"
@@ -3565,7 +3534,7 @@ Statuses Count: 8467
 Account Location: "UofSC '20"
 Account Verified: false
 --------------------------
-TWEET
+115.
 --------------------------
 ID: 707376002687754200
 Text: "I could care less ab a sequel but OMG Ryan Gosling will be in Jacksonville for an extended period of time😍😍😍😍😍😍😍😍\nhttps://t.co/BXSLWmIrzS"
@@ -3596,7 +3565,7 @@ Statuses Count: 1638
 Account Location: "Sunshine State☀️"
 Account Verified: false
 --------------------------
-TWEET
+116.
 --------------------------
 ID: 707372697794306000
 Text: "first kims bathroom selfie and now a notebook sequel?! thank you march of 2016."
@@ -3627,7 +3596,7 @@ Statuses Count: 1733
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+117.
 --------------------------
 ID: 707351010600210400
 Text: "How can there be a sequel to The Notebook? It was literally a story from them being teenagers to them dying"
@@ -3658,7 +3627,7 @@ Statuses Count: 3153
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+118.
 --------------------------
 ID: 707338077153308700
 Text: "@NicholasSparks Is it true that there will be a sequel to #notebook?"
@@ -3689,7 +3658,7 @@ Statuses Count: 2225
 Account Location: "Dallas, TX"
 Account Verified: false
 --------------------------
-TWEET
+119.
 --------------------------
 ID: 707328902847447000
 Text: "@SandRproduction I just read an article that said they're making a sequel to The Notebook and they're gonna film it in Des Moines, IA 😄"
@@ -3720,12 +3689,12 @@ Statuses Count: 79
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+120.
 --------------------------
 ID: 707327277973921800
 Text: "There's going to be a sequel to The Notebook why is Nicholas Sparks trying to kill me 😭"
 ~~~~~
-**Impact Score: 0.24752475247524752%
+**Impact Score: 0.2472187886279357%
 Favourite Count: 2
 Retweet Count: 0
 ~~~~~
@@ -3745,13 +3714,13 @@ Smiling Emoticon: false
 Default Profile: true
 Default Profile Image: false
 User Created At: "Thu Aug 11 07:38:20 +0000 2011"
-Followers Count: 808
+Followers Count: 809
 Friends Count: 1015
-Statuses Count: 17129
+Statuses Count: 17127
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+121.
 --------------------------
 ID: 707312215750119400
 Text: "How can you make a sequel to The Notebook??? They dead."
@@ -3778,11 +3747,11 @@ Default Profile Image: false
 User Created At: "Mon May 24 02:42:23 +0000 2010"
 Followers Count: 1485
 Friends Count: 407
-Statuses Count: 21188
+Statuses Count: 21182
 Account Location: "Tennessee, USA"
 Account Verified: false
 --------------------------
-TWEET
+122.
 --------------------------
 ID: 707311876279906300
 Text: "This is super-duper exciting! They're going to film the sequel in Clearwater, Florida!... https://t.co/Vu7ABBGTr5"
@@ -3813,7 +3782,7 @@ Statuses Count: 244
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+123.
 --------------------------
 ID: 707279758225113100
 Text: "@AlondraKayy they're making a sequel to The Notebook!!!! 😍😍😍"
@@ -3844,7 +3813,7 @@ Statuses Count: 1423
 Account Location: "Dumas, TX"
 Account Verified: false
 --------------------------
-TWEET
+124.
 --------------------------
 ID: 707261754368245800
 Text: "they are making a sequel to the notebook? oh HAPPY FLIPPIN DAY."
@@ -3875,7 +3844,7 @@ Statuses Count: 14681
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+125.
 --------------------------
 ID: 707259755723681800
 Text: "I will be so mad if they make \"The Notebook 2\" Don't ruin a fantastic movie with an unnecessary sequel. #StopNicholasSparks2k16"
@@ -3906,7 +3875,38 @@ Statuses Count: 6235
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+126.
+--------------------------
+ID: 707258663182925800
+Text: "RT @tayyboat: THE SEQUEL TO THE NOTEBOOK IS BEING FILMED IN JACKSONVILLE IM COMING FOR YOU RYAN"
+~~~~~
+**Impact Score: 0.32786885245901637%
+Favourite Count: 0
+Retweet Count: 2
+~~~~~
+Tweet Location: null
+Tweet Time: "Tue Mar 08 17:36:20 +0000 2016"
+Tweet Length: 95
+Hashtags: false
+URLs: false
+User Mentions: true
+Media: false
+'Retweet': false
+All Caps: false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Thu Mar 22 15:41:54 +0000 2012"
+Followers Count: 610
+Friends Count: 850
+Statuses Count: 7426
+Account Location: "Jax, FL "
+Account Verified: false
+--------------------------
+127.
 --------------------------
 ID: 707257515914956800
 Text: "They are making a second notebook film. 1) there's no actual sequel the book 2) you're going to ruin Allie &amp; Noah"
@@ -3937,12 +3937,12 @@ Statuses Count: 4248
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+128.
 --------------------------
 ID: 707253317269737500
 Text: "So there's going to be a sequel to the notebook. Sparks wrote the screen play and it's going to be original cast. Set after their wedding😭"
 ~~~~~
-**Impact Score: 0.11449133137062481%
+**Impact Score: 0.11454753722794961%
 Favourite Count: 7
 Retweet Count: 0
 ~~~~~
@@ -3962,13 +3962,75 @@ Smiling Emoticon: false
 Default Profile: true
 Default Profile Image: false
 User Created At: "Thu Jul 25 14:01:44 +0000 2013"
-Followers Count: 6114
+Followers Count: 6111
 Friends Count: 2362
 Statuses Count: 56869
 Account Location: "hiding from responsibility "
 Account Verified: false
 --------------------------
-TWEET
+129.
+--------------------------
+ID: 707253265327464400
+Text: "RT @sapatton97: THEY ARE MAKING A SEQUEL TO THE NOTEBOOK. this isn't real life. crying."
+~~~~~
+**Impact Score: 5.454545454545454%
+Favourite Count: 0
+Retweet Count: 6
+~~~~~
+Tweet Location: null
+Tweet Time: "Tue Mar 08 17:14:53 +0000 2016"
+Tweet Length: 87
+Hashtags: false
+URLs: false
+User Mentions: true
+Media: false
+'Retweet': false
+All Caps: false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: true
+Default Profile Image: false
+User Created At: "Mon Mar 23 21:15:43 +0000 2015"
+Followers Count: 110
+Friends Count: 107
+Statuses Count: 1156
+Account Location: ""
+Account Verified: false
+--------------------------
+130.
+--------------------------
+ID: 707252683254669300
+Text: "RT @sapatton97: THEY ARE MAKING A SEQUEL TO THE NOTEBOOK. this isn't real life. crying."
+~~~~~
+**Impact Score: 1.680672268907563%
+Favourite Count: 0
+Retweet Count: 6
+~~~~~
+Tweet Location: null
+Tweet Time: "Tue Mar 08 17:12:34 +0000 2016"
+Tweet Length: 87
+Hashtags: false
+URLs: false
+User Mentions: true
+Media: false
+'Retweet': false
+All Caps: false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: true
+Default Profile Image: false
+User Created At: "Thu Jan 30 04:30:20 +0000 2014"
+Followers Count: 357
+Friends Count: 339
+Statuses Count: 2902
+Account Location: "Nacogdoches, TX"
+Account Verified: false
+--------------------------
+131.
 --------------------------
 ID: 707250321274355700
 Text: "First Love Story na napanood ko, may sequel na &lt;3 #TheNotebook2 https://t.co/gBxEX2I2D7"
@@ -3995,11 +4057,166 @@ Default Profile Image: false
 User Created At: "Sat Jan 16 07:49:11 +0000 2010"
 Followers Count: 269
 Friends Count: 372
-Statuses Count: 4297
+Statuses Count: 4296
 Account Location: "Makati City"
 Account Verified: false
 --------------------------
-TWEET
+132.
+--------------------------
+ID: 707249571064365000
+Text: "RT @CorinneElysia23: Saw something about making a sequel to the notebook... The main characters died...... https://t.co/b4vrI0MIa9"
+~~~~~
+**Impact Score: 0.15337423312883436%
+Favourite Count: 0
+Retweet Count: 1
+~~~~~
+Tweet Location: null
+Tweet Time: "Tue Mar 08 17:00:12 +0000 2016"
+Tweet Length: 130
+Hashtags: false
+URLs: true
+User Mentions: true
+Media: false
+'Retweet': false
+All Caps: false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Thu Nov 24 01:26:02 +0000 2011"
+Followers Count: 652
+Friends Count: 468
+Statuses Count: 17723
+Account Location: "atl"
+Account Verified: false
+--------------------------
+133.
+--------------------------
+ID: 707247560998703100
+Text: "RT @tayyboat: THE SEQUEL TO THE NOTEBOOK IS BEING FILMED IN JACKSONVILLE IM COMING FOR YOU RYAN"
+~~~~~
+**Impact Score: 0.32679738562091504%
+Favourite Count: 0
+Retweet Count: 2
+~~~~~
+Tweet Location: null
+Tweet Time: "Tue Mar 08 16:52:13 +0000 2016"
+Tweet Length: 95
+Hashtags: false
+URLs: false
+User Mentions: true
+Media: false
+'Retweet': false
+All Caps: false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Fri Sep 23 02:46:37 +0000 2011"
+Followers Count: 612
+Friends Count: 277
+Statuses Count: 11310
+Account Location: "Jacksonville, FL "
+Account Verified: false
+--------------------------
+134.
+--------------------------
+ID: 707241981924220900
+Text: "RT @sapatton97: THEY ARE MAKING A SEQUEL TO THE NOTEBOOK. this isn't real life. crying."
+~~~~~
+**Impact Score: 6.451612903225806%
+Favourite Count: 0
+Retweet Count: 6
+~~~~~
+Tweet Location: null
+Tweet Time: "Tue Mar 08 16:30:03 +0000 2016"
+Tweet Length: 87
+Hashtags: false
+URLs: false
+User Mentions: true
+Media: false
+'Retweet': false
+All Caps: false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: true
+Default Profile Image: false
+User Created At: "Tue Jul 21 15:51:01 +0000 2015"
+Followers Count: 93
+Friends Count: 145
+Statuses Count: 271
+Account Location: "Nacogdoches | ATX"
+Account Verified: false
+--------------------------
+135.
+--------------------------
+ID: 707239813578002400
+Text: "RT @sapatton97: THEY ARE MAKING A SEQUEL TO THE NOTEBOOK. this isn't real life. crying."
+~~~~~
+**Impact Score: 0.7947019867549668%
+Favourite Count: 0
+Retweet Count: 6
+~~~~~
+Tweet Location: null
+Tweet Time: "Tue Mar 08 16:21:26 +0000 2016"
+Tweet Length: 87
+Hashtags: false
+URLs: false
+User Mentions: true
+Media: false
+'Retweet': false
+All Caps: false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: true
+Default Profile Image: false
+User Created At: "Wed Jan 01 19:22:56 +0000 2014"
+Followers Count: 755
+Friends Count: 562
+Statuses Count: 11977
+Account Location: ""
+Account Verified: false
+--------------------------
+136.
+--------------------------
+ID: 707238557979545600
+Text: "RT @sapatton97: THEY ARE MAKING A SEQUEL TO THE NOTEBOOK. this isn't real life. crying."
+~~~~~
+**Impact Score: 1.488833746898263%
+Favourite Count: 0
+Retweet Count: 6
+~~~~~
+Tweet Location: null
+Tweet Time: "Tue Mar 08 16:16:26 +0000 2016"
+Tweet Length: 87
+Hashtags: false
+URLs: false
+User Mentions: true
+Media: false
+'Retweet': false
+All Caps: false
+Question Mark: false
+Explanation Mark: false
+Quote: false
+Smiling Emoticon: false
+Default Profile: true
+Default Profile Image: false
+User Created At: "Sun Aug 19 01:47:06 +0000 2012"
+Followers Count: 403
+Friends Count: 531
+Statuses Count: 1429
+Account Location: ""
+Account Verified: false
+--------------------------
+137.
 --------------------------
 ID: 707236286889906200
 Text: "THEY ARE MAKING A SEQUEL TO THE NOTEBOOK. this isn't real life. crying."
@@ -4030,7 +4247,7 @@ Statuses Count: 2045
 Account Location: "936|205"
 Account Verified: false
 --------------------------
-TWEET
+138.
 --------------------------
 ID: 707232155936690200
 Text: "Saw something about making a sequel to the notebook... The main characters died...... https://t.co/b4vrI0MIa9"
@@ -4057,11 +4274,11 @@ Default Profile Image: false
 User Created At: "Tue Nov 29 02:03:38 +0000 2011"
 Followers Count: 1042
 Friends Count: 880
-Statuses Count: 25919
+Statuses Count: 25915
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+139.
 --------------------------
 ID: 707225794653855700
 Text: "It honestly infuriates me that they ruin every classic movie by making a sequel. Seriously, The Notebook 2? No. Just no."
@@ -4088,11 +4305,11 @@ Default Profile Image: false
 User Created At: "Tue Dec 20 05:10:44 +0000 2011"
 Followers Count: 465
 Friends Count: 458
-Statuses Count: 4434
+Statuses Count: 4433
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+140.
 --------------------------
 ID: 707225439635415000
 Text: "Just read that they're making \"The Notebook 2\". Dumb bc there's actually a sequel to the book called \"The Wedding\" about their kids"
@@ -4119,16 +4336,16 @@ Default Profile Image: false
 User Created At: "Mon Jul 16 00:10:43 +0000 2012"
 Followers Count: 201
 Friends Count: 256
-Statuses Count: 14198
+Statuses Count: 14197
 Account Location: "New Jersey"
 Account Verified: false
 --------------------------
-TWEET
+141.
 --------------------------
 ID: 707215068778332200
 Text: "I need someone to confirm that they are making a sequel to the Notebook! #rachelandryan4eva"
 ~~~~~
-**Impact Score: 2.727272727272727%
+**Impact Score: 2.7522935779816518%
 Favourite Count: 3
 Retweet Count: 0
 ~~~~~
@@ -4148,13 +4365,13 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Wed Mar 16 05:10:42 +0000 2011"
-Followers Count: 110
+Followers Count: 109
 Friends Count: 152
 Statuses Count: 3487
 Account Location: "Gulf Breeze, FL"
 Account Verified: false
 --------------------------
-TWEET
+142.
 --------------------------
 ID: 707213767847886800
 Text: "THE NOTEBOOK IS GETTING A SEQUEL?! BUT THE BOTH DIED. I DON'T UNDERSTAND."
@@ -4181,11 +4398,11 @@ Default Profile Image: false
 User Created At: "Tue Aug 03 19:36:19 +0000 2010"
 Followers Count: 397
 Friends Count: 396
-Statuses Count: 13555
+Statuses Count: 13551
 Account Location: "Columbus, OH"
 Account Verified: false
 --------------------------
-TWEET
+143.
 --------------------------
 ID: 707211386200285200
 Text: "A sequel?! Whaaaattt? Yes!!! The Notebook 2 to be Filmed in Clearwater, Florida – ALY News https://t.co/HFPBYjPOzc"
@@ -4216,7 +4433,7 @@ Statuses Count: 13689
 Account Location: "Virginia"
 Account Verified: false
 --------------------------
-TWEET
+144.
 --------------------------
 ID: 707208797434077200
 Text: "Apparently there's a sequel to The Notebook being made with Ryan Gosling and Rachel McAdams. If this happens my life will be made 😄"
@@ -4241,18 +4458,18 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Wed Mar 11 15:23:23 +0000 2009"
-Followers Count: 241
+Followers Count: 240
 Friends Count: 587
 Statuses Count: 5532
 Account Location: "Philly"
 Account Verified: false
 --------------------------
-TWEET
+145.
 --------------------------
 ID: 707195060975226900
 Text: "they're making a sequel to the notebook...... I'm pumped af"
 ~~~~~
-**Impact Score: 0.8097165991902834%
+**Impact Score: 0.8064516129032258%
 Favourite Count: 1
 Retweet Count: 1
 ~~~~~
@@ -4272,18 +4489,18 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Mon Dec 24 02:28:16 +0000 2012"
-Followers Count: 247
-Friends Count: 142
-Statuses Count: 5575
+Followers Count: 248
+Friends Count: 141
+Statuses Count: 5574
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+146.
 --------------------------
 ID: 707192874618724400
 Text: "And now our hopes are dashed... The notebook sequel could be a hoax. Boo!!"
 ~~~~~
-**Impact Score: 0.034211426616489904%
+**Impact Score: 0.03419972640218878%
 Favourite Count: 1
 Retweet Count: 0
 ~~~~~
@@ -4303,18 +4520,49 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Sun Nov 21 22:43:55 +0000 2010"
-Followers Count: 2923
+Followers Count: 2924
 Friends Count: 1235
 Statuses Count: 10393
 Account Location: "Jacksonville, FL"
 Account Verified: true
 --------------------------
-TWEET
+147.
+--------------------------
+ID: 707192224577101800
+Text: "RT @MeaganMHarris: The sequel to the Notebook to be filmed in #Jax?!? Say it isn't so.. #RyanGosling woot woot!"
+~~~~~
+**Impact Score: 0.026490066225165563%
+Favourite Count: 0
+Retweet Count: 1
+~~~~~
+Tweet Location: null
+Tweet Time: "Tue Mar 08 13:12:19 +0000 2016"
+Tweet Length: 111
+Hashtags: true
+URLs: false
+User Mentions: true
+Media: false
+'Retweet': false
+All Caps: false
+Question Mark: true
+Explanation Mark: true
+Quote: false
+Smiling Emoticon: false
+Default Profile: false
+Default Profile Image: false
+User Created At: "Wed Mar 18 18:09:56 +0000 2009"
+Followers Count: 3775
+Friends Count: 1370
+Statuses Count: 12663
+Account Location: "Jacksonville, FL"
+Account Verified: true
+--------------------------
+148.
 --------------------------
 ID: 707192188241911800
 Text: "The sequel to the Notebook to be filmed in #Jax?!? Say it isn't so.. #RyanGosling woot woot!"
 ~~~~~
-**Impact Score: 0.06842285323297981%
+**Impact Score: 0.06839945280437756%
 Favourite Count: 1
 Retweet Count: 1
 ~~~~~
@@ -4334,18 +4582,18 @@ Smiling Emoticon: false
 Default Profile: false
 Default Profile Image: false
 User Created At: "Sun Nov 21 22:43:55 +0000 2010"
-Followers Count: 2923
+Followers Count: 2924
 Friends Count: 1235
 Statuses Count: 10393
 Account Location: "Jacksonville, FL"
 Account Verified: true
 --------------------------
-TWEET
+149.
 --------------------------
 ID: 707187915026276400
 Text: "They're making a sequel for the Notebook and idk I just feel so alive"
 ~~~~~
-**Impact Score: 0.5952380952380952%
+**Impact Score: 0.5988023952095809%
 Favourite Count: 1
 Retweet Count: 0
 ~~~~~
@@ -4365,13 +4613,13 @@ Smiling Emoticon: false
 Default Profile: true
 Default Profile Image: false
 User Created At: "Mon Aug 13 15:29:37 +0000 2012"
-Followers Count: 168
+Followers Count: 167
 Friends Count: 132
-Statuses Count: 2143
+Statuses Count: 2141
 Account Location: ""
 Account Verified: false
 --------------------------
-TWEET
+150.
 --------------------------
 ID: 707182902036078600
 Text: "Sooooo @999gatorcountry just announced they're filming @NicholasSparks upcoming sequel to The Notebook around Jacksonville 😍😍😍  #loveit"
@@ -4400,749 +4648,5 @@ Followers Count: 69
 Friends Count: 289
 Statuses Count: 376
 Account Location: "Florida, USA"
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707181821017120800
-Text: "THE SEQUEL TO THE NOTEBOOK IS BEING FILMED IN JACKSONVILLE IM COMING FOR YOU RYAN"
-~~~~~
-**Impact Score: 1.4851485148514851%
-Favourite Count: 10
-Retweet Count: 2
-~~~~~
-Tweet Location: null
-Tweet Time: "Tue Mar 08 12:30:59 +0000 2016"
-Tweet Length: 81
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: true
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Sat Jun 09 01:13:07 +0000 2012"
-Followers Count: 808
-Friends Count: 376
-Statuses Count: 28434
-Account Location: "jax, FL"
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707112946325790700
-Text: "The Notebook is such a sweet movie and is to not be tampered with even things such as making a sequel to it."
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Tue Mar 08 07:57:18 +0000 2016"
-Tweet Length: 108
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Mon Nov 16 09:31:31 +0000 2015"
-Followers Count: 35
-Friends Count: 31
-Statuses Count: 529
-Account Location: "San Antonio, TX"
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707093904693317600
-Text: "The Notebook sequel will be shot in Clearwater, Florida 😍💙💙💙"
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: "Dubai, United Arab Emirates"
-Tweet Time: "Tue Mar 08 06:41:38 +0000 2016"
-Tweet Length: 64
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Fri May 25 20:49:40 +0000 2012"
-Followers Count: 301
-Friends Count: 77
-Statuses Count: 11797
-Account Location: "Dubai, United Arab Emirates"
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707077139422650400
-Text: "I just found out that they're making a sequel to The Notebook and I've never heard better news in my entire life ❤💑📖"
-~~~~~
-**Impact Score: 0.16611295681063123%
-Favourite Count: 0
-Retweet Count: 1
-~~~~~
-Tweet Location: null
-Tweet Time: "Tue Mar 08 05:35:01 +0000 2016"
-Tweet Length: 118
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Sat Nov 13 19:36:35 +0000 2010"
-Followers Count: 602
-Friends Count: 457
-Statuses Count: 32974
-Account Location: ""
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707065836318683100
-Text: "rumor has it they're making The Notebook 2.... Sorry but that's the kind of movie that shouldn't have a sequel at all"
-~~~~~
-**Impact Score: 1.8957345971563981%
-Favourite Count: 8
-Retweet Count: 0
-~~~~~
-Tweet Location: "Rahway, NJ"
-Tweet Time: "Tue Mar 08 04:50:06 +0000 2016"
-Tweet Length: 117
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Sun Jan 13 03:00:01 +0000 2013"
-Followers Count: 422
-Friends Count: 368
-Statuses Count: 10600
-Account Location: "Pennsylvania, USA"
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707061324883349500
-Text: "Why didn't I know there was a sequel to The Notebook 😩"
-~~~~~
-**Impact Score: 0.1543805480509456%
-Favourite Count: 3
-Retweet Count: 1
-~~~~~
-Tweet Location: null
-Tweet Time: "Tue Mar 08 04:32:11 +0000 2016"
-Tweet Length: 55
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Mon Nov 21 00:02:15 +0000 2011"
-Followers Count: 2591
-Friends Count: 1521
-Statuses Count: 86668
-Account Location: "NYC"
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707060162234859500
-Text: "Also, wondering why there's going to be a sequel to The Notebook? 🤔 #WorstIdeaEver"
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: "Concord, NH"
-Tweet Time: "Tue Mar 08 04:27:33 +0000 2016"
-Tweet Length: 83
-Hashtags: true
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: true
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Wed Jan 09 22:34:46 +0000 2013"
-Followers Count: 205
-Friends Count: 125
-Statuses Count: 6505
-Account Location: ""
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707035480282538000
-Text: "😠😠😠 (the Notebook sequel thing is for real though) #GoslingsComingForMe https://t.co/YO4Dh2qGtM"
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Tue Mar 08 02:49:29 +0000 2016"
-Tweet Length: 98
-Hashtags: true
-URLs: true
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Fri Dec 07 00:51:17 +0000 2012"
-Followers Count: 768
-Friends Count: 819
-Statuses Count: 14318
-Account Location: "Florida"
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707034942446968800
-Text: "THEYRE MAKING A SEQUEL TO THE NOTEBOOK HAHAHA OMG LIFE IS GREAT"
-~~~~~
-**Impact Score: 2.8391167192429023%
-Favourite Count: 8
-Retweet Count: 1
-~~~~~
-Tweet Location: null
-Tweet Time: "Tue Mar 08 02:47:21 +0000 2016"
-Tweet Length: 63
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: true
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: true
-Default Profile Image: false
-User Created At: "Sun Jul 26 04:28:04 +0000 2015"
-Followers Count: 317
-Friends Count: 288
-Statuses Count: 1974
-Account Location: ""
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707030175041527800
-Text: "@nicholassparks I just heard about a sequel to the notebook being filmed in jacksonville, FL. Any truth to that?"
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Tue Mar 08 02:28:24 +0000 2016"
-Tweet Length: 112
-Hashtags: false
-URLs: false
-User Mentions: true
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: true
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Fri Mar 20 00:22:32 +0000 2009"
-Followers Count: 830
-Friends Count: 1236
-Statuses Count: 61647
-Account Location: "VA"
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707024202977554400
-Text: "Someone tell my mother that there is not actually going to be a sequel to The Notebook https://t.co/h11uQkkBh6"
-~~~~~
-**Impact Score: 0.7936507936507936%
-Favourite Count: 1
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Tue Mar 08 02:04:40 +0000 2016"
-Tweet Length: 110
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: true
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Mon Dec 31 05:43:24 +0000 2012"
-Followers Count: 126
-Friends Count: 124
-Statuses Count: 3366
-Account Location: ""
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707014835050049500
-Text: "THEY ARE FILMING A SEQUEL TO THE NOTEBOOK IN WINSTON RYAN GOSLING WILL BE IN WINSTON THIS IS NOT A DRILL THIS IS NOT A DRILL OH MY GOD"
-~~~~~
-**Impact Score: 1.0432190760059614%
-Favourite Count: 3
-Retweet Count: 4
-~~~~~
-Tweet Location: "North Carolina, USA"
-Tweet Time: "Tue Mar 08 01:27:27 +0000 2016"
-Tweet Length: 134
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: true
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Fri Dec 09 02:53:51 +0000 2011"
-Followers Count: 671
-Friends Count: 466
-Statuses Count: 35626
-Account Location: "North Carolina"
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707010881905774600
-Text: "It took me way too long to realize that there is a sequel to the Notebook. Now I know what I'm going to be doing for the night."
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Tue Mar 08 01:11:44 +0000 2016"
-Tweet Length: 127
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Thu Apr 16 23:43:06 +0000 2015"
-Followers Count: 195
-Friends Count: 358
-Statuses Count: 265
-Account Location: "Reidsville, North Carolina"
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 707005323991765000
-Text: "they're making a sequel to the notebook 😍😍😍 my heart is happy"
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Tue Mar 08 00:49:39 +0000 2016"
-Tweet Length: 64
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Fri Feb 04 01:48:36 +0000 2011"
-Followers Count: 327
-Friends Count: 358
-Statuses Count: 17562
-Account Location: "081 | 094"
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 706997415623045100
-Text: "They're making a sequel to The Notebook and it's being filmed in the town I used to live in 😻😻"
-~~~~~
-**Impact Score: 0.9255178492728074%
-Favourite Count: 21
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Tue Mar 08 00:18:13 +0000 2016"
-Tweet Length: 96
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: true
-Default Profile Image: false
-User Created At: "Fri Apr 26 05:12:45 +0000 2013"
-Followers Count: 2269
-Friends Count: 1599
-Statuses Count: 11658
-Account Location: "film & journalism "
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 706990957389029400
-Text: "PSA: the notebook sequel will be filmed in Clearwater!!!"
-~~~~~
-**Impact Score: 0.9900990099009901%
-Favourite Count: 5
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Mon Mar 07 23:52:34 +0000 2016"
-Tweet Length: 56
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: true
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Wed Jan 25 01:55:43 +0000 2012"
-Followers Count: 505
-Friends Count: 288
-Statuses Count: 3892
-Account Location: " ◡̈ "
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 706928210462830600
-Text: "They're going to ruin the notebook by making a sequel 😒"
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Mon Mar 07 19:43:14 +0000 2016"
-Tweet Length: 56
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: true
-Default Profile Image: false
-User Created At: "Tue Jan 29 03:35:27 +0000 2013"
-Followers Count: 177
-Friends Count: 133
-Statuses Count: 2995
-Account Location: "FWB~Orlando"
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 706912847830212600
-Text: "So there is going to be The Notebook 2 a sequel to the first movie. I'm soooo excited 😭😍😍😍😍😍"
-~~~~~
-**Impact Score: 0.7544006705783739%
-Favourite Count: 1
-Retweet Count: 8
-~~~~~
-Tweet Location: null
-Tweet Time: "Mon Mar 07 18:42:11 +0000 2016"
-Tweet Length: 98
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: true
-Default Profile Image: false
-User Created At: "Sun Jan 25 05:44:04 +0000 2015"
-Followers Count: 1193
-Friends Count: 871
-Statuses Count: 5480
-Account Location: "Roll Tide "
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 706853288864407600
-Text: "The Notebook 2, really? Does it show how degenerative her Alzheimer's has grown? Not everything needs a damn sequel."
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Mon Mar 07 14:45:31 +0000 2016"
-Tweet Length: 116
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: true
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Sun Jul 04 20:50:58 +0000 2010"
-Followers Count: 77
-Friends Count: 194
-Statuses Count: 2628
-Account Location: "Tulsa, OK"
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 706522819257958400
-Text: "@fangirlhekate The Wedding (sequel to The Notebook) is my fave. Iba yun from all his works. \nREIDY TO WIN\n#VoteJamesFPP #KCA"
-~~~~~
-**Impact Score: 1.5625%
-Favourite Count: 1
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Sun Mar 06 16:52:21 +0000 2016"
-Tweet Length: 124
-Hashtags: true
-URLs: false
-User Mentions: true
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: true
-Default Profile Image: false
-User Created At: "Thu Dec 03 20:14:33 +0000 2015"
-Followers Count: 64
-Friends Count: 55
-Statuses Count: 7956
-Account Location: ""
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 706103353114144800
-Text: "#Breaking- The incredibly popular Nicholas Sparks film The Notebook from 2004 is returning with a sequel... https://t.co/tqT9SlRbXW"
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Sat Mar 05 13:05:32 +0000 2016"
-Tweet Length: 131
-Hashtags: true
-URLs: true
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Tue Jan 18 23:48:53 +0000 2011"
-Followers Count: 962
-Friends Count: 1836
-Statuses Count: 33508
-Account Location: "FLORIDA"
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 705211309630033900
-Text: "We were JUST talking about this movie and now they're making a sequel...here???\n#Mindblown https://t.co/lSFIsWplXk"
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Thu Mar 03 02:00:53 +0000 2016"
-Tweet Length: 114
-Hashtags: true
-URLs: true
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: true
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Sat Oct 31 22:55:09 +0000 2009"
-Followers Count: 84
-Friends Count: 66
-Statuses Count: 2680
-Account Location: "My Own Little World..."
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 704853079452061700
-Text: "They're filming a sequel to the notebook in Des Moines🙀"
-~~~~~
-**Impact Score: 0.9404388714733543%
-Favourite Count: 11
-Retweet Count: 1
-~~~~~
-Tweet Location: null
-Tweet Time: "Wed Mar 02 02:17:24 +0000 2016"
-Tweet Length: 56
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Tue Feb 21 23:28:18 +0000 2012"
-Followers Count: 1276
-Friends Count: 597
-Statuses Count: 16499
-Account Location: "Dubuque, Iowa"
-Account Verified: false
---------------------------
-TWEET
---------------------------
-ID: 704725758044930000
-Text: "reading the sequel to The Notebook - it's so cute I cry😭"
-~~~~~
-**Impact Score: 0%
-Favourite Count: 0
-Retweet Count: 0
-~~~~~
-Tweet Location: null
-Tweet Time: "Tue Mar 01 17:51:28 +0000 2016"
-Tweet Length: 57
-Hashtags: false
-URLs: false
-User Mentions: false
-Media: false
-'Retweet': false
-All Caps: false
-Question Mark: false
-Explanation Mark: false
-Quote: false
-Smiling Emoticon: false
-Default Profile: false
-Default Profile Image: false
-User Created At: "Tue Jun 02 16:57:22 +0000 2015"
-Followers Count: 76
-Friends Count: 477
-Statuses Count: 956
-Account Location: ""
 Account Verified: false
 --------------------------

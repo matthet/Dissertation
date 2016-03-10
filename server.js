@@ -75,68 +75,55 @@ app.get('/stream', function(req, res) {
   });
 });
 
-// Search API
+// Initialise search, making first request to search API
 
 app.get('/search', function(req, res) {
-  q = "obama vacation dubai";
-  requests_received = 0;
-  match_count = 0;
-  run_number = 1;
+  q = "notebook sequel";
+  run_number = 0;
+  total_tweets = 0;
 
-  client.get('search/tweets', {q: q, count: 1}, function(error, tweets, response){
-    requests_received = tweets.statuses.length;
-    
-    if (requests_received != 0) {
-      lowest_id = getLowestID(tweets);
-      match_count = analyseRumourHits(tweets, match_count, run_number);
+  for (i = run_number; i < 2; i++) {
+    client.get('search/tweets', {q: q, exclude: 'retweets', count: 100}, function(error, tweets, response){
+      tweets_received = tweets.statuses.length;
+      console.log('Tweets received: ' + tweets_received);
 
-      client.get('search/tweets', {q: q, count: (15 - requests_received), max_id: lowest_id}, function(error, tweets, response){
-        requests_received = tweets.statuses.length;
-    
-        if (requests_received != 0) {
-          run_number = 2;
-          analyseRumourHits(tweets, match_count, run_number);
-        }
-      });
-    }
-  });
+      if (tweets_received != 0) {
+        analyseRumourHits(tweets);
+      }
+    });
+  }
 });
 
 // Find lowest ID of messages returned by the Search API.
 
-function getLowestID(tweets) {
-  lowest_id = tweets.statuses[0].id;
+// function getLowestID(tweets) {
+//   lowest_id = tweets.statuses[0].id;
 
-  for (i = 1; i < tweets.length; i++) {
-    tweet_id = JSON.stringify(tweets[i].id);
+//   for (i = 1; i < tweets.length; i++) {
+//     tweet_id = JSON.stringify(tweets[i].id);
     
-    if (tweet_id < lowest_id) {
-      lowest_id = tweet_id;
-    }
-  }
-  return lowest_id;
-}
+//     if (tweet_id < lowest_id) {
+//       lowest_id = tweet_id;
+//     }
+//   }
+//   return lowest_id;
+// }
 
 // Find rumour hits from messages returned by the Search API.
 
-function analyseRumourHits(tweets, match_count, run_number) {
+function analyseRumourHits(tweets) {
   file_string = "";
 
   for (i = 0; i < tweets.statuses.length; i++) {
     tweet_text = JSON.stringify(tweets.statuses[i].text);
 
-    if ((tweet_text.search(/obama/i)) && (tweet_text.search(/vacation/i)) && (tweet_text.search(/dubai/i))){
-      tweet_string = (match_count + 1) + '.\n' + tweet_divider + '\n' + parseTweet(tweets.statuses[i]);
+    if ((tweet_text.search(/the notebook/i)) && (tweet_text.search(/sequel/i))){
+      tweet_string = 'TWEET\n' + tweet_divider + '\n' + parseTweet(tweets.statuses[i]);
       file_string += tweet_string;
-      match_count += 1;
     }
   }
   
   addToFile(file_string);
-
-  if (run_number == 1) {
-    return match_count;
-  }
 }
 
 // --------------- Helper Functions ---------------
@@ -171,6 +158,7 @@ function parseTweet(tweet) {
   entities_user_mentions = JSON.stringify(tweet.entities.user_mentions) == '[]' ? false : true;
   entities_media = tweet.entities.media ? true : false;
   word_retweet = tweet_text.search(/retweet/i) > -1 ? true : false;
+  all_caps = tweet_text.localeCompare(tweet_text.toUpperCase()) == 0 ? true : false;
   question_mark = tweet_text.indexOf('?') > -1 ? true : false;
   explanation_mark = tweet_text.indexOf('!') > -1 ? true : false;
   quote = tweet.text.replace(/[^\""]/g, "").length == 2 ? true : false;
@@ -199,6 +187,7 @@ function parseTweet(tweet) {
                  'User Mentions: ' + entities_user_mentions + '\n' + 
                  'Media: ' + entities_media + '\n' + 
                  '\'Retweet\': ' + word_retweet + '\n' + 
+                 'All Caps: ' + all_caps + '\n' + 
                  'Question Mark: ' + question_mark + '\n' + 
                  'Explanation Mark: ' + explanation_mark + '\n' + 
                  'Quote: ' + quote + '\n' + 
@@ -219,7 +208,7 @@ function parseTweet(tweet) {
 // Calculate impact score by user engagement measures.
 
 function calculateImpact(favourites, retweets, followers) {
-  engagements = (retweets + favourites) / followers;
+  engagements = ((retweets + favourites) / followers) * 100;
   return (engagements);
 }
 
