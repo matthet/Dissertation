@@ -80,7 +80,7 @@ app.get('/search', function(req, res) {
   total_tweets = 0;
 
   for (i = run_number; i < 1; i++) {
-    client.get('search/tweets', {q: q, exclude: 'retweets', count: 3}, function(error, tweets, response){
+    client.get('search/tweets', {q: q, exclude: 'retweets', count: 10}, function(error, tweets, response){
       tweets_received = tweets.statuses.length;
       console.log('Tweets received: ' + tweets_received);
 
@@ -100,8 +100,18 @@ function analyseRumourHits(tweets) {
     tweet_text = JSON.stringify(tweets.statuses[i].text);
 
     if ((tweet_text.search(/notebook/i)) && (tweet_text.search(/sequel/i))){
-      db_rumour = parseTweet(tweets.statuses[i]);
-      addToDB(db_rumour);
+      //duplicate = checkDatabase(tweets.statuses[i].id);
+
+      Notebook.findOne({'id': tweets.statuses[i].id}, 'id text', function (err, duplicate) {
+        if (err) return handleError(err);
+
+        if (duplicate == null) {
+          db_rumour = parseTweet(tweets.statuses[i]);
+          addToDB(db_rumour);
+        } else {
+          console.log('duplicate tweet received');
+        }
+      })
     }
   }
 }
