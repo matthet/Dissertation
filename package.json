@@ -1,0 +1,31 @@
+{
+  "name": "dissertation",
+  "version": "1.0.0",
+  "description": "Tara's Rumour Impact Dissertation",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-generator": "^4.13.1",
+    "moment": "^2.11.2",
+    "mongodb": "^2.1.7",
+    "mongoose": "^4.4.6",
+    "twitter": "^1.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthet/Dissertation.git"
+  },
+  "author": "Tara Matthews",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthet/Dissertation/issues"
+  },
+  "homepage": "https://github.com/matthet/Dissertation#readme"
+}

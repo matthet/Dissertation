@@ -7,6 +7,14 @@ var cookieParser = require('cookie-parser');
 var http = require('http');
 var fs = require('fs');
 
+var dbConfig = require('./db');
+var mongoose = require('mongoose');
+
+var Rumour = require('./models/rumour');
+
+// Connect to DB
+mongoose.connect(dbConfig.url);
+
 // Server config
 var app = express();
 
@@ -93,21 +101,6 @@ app.get('/search', function(req, res) {
     });
   }
 });
-
-// Find lowest ID of messages returned by the Search API.
-
-// function getLowestID(tweets) {
-//   lowest_id = tweets.statuses[0].id;
-
-//   for (i = 1; i < tweets.length; i++) {
-//     tweet_id = JSON.stringify(tweets[i].id);
-    
-//     if (tweet_id < lowest_id) {
-//       lowest_id = tweet_id;
-//     }
-//   }
-//   return lowest_id;
-// }
 
 // Find rumour hits from messages returned by the Search API.
 

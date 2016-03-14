@@ -1,0 +1,414 @@
+Rumour Output 
+--------------------------
+ID: 702793995450261500
+Text:"Apple to release iphone march 18th ???"
+Tweet Location: "Dublin City, Ireland"
+Tweet Created At: "Thu Feb 25 09:55:20 +0000 2016"
+Hashtags: []
+URLs: []
+User Mentions: []
+Media: undefined
+Question Mark: true
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 0
+Default Profile: true
+Default Profile Image: true
+User Created At: "Mon Dec 07 16:21:52 +0000 2015"
+Followers Count: 0
+Friends Count: 0
+Statuses Count: 13
+Account Location: null
+Account Verified: false
+--------------------------
+1.
+--------------------------
+ID: 702588784181964800
+Text:"Apple will reportedly release new iPhone and iPad Air 3 on March 18th https://t.co/gbh5p2Bqdc"
+Tweet Location: null
+Tweet Created At: "Wed Feb 24 20:19:54 +0000 2016"
+Hashtags: []
+URLs: [{"url":"https://t.co/gbh5p2Bqdc","expanded_url":"http://bit.ly/1XNdXxO","display_url":"bit.ly/1XNdXxO","indices":[70,93]}]
+User Mentions: []
+Media: undefined
+Question Mark: false
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 0
+Default Profile: true
+Default Profile Image: false
+User Created At: "Tue Jan 31 21:06:18 +0000 2012"
+Followers Count: 63
+Friends Count: 68
+Statuses Count: 1183
+Account Location: "Boston, MA"
+Account Verified: false
+--------------------------
+2.
+--------------------------
+ID: 702587624213639200
+Text:"RT @supakaine: my album come out March 18th. #Zagteam #APX get my single tall grass on Apple,spotify,tidal whatever. thanks https://t.co/Ad…"
+Tweet Location: null
+Tweet Created At: "Wed Feb 24 20:15:17 +0000 2016"
+Hashtags: [{"text":"Zagteam","indices":[45,53]},{"text":"APX","indices":[54,58]}]
+URLs: [{"url":"https://t.co/AdZSCvnF5i","expanded_url":"https://itun.es/us/4gIl5","display_url":"itun.es/us/4gIl5","indices":[124,140]}]
+User Mentions: [{"screen_name":"supakaine","name":"supakaine","id":69135134,"id_str":"69135134","indices":[3,13]}]
+Media: undefined
+Question Mark: false
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 6
+Default Profile: false
+Default Profile Image: false
+User Created At: "Mon Feb 21 20:34:32 +0000 2011"
+Followers Count: 1133
+Friends Count: 844
+Statuses Count: 19650
+Account Location: "free association"
+Account Verified: false
+--------------------------
+3.
+--------------------------
+ID: 702582238320263200
+Text:"RT @supakaine: my album come out March 18th. #Zagteam #APX get my single tall grass on Apple,spotify,tidal whatever. thanks https://t.co/Ad…"
+Tweet Location: null
+Tweet Created At: "Wed Feb 24 19:53:53 +0000 2016"
+Hashtags: [{"text":"Zagteam","indices":[45,53]},{"text":"APX","indices":[54,58]}]
+URLs: [{"url":"https://t.co/AdZSCvnF5i","expanded_url":"https://itun.es/us/4gIl5","display_url":"itun.es/us/4gIl5","indices":[124,140]}]
+User Mentions: [{"screen_name":"supakaine","name":"supakaine","id":69135134,"id_str":"69135134","indices":[3,13]}]
+Media: undefined
+Question Mark: false
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 6
+Default Profile: false
+Default Profile Image: false
+User Created At: "Thu Jun 24 21:01:30 +0000 2010"
+Followers Count: 1024
+Friends Count: 404
+Statuses Count: 42678
+Account Location: " RIPS™ uhhuh™ "
+Account Verified: false
+--------------------------
+4.
+--------------------------
+ID: 702582142463778800
+Text:"RT @supakaine: my album come out March 18th. #Zagteam #APX get my single tall grass on Apple,spotify,tidal whatever. thanks https://t.co/Ad…"
+Tweet Location: null
+Tweet Created At: "Wed Feb 24 19:53:30 +0000 2016"
+Hashtags: [{"text":"Zagteam","indices":[45,53]},{"text":"APX","indices":[54,58]}]
+URLs: [{"url":"https://t.co/AdZSCvnF5i","expanded_url":"https://itun.es/us/4gIl5","display_url":"itun.es/us/4gIl5","indices":[124,140]}]
+User Mentions: [{"screen_name":"supakaine","name":"supakaine","id":69135134,"id_str":"69135134","indices":[3,13]}]
+Media: undefined
+Question Mark: false
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 6
+Default Profile: true
+Default Profile Image: false
+User Created At: "Wed Feb 04 18:40:47 +0000 2015"
+Followers Count: 272
+Friends Count: 429
+Statuses Count: 3682
+Account Location: "TALL GRASS"
+Account Verified: false
+--------------------------
+5.
+--------------------------
+ID: 702363042881912800
+Text:"RT @supakaine: my album come out March 18th. #Zagteam #APX get my single tall grass on Apple,spotify,tidal whatever. thanks https://t.co/Ad…"
+Tweet Location: null
+Tweet Created At: "Wed Feb 24 05:22:53 +0000 2016"
+Hashtags: [{"text":"Zagteam","indices":[45,53]},{"text":"APX","indices":[54,58]}]
+URLs: [{"url":"https://t.co/AdZSCvnF5i","expanded_url":"https://itun.es/us/4gIl5","display_url":"itun.es/us/4gIl5","indices":[124,140]}]
+User Mentions: [{"screen_name":"supakaine","name":"supakaine","id":69135134,"id_str":"69135134","indices":[3,13]}]
+Media: undefined
+Question Mark: false
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 6
+Default Profile: false
+Default Profile Image: false
+User Created At: "Thu Nov 05 22:24:25 +0000 2009"
+Followers Count: 1591
+Friends Count: 378
+Statuses Count: 86202
+Account Location: "Central Earth "
+Account Verified: false
+--------------------------
+6.
+--------------------------
+ID: 702361261888151600
+Text:"RT @supakaine: my album come out March 18th. #Zagteam #APX get my single tall grass on Apple,spotify,tidal whatever. thanks https://t.co/Ad…"
+Tweet Location: null
+Tweet Created At: "Wed Feb 24 05:15:48 +0000 2016"
+Hashtags: [{"text":"Zagteam","indices":[45,53]},{"text":"APX","indices":[54,58]}]
+URLs: [{"url":"https://t.co/AdZSCvnF5i","expanded_url":"https://itun.es/us/4gIl5","display_url":"itun.es/us/4gIl5","indices":[124,140]}]
+User Mentions: [{"screen_name":"supakaine","name":"#TallGrassVideo","id":69135134,"id_str":"69135134","indices":[3,13]}]
+Media: undefined
+Question Mark: false
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 6
+Default Profile: false
+Default Profile Image: false
+User Created At: "Tue Jan 04 21:05:57 +0000 2011"
+Followers Count: 511
+Friends Count: 113
+Statuses Count: 10520
+Account Location: "building sounds in MI "
+Account Verified: false
+--------------------------
+7.
+--------------------------
+ID: 702361142480470000
+Text:"RT @supakaine: my album come out March 18th. #Zagteam #APX get my single tall grass on Apple,spotify,tidal whatever. thanks https://t.co/Ad…"
+Tweet Location: null
+Tweet Created At: "Wed Feb 24 05:15:20 +0000 2016"
+Hashtags: [{"text":"Zagteam","indices":[45,53]},{"text":"APX","indices":[54,58]}]
+URLs: [{"url":"https://t.co/AdZSCvnF5i","expanded_url":"https://itun.es/us/4gIl5","display_url":"itun.es/us/4gIl5","indices":[124,140]}]
+User Mentions: [{"screen_name":"supakaine","name":"#TallGrassVideo","id":69135134,"id_str":"69135134","indices":[3,13]}]
+Media: undefined
+Question Mark: false
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 6
+Default Profile: true
+Default Profile Image: false
+User Created At: "Mon Jul 14 01:21:14 +0000 2014"
+Followers Count: 1254
+Friends Count: 1171
+Statuses Count: 30595
+Account Location: "313"
+Account Verified: false
+--------------------------
+8.
+--------------------------
+ID: 702360978730700800
+Text:"my album come out March 18th. #Zagteam #APX get my single tall grass on Apple,spotify,tidal whatever. thanks https://t.co/AdZSCvnF5i 💛"
+Tweet Location: null
+Tweet Created At: "Wed Feb 24 05:14:41 +0000 2016"
+Hashtags: [{"text":"Zagteam","indices":[30,38]},{"text":"APX","indices":[39,43]}]
+URLs: [{"url":"https://t.co/AdZSCvnF5i","expanded_url":"https://itun.es/us/4gIl5","display_url":"itun.es/us/4gIl5","indices":[109,132]}]
+User Mentions: []
+Media: undefined
+Question Mark: false
+Smiling Emoticon: false
+Favorite Count: 5
+Retweet Count: 6
+Default Profile: false
+Default Profile Image: false
+User Created At: "Wed Aug 26 23:41:17 +0000 2009"
+Followers Count: 2218
+Friends Count: 498
+Statuses Count: 72552
+Account Location: "Detroit, USA "
+Account Verified: false
+--------------------------
+9.
+--------------------------
+ID: 702048013066211300
+Text:"Apple will reportedly release new iPhone and iPad Air 3 on March 18th。らしい"
+Tweet Location: null
+Tweet Created At: "Tue Feb 23 08:31:04 +0000 2016"
+Hashtags: []
+URLs: []
+User Mentions: []
+Media: undefined
+Question Mark: false
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 0
+Default Profile: true
+Default Profile Image: false
+User Created At: "Wed Dec 04 00:45:37 +0000 2013"
+Followers Count: 4387
+Friends Count: 4863
+Statuses Count: 19943
+Account Location: ""
+Account Verified: false
+--------------------------
+10.
+--------------------------
+ID: 702002711227596800
+Text:"Apple will reportedly release new iPhone and iPad Air 3 on March 18th。・・だから？"
+Tweet Location: null
+Tweet Created At: "Tue Feb 23 05:31:03 +0000 2016"
+Hashtags: []
+URLs: []
+User Mentions: []
+Media: undefined
+Question Mark: false
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 0
+Default Profile: true
+Default Profile Image: false
+User Created At: "Wed Dec 04 00:45:37 +0000 2013"
+Followers Count: 4387
+Friends Count: 4863
+Statuses Count: 19943
+Account Location: ""
+Account Verified: false
+--------------------------
+11.
+--------------------------
+ID: 701851719458644000
+Text:"Apple will reportedly release new iPhone and iPad Air 3 on March 18th。って今知った。"
+Tweet Location: null
+Tweet Created At: "Mon Feb 22 19:31:04 +0000 2016"
+Hashtags: []
+URLs: []
+User Mentions: []
+Media: undefined
+Question Mark: false
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 0
+Default Profile: true
+Default Profile Image: false
+User Created At: "Wed Dec 04 00:45:37 +0000 2013"
+Followers Count: 4387
+Friends Count: 4863
+Statuses Count: 19943
+Account Location: ""
+Account Verified: false
+--------------------------
+12.
+--------------------------
+ID: 701761121301082100
+Text:"Apple will reportedly release new iPhone and iPad Air 3 on March 18th。・・マジですか！"
+Tweet Location: null
+Tweet Created At: "Mon Feb 22 13:31:04 +0000 2016"
+Hashtags: []
+URLs: []
+User Mentions: []
+Media: undefined
+Question Mark: false
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 0
+Default Profile: true
+Default Profile Image: false
+User Created At: "Wed Dec 04 00:45:37 +0000 2013"
+Followers Count: 4387
+Friends Count: 4863
+Statuses Count: 19943
+Account Location: ""
+Account Verified: false
+--------------------------
+13.
+--------------------------
+ID: 701746014663811100
+Text:"Apple will reportedly release new iPhone and iPad Air 3 on March 18th。(´З`)"
+Tweet Location: null
+Tweet Created At: "Mon Feb 22 12:31:02 +0000 2016"
+Hashtags: []
+URLs: []
+User Mentions: []
+Media: undefined
+Question Mark: false
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 0
+Default Profile: true
+Default Profile Image: false
+User Created At: "Wed Dec 04 00:45:37 +0000 2013"
+Followers Count: 4387
+Friends Count: 4863
+Statuses Count: 19943
+Account Location: ""
+Account Verified: false
+--------------------------
+14.
+--------------------------
+ID: 701660946461229000
+Text:"New Post: Apple Product Launch March 18th Who Cares? https://t.co/0VDl0BAoQZ"
+Tweet Location: null
+Tweet Created At: "Mon Feb 22 06:53:00 +0000 2016"
+Hashtags: []
+URLs: [{"url":"https://t.co/0VDl0BAoQZ","expanded_url":"http://buff.ly/1QsA4E2","display_url":"buff.ly/1QsA4E2","indices":[53,76]}]
+User Mentions: []
+Media: undefined
+Question Mark: true
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 0
+Default Profile: false
+Default Profile Image: false
+User Created At: "Tue Oct 23 08:46:26 +0000 2007"
+Followers Count: 2863
+Friends Count: 3106
+Statuses Count: 55952
+Account Location: "Modiin, Israel"
+Account Verified: false
+--------------------------
+15.
+--------------------------
+ID: 701528062618259500
+Text:"Apple Product Launch March 18th Who Cares? https://t.co/0shfn0Ee3Z https://t.co/B2tLZ4SIFh"
+Tweet Location: null
+Tweet Created At: "Sun Feb 21 22:04:58 +0000 2016"
+Hashtags: []
+URLs: [{"url":"https://t.co/0shfn0Ee3Z","expanded_url":"http://warptest.com/2016/02/apple-product-launch-march-18th-cares/","display_url":"warptest.com/2016/02/apple-…","indices":[43,66]}]
+User Mentions: []
+Media: "http://pbs.twimg.com/media/CbxUDhwVIAEnTAE.jpg"
+Question Mark: true
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 0
+Default Profile: false
+Default Profile Image: false
+User Created At: "Tue Oct 23 08:46:26 +0000 2007"
+Followers Count: 2863
+Friends Count: 3106
+Statuses Count: 55952
+Account Location: "Modiin, Israel"
+Account Verified: false
+--------------------------
+16.
+--------------------------
+ID: 701528023263121400
+Text:"Another Apple Product Launch ... Yawn March 18th will see Apple Product Launch 2016. The Verge and others are... https://t.co/vnlXoP7I5o"
+Tweet Location: null
+Tweet Created At: "Sun Feb 21 22:04:49 +0000 2016"
+Hashtags: []
+URLs: [{"url":"https://t.co/vnlXoP7I5o","expanded_url":"http://fb.me/7HzqabJjr","display_url":"fb.me/7HzqabJjr","indices":[113,136]}]
+User Mentions: []
+Media: undefined
+Question Mark: false
+Smiling Emoticon: false
+Favorite Count: 1
+Retweet Count: 0
+Default Profile: false
+Default Profile Image: false
+User Created At: "Tue Oct 23 08:46:26 +0000 2007"
+Followers Count: 2863
+Friends Count: 3106
+Statuses Count: 55952
+Account Location: "Modiin, Israel"
+Account Verified: false
+--------------------------
+17.
+--------------------------
+ID: 701474227237445600
+Text:"Apple will reportedly release new iPhone and iPad Air 3 on March 18th。・・らしい"
+Tweet Location: null
+Tweet Created At: "Sun Feb 21 18:31:03 +0000 2016"
+Hashtags: []
+URLs: []
+User Mentions: []
+Media: undefined
+Question Mark: false
+Smiling Emoticon: false
+Favorite Count: 0
+Retweet Count: 0
+Default Profile: true
+Default Profile Image: false
+User Created At: "Wed Dec 04 00:45:37 +0000 2013"
+Followers Count: 4387
+Friends Count: 4863
+Statuses Count: 19943
+Account Location: ""
+Account Verified: false
+--------------------------
