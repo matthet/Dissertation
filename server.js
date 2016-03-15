@@ -13,7 +13,7 @@ var mongoose = require('mongoose');
 var Rumour = require('./models/rumour_document');
 
 // Connect to DB
-mongoose.connect(dbConfig.url);
+//mongoose.connect(dbConfig.url);
 
 // Server config
 var app = express();
@@ -44,32 +44,6 @@ app.post('/tweet', function(req, res) {
     console.log(tweet);  // Tweet body. 
     console.log(response);  // Raw response object. 
   });  
-});
-
-// Streaming API
-
-app.get('/stream', function(req, res) {
-  track = "apple march 18th";
-
-  client.stream('statuses/filter', {track: track}, function(stream) {
-    stream.on('data', function(tweet) {
-
-      tweet_string = parseTweet(tweet);
-      console.log(JSON.stringify(tweet));
-
-      // fs.appendFile(filepath, tweet_string, function (err) {
-      //   if (err) {
-      //     return console.log(err);
-      //   }
-
-      //   console.log("tweet added to Output.txt!");
-      // }); 
-    });
- 
-    stream.on('error', function(error) {
-      throw error;
-    });
-  });
 });
 
 // Search API.
