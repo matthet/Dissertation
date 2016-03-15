@@ -79,16 +79,14 @@ app.get('/search', function(req, res) {
   run_number = 0;
   total_tweets = 0;
 
-  for (i = run_number; i < 1; i++) {
-    client.get('search/tweets', {q: q, exclude: 'retweets', count: 2}, function(error, tweets, response){
-      tweets_received = tweets.statuses.length;
-      console.log('Tweets received: ' + tweets_received);
+  client.get('search/tweets', {q: q, exclude: 'retweets', count: 100}, function(error, tweets, response){
+    tweets_received = tweets.statuses.length;
+    console.log('Tweets received: ' + tweets_received);
 
-      if (tweets_received != 0) {
-        analyseRumourHits(tweets);
-      }
-    });
-  }
+    if (tweets_received != 0) {
+      analyseRumourHits(tweets);
+    }
+  });
 });
 
 // Find rumour hits from messages returned by the Search API.
