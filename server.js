@@ -72,22 +72,44 @@ app.get('/stream', function(req, res) {
   });
 });
 
-// Initialise search, making first request to search API
+// Search API.
 
 app.get('/search', function(req, res) {
-  q = "notebook sequel";
+  q = "cut onions food poisoning";
   run_number = 0;
   total_tweets = 0;
 
-  client.get('search/tweets', {q: q, exclude: 'retweets', count: 100}, function(error, tweets, response){
-    tweets_received = tweets.statuses.length;
-    console.log('Tweets received: ' + tweets_received);
+  findLowestID(function(lowest_id) {
+    console.log('LOWEST ID: ' + lowest_id);
+    client.get('search/tweets', {q: q, exclude: 'retweets', max_id: lowest_id, count: 100}, function(error, tweets, response){
+      tweets_received = tweets.statuses.length;
+      console.log('Tweets received: ' + tweets_received);
 
-    if (tweets_received != 0) {
-      analyseRumourHits(tweets);
-    }
+      if (tweets_received != 0) {
+        analyseRumourHits(tweets);
+      }
+    });
   });
 });
+
+// Scan database to find oldest tweet received.
+
+function findLowestID(callback) {
+  Rumour.find({}, 'id', function (err, tweet_ids) {
+    lowest_id = '';
+  
+    if (tweet_ids.length > 0) {
+      lowest_id = tweet_ids[0].id;
+
+      for (i = 1; i < tweet_ids.length; i++) {
+        if (tweet_ids[i].id.localeCompare(lowest_id) == -1){
+          lowest_id = tweet_ids[i].id;
+        }
+      }
+    }
+    callback(lowest_id);
+  });
+}
 
 // Find rumour hits from messages returned by the Search API.
 
@@ -98,7 +120,7 @@ function analyseRumourHits(tweets) {
     tweet = tweets.statuses[i];
     tweet_text = JSON.stringify(tweet.text);
 
-    if ((tweet_text.search(/notebook/i)) && (tweet_text.search(/sequel/i))){
+    if ((tweet_text.search(/cut onions/i)) && (tweet_text.search(/food poisoning/i))){
       checkDBandAdd(tweet);
     }
   }
@@ -116,7 +138,7 @@ function checkDBandAdd(tweet) {
     } else {
       console.log('duplicate tweet received');
     }
-  })
+  });
 }
 
 // Parse relevant data including impact features from Tweet.

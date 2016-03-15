@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-module.exports = mongoose.model('notebook_sequel_tweets',{
+module.exports = mongoose.model('onions_foodpoisoning_tweets',{
 	id: String,
 	text: String,
 	impact_score: String,
