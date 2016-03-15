@@ -10,7 +10,7 @@ var fs = require('fs');
 var dbConfig = require('./db');
 var mongoose = require('mongoose');
 
-var Notebook = require('./models/rumour_document');
+var Rumour = require('./models/rumour_document');
 
 // Connect to DB
 mongoose.connect(dbConfig.url);
@@ -80,7 +80,7 @@ app.get('/search', function(req, res) {
   total_tweets = 0;
 
   for (i = run_number; i < 1; i++) {
-    client.get('search/tweets', {q: q, exclude: 'retweets', count: 10}, function(error, tweets, response){
+    client.get('search/tweets', {q: q, exclude: 'retweets', count: 2}, function(error, tweets, response){
       tweets_received = tweets.statuses.length;
       console.log('Tweets received: ' + tweets_received);
 
@@ -97,29 +97,34 @@ function analyseRumourHits(tweets) {
   file_string = "";
 
   for (i = 0; i < tweets.statuses.length; i++) {
-    tweet_text = JSON.stringify(tweets.statuses[i].text);
+    tweet = tweets.statuses[i];
+    tweet_text = JSON.stringify(tweet.text);
 
     if ((tweet_text.search(/notebook/i)) && (tweet_text.search(/sequel/i))){
-      //duplicate = checkDatabase(tweets.statuses[i].id);
-
-      Notebook.findOne({'id': tweets.statuses[i].id}, 'id text', function (err, duplicate) {
-        if (err) return handleError(err);
-
-        if (duplicate == null) {
-          db_rumour = parseTweet(tweets.statuses[i]);
-          addToDB(db_rumour);
-        } else {
-          console.log('duplicate tweet received');
-        }
-      })
+      checkDBandAdd(tweet);
     }
   }
+}
+
+// Check DB for tweet received to avoid storing duplicates.
+
+function checkDBandAdd(tweet) {
+  Rumour.findOne({'id': tweet.id}, function (err, duplicate) {
+    if (err) return handleError(err);
+    
+    if (duplicate == null) {
+      db_rumour = parseTweet(tweet);
+      addToDB(db_rumour);
+    } else {
+      console.log('duplicate tweet received');
+    }
+  })
 }
 
 // Parse relevant data including impact features from Tweet.
 
 function parseTweet(tweet) {
-  var rumour = new Notebook();
+  var rumour = new Rumour();
 
   rumour.id = JSON.stringify(tweet.id);
   rumour.text = JSON.stringify(tweet.text);
@@ -166,7 +171,7 @@ function calculateImpact(favourites, retweets, followers) {
 function addToDB(rumour) {
   rumour.save(function(err, rumour) {
     if (err) return console.error(err);
-    console.log(rumour)
+    console.log('Tweet added to DB.')
   });
 }
 
