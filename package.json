@@ -11,6 +11,7 @@
     "moment": "^2.11.2",
     "mongodb": "^2.1.7",
     "mongoose": "^4.4.6",
+    "simple-statistics": "^1.0.1",
     "twitter": "^1.2.5"
   },
   "devDependencies": {},

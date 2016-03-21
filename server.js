@@ -12,6 +12,8 @@ var mongoose = require('mongoose');
 
 var Rumour = require('./models/rumour_document');
 
+var ss = require('simple-statistics');
+
 // Connect to DB
 mongoose.connect(dbConfig.url);
 
@@ -34,6 +36,8 @@ var client = new Twitter({
   access_token_key: '4406506943-vbpupRIs13PnkvzJQcyDT77IMiKuyEuWZX0e6IY',
   access_token_secret: 'nXVGLvAlcPT5GNgEEDLe0yvFsXewBY7xZAd94yeDOw5ee'
 });
+
+meanAndMedian();
 
 app.post('/tweet', function(req, res) {
 
@@ -173,43 +177,20 @@ function addToDB(rumour) {
 
 // find the mean from the first 'sample_size' tweets received.
 
-function mean() {
-  total_scores = 0;
-  sample_size = 100;
+function meanAndMedian() {
+  sample_size = 10;
+  sample_set = new Array(sample_size);
 
-  Rumour.find({}, 'impact_score', function (err, impact_scores) {
-    for (i = 0; i < sample_size; i++) {
-      score = impact_scores[i].impact_score;
-
-      if (isNaN(score)) {
-        total_scores += 0;
-      } else {
-        total_scores += parseFloat(score);
-      }
-    }
-    mean = total_scores / sample_size;
-  });
-}
-
-// find the median from the first 'sample_size' tweets received.
-
-function median() {
-  sample_size = 11;
-  median = 0;
-
+  // return records in ascending order
   Rumour.find({}, 'impact_score', {sort:{impact_score: 1}}, function (err, impact_scores) {
+
     for (i = 0; i < sample_size; i++) {
-      console.log(impact_scores[i].impact_score);
+      score = parseFloat(impact_scores[i].impact_score);
+      sample_set[i] = score;
     }
 
-    var middle = Math.floor((impact_scores.length - 1) / 2);
-
-    if (impact_scores.length % 2) {
-        median = impact_scores[middle];
-    } else {
-        median = (impact_scores[middle] + impact_scores[middle + 1]) / 2.0;
-    }
-
+    mean = ss.mean(sample_set);
+    median = ss.median(sample_set);
   });
 }
 
