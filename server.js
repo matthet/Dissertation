@@ -37,19 +37,6 @@ var client = new Twitter({
   access_token_secret: 'nXVGLvAlcPT5GNgEEDLe0yvFsXewBY7xZAd94yeDOw5ee'
 });
 
-meanAndMedian();
-
-app.post('/tweet', function(req, res) {
-
-  client.post('statuses/update', {status: 'Testing!'},  function(error, tweet, response){
-    
-    if(error) throw error;
-
-    console.log(tweet);  // Tweet body. 
-    console.log(response);  // Raw response object. 
-  });  
-});
-
 // Search API.
 
 app.get('/search', function(req, res) {
@@ -58,7 +45,6 @@ app.get('/search', function(req, res) {
   total_tweets = 0;
 
   findLowestID(function(lowest_id) {
-    console.log('LOWEST ID: ' + lowest_id);
     client.get('search/tweets', {q: q, exclude: 'retweets', max_id: lowest_id, count: 100}, function(error, tweets, response){
       tweets_received = tweets.statuses.length;
       console.log('Tweets received: ' + tweets_received);
@@ -175,22 +161,52 @@ function addToDB(rumour) {
 
 // ------------------------------------------- STATS functions ----------------------------------------------------------//
 
-// find the mean from the first 'sample_size' tweets received.
+// Might be useful later? Mean, median, variance, standard deviation.
 
-function meanAndMedian() {
+function basicStats() {
   sample_size = 10;
+
+  returnImpactScores(Rumour, sample_size, function(sample_set) {
+    mean = ss.mean(sample_set);
+    median = ss.median(sample_set);
+    variance = ss.variance(sample_set);
+    standardDev = ss.standardDeviation(sample_set);
+  });
+}
+
+// T-test: A two-sample location test of the null hypothesis such that the means of two populations are equal.
+// Interested in finding statistical significance in rumour datasets.
+
+function tTest() {
+  var germany_pork = require('./models/germany_pork');
+  var notebook_sequel = require('./models/notebook_sequel');
+  // var soros_ferguson = require('./models/soros_ferguson');
+  // var splenda_unsafe = require('./models/splenda_unsafe');
+
+  sample_size = 100;
+
+  returnImpactScores(germany_pork, sample_size, function(sample_set0) {
+    returnImpactScores(notebook_sequel, sample_size, function(sample_set1) {
+      tValue = ss.tTestTwoSample(sample_set0, sample_set1, 0);
+    });
+  });
+}
+
+function returnImpactScores(collection, sample_size, callback) {
   sample_set = new Array(sample_size);
 
   // return records in ascending order
-  Rumour.find({}, 'impact_score', {sort:{impact_score: 1}}, function (err, impact_scores) {
-
+  collection.find({}, 'impact_score', {sort:{impact_score: 1}}, function (err, impact_scores) {
     for (i = 0; i < sample_size; i++) {
       score = parseFloat(impact_scores[i].impact_score);
-      sample_set[i] = score;
-    }
 
-    mean = ss.mean(sample_set);
-    median = ss.median(sample_set);
+      if (isNaN(score)) {
+        sample_set[i] = 0;
+      } else {
+        sample_set[i] = score;
+      }
+    }
+    callback(sample_set);
   });
 }
 
