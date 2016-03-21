@@ -13,7 +13,7 @@ var mongoose = require('mongoose');
 var Rumour = require('./models/rumour_document');
 
 // Connect to DB
-//mongoose.connect(dbConfig.url);
+mongoose.connect(dbConfig.url);
 
 // Server config
 var app = express();
@@ -45,6 +45,8 @@ app.post('/tweet', function(req, res) {
     console.log(response);  // Raw response object. 
   });  
 });
+
+median();
 
 // Search API.
 
@@ -169,11 +171,55 @@ function addToDB(rumour) {
   });
 }
 
+// ------------------------------------------- STATS functions ----------------------------------------------------------//
+
+// find the mean from the first 'sample_size' tweets received.
+
+function mean() {
+  total_scores = 0;
+  sample_size = 100;
+
+  Rumour.find({}, 'impact_score', function (err, impact_scores) {
+    for (i = 0; i < sample_size; i++) {
+      score = impact_scores[i].impact_score;
+
+      if (isNaN(score)) {
+        total_scores += 0;
+      } else {
+        total_scores += parseFloat(score);
+      }
+    }
+    mean = total_scores / sample_size;
+  });
+}
+
+// find the median from the first 'sample_size' tweets received.
+
+function median() {
+  sample_size = 11;
+  median = 0;
+
+  Rumour.find({}, 'impact_score', {sort:{impact_score: 1}}, function (err, impact_scores) {
+    for (i = 0; i < sample_size; i++) {
+      console.log(impact_scores[i].impact_score);
+    }
+
+    var middle = Math.floor((impact_scores.length - 1) / 2);
+
+    if (impact_scores.length % 2) {
+        median = impact_scores[middle];
+    } else {
+        median = (impact_scores[middle] + impact_scores[middle + 1]) / 2.0;
+    }
+
+  });
+}
+
 // Start the Web Server on port 3000.
 
-var server = app.listen(3000, function() {
-  var host = server.address().address;
-  var port = server.address().port;
+// var server = app.listen(3000, function() {
+//   var host = server.address().address;
+//   var port = server.address().port;
 
-  console.log('Server app listening at http://localhost:%s', port);
-});
+//   console.log('Server app listening at http://localhost:%s', port);
+// });
