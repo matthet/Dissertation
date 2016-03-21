@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-module.exports = mongoose.model('giant_rat_london_tweets',{
+module.exports = mongoose.model('trump_white_tshirts_tweets',{
 	id: String,
 	text: String,
 	impact_score: String,

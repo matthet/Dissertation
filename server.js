@@ -46,12 +46,10 @@ app.post('/tweet', function(req, res) {
   });  
 });
 
-median();
-
 // Search API.
 
 app.get('/search', function(req, res) {
-  q = "cut onions food poisoning";
+  q = "Make America White Again trump shirts";
   run_number = 0;
   total_tweets = 0;
 
@@ -96,7 +94,7 @@ function analyseRumourHits(tweets) {
     tweet = tweets.statuses[i];
     tweet_text = JSON.stringify(tweet.text);
 
-    if ((tweet_text.search(/cut onions/i)) && (tweet_text.search(/food poisoning/i))){
+    if ((tweet_text.search(/Make America White Again/i)) && (tweet_text.search(/trump/i)) && (tweet_text.search(/shirts/i))){
       checkDBandAdd(tweet);
     }
   }
@@ -217,9 +215,9 @@ function median() {
 
 // Start the Web Server on port 3000.
 
-// var server = app.listen(3000, function() {
-//   var host = server.address().address;
-//   var port = server.address().port;
+var server = app.listen(3000, function() {
+  var host = server.address().address;
+  var port = server.address().port;
 
-//   console.log('Server app listening at http://localhost:%s', port);
-// });
+  console.log('Server app listening at http://localhost:%s', port);
+});
