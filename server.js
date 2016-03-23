@@ -10,7 +10,7 @@ var fs = require('fs');
 var dbConfig = require('./db');
 var mongoose = require('mongoose');
 
-var Rumour = require('./models/rumour_document');
+var Rumour = require('./models/singer_sonja');
 
 var ss = require('simple-statistics');
 
@@ -37,10 +37,12 @@ var client = new Twitter({
   access_token_secret: 'nXVGLvAlcPT5GNgEEDLe0yvFsXewBY7xZAd94yeDOw5ee'
 });
 
+// basicStats();
+
 // Search API.
 
 app.get('/search', function(req, res) {
-  q = "Make America White Again trump shirts";
+  q = "bryan singer red sonja";
   run_number = 0;
   total_tweets = 0;
 
@@ -54,6 +56,17 @@ app.get('/search', function(req, res) {
       }
     });
   });
+
+  // findGreatestID(function(greatest_id) {
+  //   client.get('search/tweets', {q: q, exclude: 'retweets', since_id: greatest_id, count: 100}, function(error, tweets, response){
+  //     tweets_received = tweets.statuses.length;
+  //     console.log('Tweets received: ' + tweets_received);
+
+  //     if (tweets_received != 0) {
+  //       analyseRumourHits(tweets);
+  //     }
+  //   });
+  // });
 });
 
 // Scan database to find oldest tweet received.
@@ -75,6 +88,26 @@ function findLowestID(callback) {
   });
 }
 
+// Scan database to find newest tweet received.
+
+function findGreatestID(callback) {
+  Rumour.find({}, 'id', function (err, tweet_ids) {
+    greatest_id = '';
+  
+    if (tweet_ids.length > 0) {
+      greatest_id = tweet_ids[0].id;
+
+      for (i = 1; i < tweet_ids.length; i++) {
+        if (tweet_ids[i].id.localeCompare(greatest_id) == 1){
+          greatest_id = tweet_ids[i].id;
+        }
+      }
+    }
+    console.log(greatest_id);
+    callback(greatest_id);
+  });
+}
+
 // Find rumour hits from messages returned by the Search API.
 
 function analyseRumourHits(tweets) {
@@ -84,7 +117,7 @@ function analyseRumourHits(tweets) {
     tweet = tweets.statuses[i];
     tweet_text = JSON.stringify(tweet.text);
 
-    if ((tweet_text.search(/Make America White Again/i)) && (tweet_text.search(/trump/i)) && (tweet_text.search(/shirts/i))){
+    if ((tweet_text.search(/bryan singer/i)) && (tweet_text.search(/red sonja/i))){
       checkDBandAdd(tweet);
     }
   }
@@ -164,13 +197,32 @@ function addToDB(rumour) {
 // Might be useful later? Mean, median, variance, standard deviation.
 
 function basicStats() {
-  sample_size = 10;
+  var germany_pork = require('./models/germany_pork');
+  var notebook_sequel = require('./models/notebook_sequel');
+  var soros_ferguson = require('./models/soros_ferguson');
+  var splenda_unsafe = require('./models/splenda_unsafe');
+  var gilt_shot = require('./models/gilt_shot');
+  var nazi_submarine = require('./models/nazi_submarine');
+  var oprah_pregnant = require('./models/oprah_pregnant');
+  var trump_white_tshirts = require('./models/trump_white_tshirts');
+  var obama_pay_increase = require('./models/obama_pay_increase');
+  var ford_trump = require('./models/ford_trump');
+  var pawnstars_arrest = require('./models/pawnstars_arrest');
+  var manson_trump = require('./models/manson_trump');
+  var spaceballs_sequel = require('./models/spaceballs_sequel');
 
-  returnImpactScores(Rumour, sample_size, function(sample_set) {
+  sample_size = 142;
+
+  returnImpactScores(spaceballs_sequel, sample_size, function(sample_set) {
     mean = ss.mean(sample_set);
     median = ss.median(sample_set);
     variance = ss.variance(sample_set);
     standardDev = ss.standardDeviation(sample_set);
+
+    console.log('MEAN:' + mean);
+    console.log('MEDIAN:' + median);
+    console.log('variance:' + variance);
+    console.log('standardDeviation:' + standardDev);
   });
 }
 
@@ -180,14 +232,24 @@ function basicStats() {
 function tTest() {
   var germany_pork = require('./models/germany_pork');
   var notebook_sequel = require('./models/notebook_sequel');
-  // var soros_ferguson = require('./models/soros_ferguson');
-  // var splenda_unsafe = require('./models/splenda_unsafe');
+  var soros_ferguson = require('./models/soros_ferguson');
+  var splenda_unsafe = require('./models/splenda_unsafe');
+  var gilt_shot = require('./models/gilt_shot');
+  var nazi_submarine = require('./models/nazi_submarine');
+  var oprah_pregnant = require('./models/oprah_pregnant');
+  var trump_white_tshirts = require('./models/trump_white_tshirts');
+  var obama_pay_increase = require('./models/obama_pay_increase');
+  var ford_trump = require('./models/ford_trump');
+  var pawnstars_arrest = require('./models/pawnstars_arrest');
+  var manson_trump = require('./models/manson_trump');
+  var spaceballs_sequel = require('./models/spaceballs_sequel');
 
-  sample_size = 100;
+  sample_size = 20;
 
-  returnImpactScores(germany_pork, sample_size, function(sample_set0) {
+  returnImpactScores(spaceballs_sequel, sample_size, function(sample_set0) {
     returnImpactScores(notebook_sequel, sample_size, function(sample_set1) {
       tValue = ss.tTestTwoSample(sample_set0, sample_set1, 0);
+      console.log(tValue);
     });
   });
 }
@@ -195,8 +257,8 @@ function tTest() {
 function returnImpactScores(collection, sample_size, callback) {
   sample_set = new Array(sample_size);
 
-  // return records in ascending order
-  collection.find({}, 'impact_score', {sort:{impact_score: 1}}, function (err, impact_scores) {
+  // Return collection in descending order, so highest impact scores are first.
+  collection.find({}, 'impact_score', {sort:{impact_score: -1}}, function (err, impact_scores) {
     for (i = 0; i < sample_size; i++) {
       score = parseFloat(impact_scores[i].impact_score);
 
