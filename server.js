@@ -10,7 +10,21 @@ var fs = require('fs');
 var dbConfig = require('./db');
 var mongoose = require('mongoose');
 
-var Rumour = require('./models/singer_sonja');
+var Rumour = require('./models/rumour_document');
+var germany_pork = require('./models/germany_pork');
+var notebook_sequel = require('./models/notebook_sequel');
+var soros_ferguson = require('./models/soros_ferguson');
+var splenda_unsafe = require('./models/splenda_unsafe');
+var gilt_shot = require('./models/gilt_shot');
+var nazi_submarine = require('./models/nazi_submarine');
+var oprah_pregnant = require('./models/oprah_pregnant');
+var trump_white_tshirts = require('./models/trump_white_tshirts');
+var obama_pay_increase = require('./models/obama_pay_increase');
+var ford_trump = require('./models/ford_trump');
+var pawnstars_arrest = require('./models/pawnstars_arrest');
+var manson_trump = require('./models/manson_trump');
+var spaceballs_sequel = require('./models/spaceballs_sequel');
+var singer_sonja = require('./models/singer_sonja');
 
 var ss = require('simple-statistics');
 
@@ -37,7 +51,7 @@ var client = new Twitter({
   access_token_secret: ''
 });
 
-// basicStats();
+tTest();
 
 // Search API.
 
@@ -194,89 +208,122 @@ function addToDB(rumour) {
 
 // ------------------------------------------- STATS functions ----------------------------------------------------------//
 
-// Might be useful later? Mean, median, variance, standard deviation.
+// Mean, median, variance, standard deviation.
 
-function basicStats() {
-  var germany_pork = require('./models/germany_pork');
-  var notebook_sequel = require('./models/notebook_sequel');
-  var soros_ferguson = require('./models/soros_ferguson');
-  var splenda_unsafe = require('./models/splenda_unsafe');
-  var gilt_shot = require('./models/gilt_shot');
-  var nazi_submarine = require('./models/nazi_submarine');
-  var oprah_pregnant = require('./models/oprah_pregnant');
-  var trump_white_tshirts = require('./models/trump_white_tshirts');
-  var obama_pay_increase = require('./models/obama_pay_increase');
-  var ford_trump = require('./models/ford_trump');
-  var pawnstars_arrest = require('./models/pawnstars_arrest');
-  var manson_trump = require('./models/manson_trump');
-  var spaceballs_sequel = require('./models/spaceballs_sequel');
+function basicStats(sample_set) {
 
-  sample_size = 142;
+  mean = ss.mean(sample_set);
+  median = ss.median(sample_set);
+  variance = ss.variance(sample_set);
+  standardDev = ss.standardDeviation(sample_set);
 
-  returnImpactScores(spaceballs_sequel, sample_size, function(sample_set) {
-    mean = ss.mean(sample_set);
-    median = ss.median(sample_set);
-    variance = ss.variance(sample_set);
-    standardDev = ss.standardDeviation(sample_set);
-
-    console.log('MEAN:' + mean);
-    console.log('MEDIAN:' + median);
-    console.log('variance:' + variance);
-    console.log('standardDeviation:' + standardDev);
-  });
+  console.log('MEAN:' + mean);
+  console.log('MEDIAN:' + median);
+  console.log('variance:' + variance);
+  console.log('standardDeviation:' + standardDev);
 }
 
 // T-test: A two-sample location test of the null hypothesis such that the means of two populations are equal.
 // Interested in finding statistical significance in rumour datasets.
 
 function tTest() {
-  var germany_pork = require('./models/germany_pork');
-  var notebook_sequel = require('./models/notebook_sequel');
-  var soros_ferguson = require('./models/soros_ferguson');
-  var splenda_unsafe = require('./models/splenda_unsafe');
-  var gilt_shot = require('./models/gilt_shot');
-  var nazi_submarine = require('./models/nazi_submarine');
-  var oprah_pregnant = require('./models/oprah_pregnant');
-  var trump_white_tshirts = require('./models/trump_white_tshirts');
-  var obama_pay_increase = require('./models/obama_pay_increase');
-  var ford_trump = require('./models/ford_trump');
-  var pawnstars_arrest = require('./models/pawnstars_arrest');
-  var manson_trump = require('./models/manson_trump');
-  var spaceballs_sequel = require('./models/spaceballs_sequel');
+  sample_size = 40;
 
-  sample_size = 20;
-
-  returnImpactScores(spaceballs_sequel, sample_size, function(sample_set0) {
-    returnImpactScores(notebook_sequel, sample_size, function(sample_set1) {
-      tValue = ss.tTestTwoSample(sample_set0, sample_set1, 0);
+  retrieveFromDB(soros_ferguson, sample_size, function(sample_set0) {
+    retrieveFromDB(spaceballs_sequel, sample_size, function(sample_set1) {
+      tValue = ss.tTestTwoSample(sample_set0[1], sample_set1[1], 0);
       console.log(tValue);
     });
   });
 }
 
-function returnImpactScores(collection, sample_size, callback) {
-  sample_set = new Array(sample_size);
+// Find impact score data
 
-  // Return collection in descending order, so highest impact scores are first.
-  collection.find({}, 'impact_score', {sort:{impact_score: -1}}, function (err, impact_scores) {
-    for (i = 0; i < sample_size; i++) {
-      score = parseFloat(impact_scores[i].impact_score);
+// function statsImpact(collection, sample_size) {
+//   findImpactScores(collection, sample_size, function(dataset) {
+//     basicStats(sample_set);
+//   });
+// }
+
+// // Find follower counts data
+
+// function statsFollowers(collection, sample_size) {
+//   findFollowerCounts(collection, sample_size, function(dataset) {
+//     basicStats(sample_set);
+//   });
+// }
+
+// Return the impact scores of sample_size documents from database
+
+function retrieveFromDB(collection, sample_size, callback) {
+  randomIndices = [];
+  random_sample = [];
+  rand_impact_scores = [];
+  rand_follower_counts = [];
+
+  collection.find({}, 'impact_score followers_count', function (err, dataset) {
+    
+    while(randomIndices.length < sample_size){
+      randomnumber = Math.ceil(Math.random() * (dataset.length - 1))
+      found = false;
+
+      for(i = 0; i < randomIndices.length; i++) {
+        if(randomIndices[i] == randomnumber) {
+          found = true;
+          break
+        }
+      }
+
+      if(!found)randomIndices[randomIndices.length] = randomnumber;
+    }
+
+    console.log(randomIndices);
+
+    for(i = 0; i < randomIndices.length; i++) {
+      score = parseFloat(dataset[randomIndices[i]].impact_score);
 
       if (isNaN(score)) {
-        sample_set[i] = 0;
+        rand_impact_scores[i] = 0;
       } else {
-        sample_set[i] = score;
+        rand_impact_scores[i] = score;
+      }
+
+      rand_follower_counts[i] = dataset[randomIndices[i]].followers_count;
+    }
+
+    random_sample = [randomIndices, rand_impact_scores, rand_follower_counts];
+
+    callback(random_sample);
+  });
+}
+
+// Generate unique, random indices
+
+function randomIndices(sample_size, table_size) {
+  arr = []
+
+  while(arr.length < sample_size){
+    randomnumber = Math.ceil(Math.random() * (table_size - 1))
+    found = false;
+
+    for(i = 0; i < arr.length; i++) {
+      if(arr[i] == randomnumber) {
+        found = true;
+        break
       }
     }
-    callback(sample_set);
-  });
+
+    if(!found)arr[arr.length] = randomnumber;
+  }
+
+  return(arr);
 }
 
 // Start the Web Server on port 3000.
 
-var server = app.listen(3000, function() {
-  var host = server.address().address;
-  var port = server.address().port;
+// var server = app.listen(3000, function() {
+//   var host = server.address().address;
+//   var port = server.address().port;
 
-  console.log('Server app listening at http://localhost:%s', port);
-});
+//   console.log('Server app listening at http://localhost:%s', port);
+// });
