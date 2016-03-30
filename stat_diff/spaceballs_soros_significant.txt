@@ -1,0 +1,35 @@
+Rumour A: soros_ferguson, Rumour B: spaceballs_sequel
+
+A indices: 154,26,120,20,143,71,121,146,116,59,96,76,61,109,75,33,88,104,5,137,131,14,50,2,89,58,46,63,25,19,169,55,6,11,180,42,118,138,56,43
+B indices: 108,66,31,109,83,91,20,38,32,33,54,59,84,107,45,128,125,118,99,100,44,137,141,123,3,65,71,98,23,24,57,116,90,73,9,27,86,42,126,74
+
+T-value: 3.208079590400287
+
+Rumour A Stats: 
+Impact Scores: 
+MEAN: 0.09370167317459029
+MEDIAN: 0
+variance: 0.03327124330257404
+standardDeviation: 0.182404066025333
+
+
+Follower Counts: 
+MEAN: 3.0428370457794807e+136
+MEDIAN: 4505528
+variance: 9.258857287167993e+272
+standardDeviation: 3.0428370457794797e+136
+
+
+Rumour B Stats: 
+Impact Scores: 
+MEAN: 0
+MEDIAN: 0
+variance: 0
+standardDeviation: 0
+
+
+Follower Counts: 
+MEAN: 2.2424898525957996e+94
+MEDIAN: 4747.5
+variance: 5.028760738995127e+188
+standardDeviation: 2.2424898525957985e+94

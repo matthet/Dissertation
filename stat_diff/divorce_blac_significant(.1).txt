@@ -1,0 +1,36 @@
+Rumour A: kim_divorce, Rumour B: rob_blac
+Sample Size: 40
+
+A indices: 15,48,59,67,3,81,43,53,88,52,96,44,86,23,56,66,29,21,85,42,83,63,11,10,24,82,19,58,13,39,61,91,49,62,51,73,9,50,37,8
+B indices: 111,74,28,95,153,49,108,2,16,10,58,36,5,159,11,87,69,73,33,182,116,48,115,131,3,160,57,90,94,89,37,12,181,72,151,125,167,139,91,56
+
+T-value: 1.9301698389932687
+
+Rumour A Stats: 
+Impact Scores: 
+MEAN: 4.0553925546352
+MEDIAN: 0
+variance: 172.08860378376252
+standardDeviation: 13.1182546012708
+
+
+Follower Counts: 
+MEAN: 2236.85
+MEDIAN: 557
+variance: 27540753.9775
+standardDeviation: 5247.928541577143
+
+
+Rumour B Stats: 
+Impact Scores: 
+MEAN: 0.0008740032289604041
+MEDIAN: 0
+variance: 0.000011776758138031162
+standardDeviation: 0.003431728156196403
+
+
+Follower Counts: 
+MEAN: 17204.225
+MEDIAN: 998
+variance: 4701233243.774373
+standardDeviation: 68565.5397687087

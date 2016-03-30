@@ -1,0 +1,35 @@
+Rumour A: kim_divorce, Rumour B: khloe_father
+
+A indices: 28,92,41,26,29,27,42,81,89,46,50,74,51,58,53,57,3,66,30,39,16,84,34,67,36,90,72,85,43,14,7,10,18,59,15,13,78,32,71,87
+B indices: 68,52,65,11,39,27,2,99,17,20,23,3,14,70,64,61,73,74,21,85,59,42,41,24,46,36,16,92,97,37,51,55,10,35,82,60,45,78,26,6
+
+T-value: 1.8316318872520874
+
+Rumour A Stats: 
+Impact Scores: 
+MEAN: 3.9797123850639693
+MEDIAN: 0
+variance: 172.5896664598668
+standardDeviation: 13.137338636872645
+
+
+Follower Counts: 
+MEAN: 3799.775
+MEDIAN: 740
+variance: 56674289.974374995
+standardDeviation: 7528.232858671084
+
+
+Rumour B Stats: 
+Impact Scores: 
+MEAN: 0.12516126146684017
+MEDIAN: 0
+variance: 0.12763187115264113
+standardDeviation: 0.35725603025371194
+
+
+Follower Counts: 
+MEAN: 1220.325
+MEDIAN: 231.5
+variance: 18542518.969375007
+standardDeviation: 4306.102526574931

@@ -1,0 +1,35 @@
+Rumour A: kim_divorce, Rumour B: kim_doppelganger
+
+A indices: 18,41,14,64,74,89,12,59,30,96,93,27,85,15,90,79,10,11,46,58,47,39,73,92,31,7,26,63,48,86,4,75,6,35,50,84,66,87,29,80
+B indices: 30,90,98,34,29,57,88,74,72,27,6,93,94,11,7,9,12,51,35,43,80,59,56,2,4,58,40,62,85,86,48,22,49,92,23,89,39,5,87,77
+
+T-value: 2.140372556077101
+
+Rumour A Stats: 
+Impact Scores: 
+MEAN: 5.146639463533505
+MEDIAN: 0
+variance: 223.99279507847683
+standardDeviation: 14.96638884562595
+
+
+Follower Counts: 
+MEAN: 3026.3
+MEDIAN: 365
+variance: 64829747.55999999
+standardDeviation: 8051.692217167767
+
+
+Rumour B Stats: 
+Impact Scores: 
+MEAN: 0.01710131832756463
+MEDIAN: 0
+variance: 0.0043003710421794005
+standardDeviation: 0.06557721435208574
+
+
+Follower Counts: 
+MEAN: 10054.975
+MEDIAN: 828.5
+variance: 989468913.6743749
+standardDeviation: 31455.824797235487

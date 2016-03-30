@@ -1,0 +1,36 @@
+Rumour A: kim_divorce, Rumour B: jenner_lips
+Sample Size: 40
+
+A indices: 82,75,17,21,58,34,24,43,53,39,46,59,85,23,14,22,27,47,7,79,41,18,33,30,74,91,32,77,86,5,19,8,88,60,89,90,73,29,31,68
+B indices: 113,89,333,329,146,301,12,269,159,116,280,177,255,152,225,195,24,290,91,210,216,144,90,328,69,31,286,315,155,56,162,312,186,101,154,323,8,203,327,47
+
+T-value: 1.7719364612858226
+
+Rumour A Stats: 
+Impact Scores: 
+MEAN: 3.791707089164306
+MEDIAN: 0
+variance: 173.14554989735203
+standardDeviation: 13.15847825158183
+
+
+Follower Counts: 
+MEAN: 3315.5
+MEDIAN: 698.5
+variance: 58135301.55
+standardDeviation: 7624.650913320556
+
+
+Rumour B Stats: 
+Impact Scores: 
+MEAN: 0.05727204524464241
+MEDIAN: 0
+variance: 0.08246839419481489
+standardDeviation: 0.28717310841165977
+
+
+Follower Counts: 
+MEAN: 28532.45
+MEDIAN: 204
+variance: 20025817341.297497
+standardDeviation: 141512.60488485644
