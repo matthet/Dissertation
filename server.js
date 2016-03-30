@@ -10,7 +10,6 @@ var fs = require('fs');
 var dbConfig = require('./db');
 var mongoose = require('mongoose');
 
-var Rumour = require('./models/rumour_document');
 var germany_pork = require('./models/germany_pork');
 var notebook_sequel = require('./models/notebook_sequel');
 var soros_ferguson = require('./models/soros_ferguson');
@@ -25,6 +24,13 @@ var pawnstars_arrest = require('./models/pawnstars_arrest');
 var manson_trump = require('./models/manson_trump');
 var spaceballs_sequel = require('./models/spaceballs_sequel');
 var singer_sonja = require('./models/singer_sonja');
+var khloe_father = require('./models/khloe_father');
+var kim_doppelganger = require('./models/kim_doppelganger');
+var rob_blac = require('./models/rob_blac');
+var jenner_lips = require('./models/kylie_jenner_lips');
+var evans_arrested = require('./models/evans_arrested');
+
+var Rumour = require('./models/gunz_vasectomy');
 
 var ss = require('simple-statistics');
 
@@ -45,18 +51,18 @@ app.use(cookieParser());
 app.use('/', express.static('public'));
 
 var client = new Twitter({
-  consumer_key: '',
-  consumer_secret: '',
-  access_token_key: '',
-  access_token_secret: ''
+  consumer_key: 'HlNfATf1c9krHIygrXWcP4iOx',
+  consumer_secret: '9vBm0ArMCdZkLX8zd2dEvo9Z1BEJ587N5pAlsCfPEZPFr52N60',
+  access_token_key: '4406506943-vbpupRIs13PnkvzJQcyDT77IMiKuyEuWZX0e6IY',
+  access_token_secret: 'nXVGLvAlcPT5GNgEEDLe0yvFsXewBY7xZAd94yeDOw5ee'
 });
 
-tTest();
+tTest(); 
 
 // Search API.
 
 app.get('/search', function(req, res) {
-  q = "bryan singer red sonja";
+  q = "peter gunz vasectomy";
   run_number = 0;
   total_tweets = 0;
 
@@ -131,7 +137,7 @@ function analyseRumourHits(tweets) {
     tweet = tweets.statuses[i];
     tweet_text = JSON.stringify(tweet.text);
 
-    if ((tweet_text.search(/bryan singer/i)) && (tweet_text.search(/red sonja/i))){
+    if ((tweet_text.search(/peter gunz/i)) && (tweet_text.search(/vasectomy/i))){
       checkDBandAdd(tweet);
     }
   }
@@ -211,28 +217,43 @@ function addToDB(rumour) {
 // Mean, median, variance, standard deviation.
 
 function basicStats(sample_set) {
+  stats = '';
 
   mean = ss.mean(sample_set);
   median = ss.median(sample_set);
   variance = ss.variance(sample_set);
   standardDev = ss.standardDeviation(sample_set);
 
-  console.log('MEAN:' + mean);
-  console.log('MEDIAN:' + median);
-  console.log('variance:' + variance);
-  console.log('standardDeviation:' + standardDev);
+  stats += 'MEAN: ' + mean + '\n';
+  stats += 'MEDIAN: ' + median + '\n';
+  stats += 'variance: ' + variance + '\n';
+  stats += 'standardDeviation: ' + standardDev + '\n';
+
+  return (stats);
 }
 
 // T-test: A two-sample location test of the null hypothesis such that the means of two populations are equal.
 // Interested in finding statistical significance in rumour datasets.
 
 function tTest() {
+  output = 'Rumour A: jenner_lips, Rumour B: khloe_father\n\n';
   sample_size = 40;
 
-  retrieveFromDB(soros_ferguson, sample_size, function(sample_set0) {
-    retrieveFromDB(spaceballs_sequel, sample_size, function(sample_set1) {
+  retrieveFromDB(jenner_lips, sample_size, function(sample_set0) {
+    retrieveFromDB(khloe_father, sample_size, function(sample_set1) {
       tValue = ss.tTestTwoSample(sample_set0[1], sample_set1[1], 0);
-      console.log(tValue);
+
+      output += 'A indices: ' + sample_set0[0] + '\nB indices: ' + sample_set1[0] + '\n\n';
+      output += 'T-value: ' + tValue + '\n\n';
+      output += 'Rumour A Stats: \nImpact Scores: \n' + basicStats(sample_set0[1]) + '\n\nFollower Counts: \n' + basicStats(sample_set0[2]);
+      output += '\n\nRumour B Stats: \nImpact Scores: \n' + basicStats(sample_set1[1]) + '\n\nFollower Counts: \n' + basicStats(sample_set1[2]); 
+
+      fs.writeFile("output.txt", output, function(err) {
+        if(err) {
+            return console.log(err);
+        }
+        console.log("The file was saved!");
+      });
     });
   });
 }
@@ -263,6 +284,7 @@ function retrieveFromDB(collection, sample_size, callback) {
 
   collection.find({}, 'impact_score followers_count', function (err, dataset) {
     
+    // Select unique, random indices to pull random tweets from rumour set.
     while(randomIndices.length < sample_size){
       randomnumber = Math.ceil(Math.random() * (dataset.length - 1))
       found = false;
@@ -276,8 +298,6 @@ function retrieveFromDB(collection, sample_size, callback) {
 
       if(!found)randomIndices[randomIndices.length] = randomnumber;
     }
-
-    console.log(randomIndices);
 
     for(i = 0; i < randomIndices.length; i++) {
       score = parseFloat(dataset[randomIndices[i]].impact_score);
@@ -295,28 +315,6 @@ function retrieveFromDB(collection, sample_size, callback) {
 
     callback(random_sample);
   });
-}
-
-// Generate unique, random indices
-
-function randomIndices(sample_size, table_size) {
-  arr = []
-
-  while(arr.length < sample_size){
-    randomnumber = Math.ceil(Math.random() * (table_size - 1))
-    found = false;
-
-    for(i = 0; i < arr.length; i++) {
-      if(arr[i] == randomnumber) {
-        found = true;
-        break
-      }
-    }
-
-    if(!found)arr[arr.length] = randomnumber;
-  }
-
-  return(arr);
 }
 
 // Start the Web Server on port 3000.

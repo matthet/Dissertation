@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-module.exports = mongoose.model('singer_sonja_tweets',{
+module.exports = mongoose.model('khloe_father_tweets',{
 	id: String,
 	text: String,
 	impact_score: String,
