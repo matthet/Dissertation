@@ -34,7 +34,7 @@ var kim_butt = require('./models/kim_fake_butt');
 var kim_divorce = require('./models/kim_divorce');
 var gunz_vasectomy = require('./models/gunz_vasectomy');
 
-var Rumour = require('./models/soros_ferguson');
+var Rumour = require('./models/mary_poppins_sequel');
 
 var ss = require('simple-statistics');
 
@@ -60,6 +60,8 @@ var client = new Twitter({
   access_token_key: '',
   access_token_secret: ''
 });
+
+textBasedFeatureAnalysis();
 
 // Search API.
 
@@ -250,12 +252,7 @@ function tTest() {
       output += 'Rumour A Stats: \nImpact Scores: \n' + basicStats(sample_set0[1]) + '\n\nFollower Counts: \n' + basicStats(sample_set0[2]);
       output += '\n\nRumour B Stats: \nImpact Scores: \n' + basicStats(sample_set1[1]) + '\n\nFollower Counts: \n' + basicStats(sample_set1[2]); 
 
-      fs.writeFile("output.txt", output, function(err) {
-        if(err) {
-            return console.log(err);
-        }
-        console.log("The file was saved!");
-      });
+      writeToFile("output.txt", output);
     });
   });
 }
@@ -345,11 +342,90 @@ function retrieveFromDB(collection, sample_size, callback) {
   });
 }
 
+// ------------------------------------------- Feature analysis -----------------------------------------------------------//
+
+// Extract the text of all tweets in rumour set and write to file.
+
+function readTweetText() {
+  tweets = '';
+
+  Rumour.find({}, 'text', function (err, dataset) {
+    for(i = 0; i < dataset.length; i++) {
+      tweets += ((i+1) + '. ' + dataset[i].text + '\n\n');
+    }
+
+    writeToFile("tweet_texts", tweets);
+  });
+}
+
+// Extract the text based feature data of all tweets in rumour set and write analysis to file.
+
+function textBasedFeatureAnalysis() {
+  have_hashtags = 0;
+  have_media = 0;
+  have_urls = 0;
+  have_user_mentions = 0;
+  have_word_retweet = 0;
+  have_all_caps = 0;
+  have_question_mark = 0;
+  have_explanation_mark = 0
+  have_quote = 0;
+  have_smiling_emoticon = 0;
+  tweet_lengths = [];
+
+  textBased = '';
+
+  Rumour.find({}, 
+    'text entities_hashtags entities_media entities_urls entities_user_mentions word_retweet all_caps question_mark explanation_mark quote smiling_emoticon', 
+      function (err, dataset) {
+
+        for(i = 0; i < dataset.length; i++) {
+          if (dataset[i].entities_hashtags == 'true') { have_hashtags += 1; }
+          if (dataset[i].entities_media == 'true') { have_media += 1; }
+          if (dataset[i].entities_urls == 'true') { have_urls += 1; }
+          if (dataset[i].entities_user_mentions == 'true') { have_user_mentions += 1; }
+          if (dataset[i].word_retweet == 'true') { have_word_retweet += 1; }
+          if (dataset[i].all_caps == 'true') { have_all_caps += 1; }
+          if (dataset[i].question_mark == 'true') { have_question_mark += 1; }
+          if (dataset[i].explanation_mark == 'true') { have_explanation_mark += 1; }
+          if (dataset[i].quote == 'true') { have_quote += 1; }
+          if (dataset[i].smiling_emoticon == 'true') { have_smiling_emoticon += 1; }
+          tweet_lengths[i] = parseFloat(dataset[i].text.length);
+        }
+
+        textBased = 'TOTAL POPULATION: ' + dataset.length + '\n' +
+                    'HASHTAGS: ' + have_hashtags + '\n' +
+                    'MEDIA: ' + have_media + '\n' +
+                    'URLS: ' + have_urls + '\n' +
+                    'USER MENTIONS: ' + have_user_mentions + '\n' +
+                    'WORD RETWEET: ' + have_word_retweet + '\n' +
+                    'ALL CAPS: ' + have_all_caps + '\n' +
+                    'QUESTION MARK: ' + have_question_mark + '\n' +
+                    'EXPLANATION MARK: ' + have_explanation_mark + '\n' +
+                    'QUOTE: ' + have_quote + '\n' +
+                    'SMILING EMOTICON: ' + have_smiling_emoticon + '\n' + 
+                    'AVERAGE TWEET LENGTH: ' + ss.mean(tweet_lengths);
+
+        writeToFile("text_based_features", textBased);
+  });
+}
+
+// ------------------------------------------- Helper Functions -----------------------------------------------------------//
+
+function writeToFile(file_name, output) {
+  fs.writeFile(file_name, output, function(err) {
+    if(err) {
+        return console.log(err);
+    }
+    console.log("The file was saved!");
+  });
+}
+
 // Start the Web Server on port 3000.
 
-var server = app.listen(3000, function() {
-  var host = server.address().address;
-  var port = server.address().port;
+// var server = app.listen(3000, function() {
+//   var host = server.address().address;
+//   var port = server.address().port;
 
-  console.log('Server app listening at http://localhost:%s', port);
-});
+//   console.log('Server app listening at http://localhost:%s', port);
+// });
