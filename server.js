@@ -33,6 +33,8 @@ var poppins_sequel = require('./models/mary_poppins_sequel');
 var kim_butt = require('./models/kim_fake_butt');
 var kim_divorce = require('./models/kim_divorce');
 var gunz_vasectomy = require('./models/gunz_vasectomy');
+var calvert_leaving = require('./models/calvert_leaving');
+var giant_rat_london = require('./models/giant_rat_london');
 
 var Rumour = require('./models/mary_poppins_sequel');
 
@@ -60,8 +62,6 @@ var client = new Twitter({
   access_token_key: '',
   access_token_secret: ''
 });
-
-accountBasedFeatureAnalysis();
 
 // Search API.
 
@@ -360,7 +360,7 @@ function readTweetText() {
 
 // Extract the text based feature data of all tweets in rumour set and write analysis to file.
 
-function textBasedFeatureAnalysis() {
+function textBasedFeatureAnalysis(collection, file_name) {
   have_hashtags = 0;
   have_media = 0;
   have_urls = 0;
@@ -412,24 +412,28 @@ function textBasedFeatureAnalysis() {
 
 // Extract the account based feature data of all tweets in rumour set and write analysis to file.
 
-function accountBasedFeatureAnalysis() {
+function accountBasedFeatureAnalysis(collection, file_name) {
   accountBased = '';
   total_account_created_years = [];
   total_followers_count = [];
   total_friends_count = [];
   total_statuses_count = [];
+  total_default_profiles = 0;
+  total_default_profos = 0;
   total_verified_accounts = 0;
 
   accountBased = '';
 
-  Rumour.find({}, 
-    'user_createdAt followers_count friends_count statuses_count account_verified', 
+  collection.find({}, 
+    'user_createdAt followers_count friends_count statuses_count account_verified default_profile default_profile_image', 
       function (err, dataset) {
         for(i = 0; i < dataset.length; i++) {
           total_account_created_years[i] = parseFloat(dataset[i].user_createdAt.substring(27, 31));
           total_followers_count[i] = parseFloat(dataset[i].followers_count);
           total_friends_count[i] = parseFloat(dataset[i].friends_count);
           total_statuses_count[i] = parseFloat(dataset[i].statuses_count);
+          if (dataset[i].default_profile == 'true') { total_default_profiles += 1; }
+          if (dataset[i].default_profile_image == 'true') { total_default_profos += 1; }
           if (dataset[i].account_verified == 'true') { total_verified_accounts += 1; }
         }
 
@@ -438,9 +442,11 @@ function accountBasedFeatureAnalysis() {
                        'AVERAGE followers count: ' + ss.mean(total_followers_count) + '\n' + 
                        'AVERAGE friends count: ' + ss.mean(total_friends_count) + '\n' + 
                        'AVERAGE statuses count: ' + ss.mean(total_statuses_count) + '\n' + 
+                       'Num. default profiles: ' + total_default_profiles + '\n' + 
+                       'Num. default avatars: ' + total_default_profos + '\n' + 
                        'Num. verified accounts in set: ' + total_verified_accounts; 
 
-        writeToFile("account_based_features", accountBased); 
+        writeToFile(file_name, accountBased); 
   });
 }
 
