@@ -61,7 +61,7 @@ var client = new Twitter({
   access_token_secret: ''
 });
 
-textBasedFeatureAnalysis();
+accountBasedFeatureAnalysis();
 
 // Search API.
 
@@ -410,6 +410,40 @@ function textBasedFeatureAnalysis() {
   });
 }
 
+// Extract the account based feature data of all tweets in rumour set and write analysis to file.
+
+function accountBasedFeatureAnalysis() {
+  accountBased = '';
+  total_account_created_years = [];
+  total_followers_count = [];
+  total_friends_count = [];
+  total_statuses_count = [];
+  total_verified_accounts = 0;
+
+  accountBased = '';
+
+  Rumour.find({}, 
+    'user_createdAt followers_count friends_count statuses_count account_verified', 
+      function (err, dataset) {
+        for(i = 0; i < dataset.length; i++) {
+          total_account_created_years[i] = parseFloat(dataset[i].user_createdAt.substring(27, 31));
+          total_followers_count[i] = parseFloat(dataset[i].followers_count);
+          total_friends_count[i] = parseFloat(dataset[i].friends_count);
+          total_statuses_count[i] = parseFloat(dataset[i].statuses_count);
+          if (dataset[i].account_verified == 'true') { total_verified_accounts += 1; }
+        }
+
+        accountBased = 'TOTAL POPULATION: ' + dataset.length + '\n' +
+                       'AVERAGE account creation year: ' + Math.round(ss.mean(total_account_created_years)) + '\n' + 
+                       'AVERAGE followers count: ' + ss.mean(total_followers_count) + '\n' + 
+                       'AVERAGE friends count: ' + ss.mean(total_friends_count) + '\n' + 
+                       'AVERAGE statuses count: ' + ss.mean(total_statuses_count) + '\n' + 
+                       'Num. verified accounts in set: ' + total_verified_accounts; 
+
+        writeToFile("account_based_features", accountBased); 
+  });
+}
+
 // ------------------------------------------- Helper Functions -----------------------------------------------------------//
 
 function writeToFile(file_name, output) {
@@ -423,9 +457,9 @@ function writeToFile(file_name, output) {
 
 // Start the Web Server on port 3000.
 
-// var server = app.listen(3000, function() {
-//   var host = server.address().address;
-//   var port = server.address().port;
+var server = app.listen(3000, function() {
+  var host = server.address().address;
+  var port = server.address().port;
 
-//   console.log('Server app listening at http://localhost:%s', port);
-// });
+  console.log('Server app listening at http://localhost:%s', port);
+});
