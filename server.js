@@ -34,7 +34,7 @@ var kim_butt = require('./models/kim_fake_butt');
 var kim_divorce = require('./models/kim_divorce');
 var gunz_vasectomy = require('./models/gunz_vasectomy');
 
-var Rumour = require('./models/calvert_leaving');
+var Rumour = require('./models/soros_ferguson');
 
 var ss = require('simple-statistics');
 
@@ -60,9 +60,6 @@ var client = new Twitter({
   access_token_key: '',
   access_token_secret: ''
 });
-
-// totalMeanImpact(); 
-totalMeanFollowers();
 
 // Search API.
 
@@ -241,11 +238,11 @@ function basicStats(sample_set) {
 // Interested in finding statistical significance in rumour datasets.
 
 function tTest() {
-  sample_size = 10;
-  output = 'Rumour A: kim_divorce, Rumour B: trump_white_tshirts\nSample Size: ' + sample_size + '\n\n' ;
+  sample_size = 40;
+  output = 'Rumour A: kim_divorce, Rumour B: rob_blac\nSample Size: ' + sample_size + '\n\n' ;
 
   retrieveFromDB(kim_divorce, sample_size, function(sample_set0) {
-    retrieveFromDB(trump_white_tshirts, sample_size, function(sample_set1) {
+    retrieveFromDB(rob_blac, sample_size, function(sample_set1) {
       tValue = ss.tTestTwoSample(sample_set0[1], sample_set1[1], 0);
 
       output += 'A indices: ' + sample_set0[0] + '\nB indices: ' + sample_set1[0] + '\n\n';
@@ -263,52 +260,39 @@ function tTest() {
   });
 }
 
-// Find mean impact score of complete rumour set
+// Find mean impact score and followers count of complete rumour set excluding verified accounts
 
-function totalMeanImpact() {
-  impact_set = []
+function totalMeanImpactAndFollowers() {
+  impact_set = [];
+  followers_set = [];
+  verified_count = 0;
+  j = 0;
 
-  Rumour.find({}, 'impact_score', function (err, dataset) {
+  Rumour.find({}, 'impact_score followers_count account_verified', function (err, dataset) {
     for(i = 0; i < dataset.length; i++) { 
-      score = parseFloat(dataset[i].impact_score);
-      if (isNaN(score)) {
-        impact_set[i] = 0;
-      } else {
-        impact_set[i] = score;
-      }
-    }
-    console.log(ss.mean(impact_set))
-  });
-}
-
-// Find mean followers count of complete rumour set
-
-function totalMeanFollowers() {
-  followers_set = []
-
-  Rumour.find({}, 'followers_count account_verified', function (err, dataset) {
-    for(i = 0; i < dataset.length; i++) { 
-      //score = parseFloat(dataset[i].followers_count);
       verified = dataset[i].account_verified;
 
       if (verified == 'true') { 
-        console.log('verified');
-      }
+        verified_count += 1;
+      } else {
+        impact_score = parseFloat(dataset[i].impact_score);
 
-      //followers_set[i] = score;
+        if (isNaN(impact_score)) {
+          impact_set[j] = 0;
+        } else {
+          impact_set[j] = impact_score;
+        }
+
+        followers_set[j] = parseFloat(dataset[i].followers_count);
+        j += 1;
+      }
     }
-    //console.log(ss.mean(followers_set))
-    console.log('no verified');
+
+    console.log('No. Verified Accounts: ' + verified_count);
+    console.log('MEAN IMPACT: ' + ss.mean(impact_set));
+    console.log('MEAN FOLLOWERS: ' + ss.mean(followers_set));
   });
 }
-
-// // Find follower counts data
-
-// function statsFollowers(collection, sample_size) {
-//   findFollowerCounts(collection, sample_size, function(dataset) {
-//     basicStats(sample_set);
-//   });
-// }
 
 // Return the impact scores of sample_size documents from database
 
@@ -317,6 +301,7 @@ function retrieveFromDB(collection, sample_size, callback) {
   random_sample = [];
   rand_impact_scores = [];
   rand_follower_counts = [];
+  j = 0;
 
   collection.find({}, 'impact_score followers_count', function (err, dataset) {
     
@@ -336,15 +321,22 @@ function retrieveFromDB(collection, sample_size, callback) {
     }
 
     for(i = 0; i < randomIndices.length; i++) {
-      score = parseFloat(dataset[randomIndices[i]].impact_score);
+      verified = dataset[i].account_verified;
 
-      if (isNaN(score)) {
-        rand_impact_scores[i] = 0;
+      if (verified == 'true') { 
+        console.log('excluded verified');
       } else {
-        rand_impact_scores[i] = score;
-      }
+        score = parseFloat(dataset[randomIndices[i]].impact_score);
 
-      rand_follower_counts[i] = parseFloat(dataset[randomIndices[i]].followers_count);
+        if (isNaN(score)) {
+          rand_impact_scores[j] = 0;
+        } else {
+          rand_impact_scores[j] = score;
+        }
+
+        rand_follower_counts[j] = parseFloat(dataset[randomIndices[i]].followers_count);
+        j += 1;
+      }
     }
 
     random_sample = [randomIndices, rand_impact_scores, rand_follower_counts];
@@ -355,9 +347,9 @@ function retrieveFromDB(collection, sample_size, callback) {
 
 // Start the Web Server on port 3000.
 
-// var server = app.listen(3000, function() {
-//   var host = server.address().address;
-//   var port = server.address().port;
+var server = app.listen(3000, function() {
+  var host = server.address().address;
+  var port = server.address().port;
 
-//   console.log('Server app listening at http://localhost:%s', port);
-// });
+  console.log('Server app listening at http://localhost:%s', port);
+});
