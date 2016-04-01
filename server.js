@@ -36,7 +36,7 @@ var gunz_vasectomy = require('./models/gunz_vasectomy');
 var calvert_leaving = require('./models/calvert_leaving');
 var giant_rat_london = require('./models/giant_rat_london');
 
-var Rumour = require('./models/mary_poppins_sequel');
+var Rumour = require('./models/rob_blac');
 
 var ss = require('simple-statistics');
 
@@ -62,6 +62,8 @@ var client = new Twitter({
   access_token_key: '',
   access_token_secret: ''
 });
+
+accountBasedFeatureAnalysis();
 
 // Search API.
 
@@ -412,7 +414,7 @@ function textBasedFeatureAnalysis(collection, file_name) {
 
 // Extract the account based feature data of all tweets in rumour set and write analysis to file.
 
-function accountBasedFeatureAnalysis(collection, file_name) {
+function accountBasedFeatureAnalysis() {
   accountBased = '';
   total_account_created_years = [];
   total_followers_count = [];
@@ -424,7 +426,7 @@ function accountBasedFeatureAnalysis(collection, file_name) {
 
   accountBased = '';
 
-  collection.find({}, 
+  Rumour.find({}, 
     'user_createdAt followers_count friends_count statuses_count account_verified default_profile default_profile_image', 
       function (err, dataset) {
         for(i = 0; i < dataset.length; i++) {
@@ -446,7 +448,7 @@ function accountBasedFeatureAnalysis(collection, file_name) {
                        'Num. default avatars: ' + total_default_profos + '\n' + 
                        'Num. verified accounts in set: ' + total_verified_accounts; 
 
-        writeToFile(file_name, accountBased); 
+        writeToFile("account_based_features", accountBased); 
   });
 }
 
@@ -463,9 +465,9 @@ function writeToFile(file_name, output) {
 
 // Start the Web Server on port 3000.
 
-var server = app.listen(3000, function() {
-  var host = server.address().address;
-  var port = server.address().port;
+// var server = app.listen(3000, function() {
+//   var host = server.address().address;
+//   var port = server.address().port;
 
-  console.log('Server app listening at http://localhost:%s', port);
-});
+//   console.log('Server app listening at http://localhost:%s', port);
+// });
