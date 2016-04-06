@@ -36,7 +36,7 @@ var gunz_vasectomy = require('./models/gunz_vasectomy');
 var calvert_leaving = require('./models/calvert_leaving');
 var giant_rat_london = require('./models/giant_rat_london');
 
-var Rumour = require('./models/rob_blac');
+var Rumour = require('./models/jenner_pregnant');
 
 var ss = require('simple-statistics');
 
@@ -45,6 +45,8 @@ mongoose.connect(dbConfig.url);
 
 // Server config
 var app = express();
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
 
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({
@@ -56,26 +58,28 @@ app.use(cookieParser());
 // As with all web servers, index.html is the default file which will be served.
 app.use('/', express.static('public'));
 
-var client = new Twitter({
-  consumer_key: '',
-  consumer_secret: '',
-  access_token_key: '',
-  access_token_secret: ''
+app.get('/', function(req, res) {
+    //render index.ejs file
+    res.render('index', {val: 0});
 });
 
-accountBasedFeatureAnalysis();
+var client = new Twitter({
+  consumer_key: 'HlNfATf1c9krHIygrXWcP4iOx',
+  consumer_secret: '9vBm0ArMCdZkLX8zd2dEvo9Z1BEJ587N5pAlsCfPEZPFr52N60',
+  access_token_key: '4406506943-vbpupRIs13PnkvzJQcyDT77IMiKuyEuWZX0e6IY',
+  access_token_secret: 'nXVGLvAlcPT5GNgEEDLe0yvFsXewBY7xZAd94yeDOw5ee'
+});
 
 // Search API.
 
 app.get('/search', function(req, res) {
-  q = "peter gunz vasectomy";
-  run_number = 0;
-  total_tweets = 0;
+  q = "kylie jenner pregnent";
 
   findLowestID(function(lowest_id) {
     client.get('search/tweets', {q: q, exclude: 'retweets', max_id: lowest_id, count: 100}, function(error, tweets, response){
       tweets_received = tweets.statuses.length;
       console.log('Tweets received: ' + tweets_received);
+      res.send(tweets_received.toString());
 
       if (tweets_received != 0) {
         analyseRumourHits(tweets);
@@ -143,7 +147,7 @@ function analyseRumourHits(tweets) {
     tweet = tweets.statuses[i];
     tweet_text = JSON.stringify(tweet.text);
 
-    if ((tweet_text.search(/peter gunz/i)) && (tweet_text.search(/vasectomy/i))){
+    if ((tweet_text.search(/kylie jenner/i)) && (tweet_text.search(/pregnant/i))){
       checkDBandAdd(tweet);
     }
   }
@@ -353,7 +357,7 @@ function readTweetText() {
 
   Rumour.find({}, 'text', function (err, dataset) {
     for(i = 0; i < dataset.length; i++) {
-      tweets += ((i+1) + '. ' + dataset[i].text + '\n\n');
+      tweets += ((i+1) + '. ' + dataset[i].text.substring(1, (dataset[i].text.length -1)) + '\n\n');
     }
 
     writeToFile("tweet_texts", tweets);
@@ -392,7 +396,7 @@ function textBasedFeatureAnalysis(collection, file_name) {
           if (dataset[i].explanation_mark == 'true') { have_explanation_mark += 1; }
           if (dataset[i].quote == 'true') { have_quote += 1; }
           if (dataset[i].smiling_emoticon == 'true') { have_smiling_emoticon += 1; }
-          tweet_lengths[i] = parseFloat(dataset[i].text.length);
+          tweet_lengths[i] = parseFloat(dataset[i].text.length) - 2; // don't count \" characters present due to saving as string in DB
         }
 
         textBased = 'TOTAL POPULATION: ' + dataset.length + '\n' +
@@ -465,9 +469,9 @@ function writeToFile(file_name, output) {
 
 // Start the Web Server on port 3000.
 
-// var server = app.listen(3000, function() {
-//   var host = server.address().address;
-//   var port = server.address().port;
+var server = app.listen(3000, function() {
+  var host = server.address().address;
+  var port = server.address().port;
 
-//   console.log('Server app listening at http://localhost:%s', port);
-// });
+  console.log('Server app listening at http://localhost:%s', port);
+});

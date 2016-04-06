@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dissertation</title>
+</head>
+
+<body ng-app="dissertation" ng-controller="tapAPIController">
+  
+    <div>
+    <link rel="stylesheet" type="text/css" href="css/landing-1.css">
+    <script src="/donations/js/webfont.js"></script>
+    <div class="w-section hero-section centered">
+        <h1 class="hero-heading" data-ix="fade-in-bottom-page-loads" style="opacity: 1; transform: translateX(0px) translateY(0px); transition: opacity 1000ms, transform 1000ms; -webkit-transition: opacity 1000ms, transform 1000ms;">
+        <div class="margin-bottom-big">{{rumour}}</div>
+        </h1>
+        <h5 class="margin-bottom-big">Tweets received: <span id="val"><%=val%></span></h5>
+        <button id="searchButton" type="button" class="button">Find Tweets</button>
+    </div>
+
+    <div class="w-section footer">
+        <div class="w-container">
+            <div class="w-row">
+                <div class="w-col w-col-6 spc">
+                    <h5>impact determination</h5>
+                    <p>We study the impact of rumour messages, in terms of their effect on social media itself. This is impact determined by measures of user engagements, i.e. quantity of retweets and favourites.</p>
+                    <p>We analyse a given rumour tweet object against a set of features related to text composition, evidence provided, and user profile characteristics, in a bid to find common features of impactful rumour tweets.</p>
+                </div>
+                <div class="w-col w-col-6 spc">
+                    <h5>twitter api</h5><div class="font-size-reg">The Search API searches against a sampling of recent Tweets published in the past 7 days.</div><br><a class="footer-link" href="https://dev.twitter.com/rest/public/search" target="_blank">https://dev.twitter.com/rest/public/search</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/webflow.7effb2b1c.js"></script>
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular-route.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular-cookies.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+    <script src="https://www.simplify.com/commerce/v1/simplify.js"></script>
+    <script src="https://www.simplify.com/commerce/simplify.form.js"></script>
+
+    <script type="text/javascript" src="js/ui-bootstrap-custom-tpls-0.13.0.min.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+    <script type="text/javascript" src="js/services.js"></script>
+    <script type="text/javascript" src="js/directives.js"></script>
+    <script type="text/javascript" src="js/webfont.js"></script>
+    <script type="text/javascript" src="js/webflow.7effb2b1c.js"></script>
+
+    <script>
+    $('#searchButton').click(function(){
+        $.get('/search', function(res) {
+            $('#val').text(res);
+        });
+    });
+    </script>
+    <script>
+        $('#streamButton').click(function() {
+            $.ajax({
+                type: 'GET',
+                url: 'http://localhost:3000/stream',
+                success : location.href = "http://localhost:3000/index.html"
+            });
+        });
+    </script>
+</body>
+</html>
