@@ -13,9 +13,8 @@
         <h1 class="hero-heading" data-ix="fade-in-bottom-page-loads" style="opacity: 1; transform: translateX(0px) translateY(0px); transition: opacity 1000ms, transform 1000ms; -webkit-transition: opacity 1000ms, transform 1000ms;">
         <div class="margin-bottom-big">{{rumour}}</div>
         </h1>
-        <h5 class="margin-bottom-big">Tweets received: <span id="val"><%=val%></span></h5>
-        <div><button id="searchButton" type="button" class="button" ng-href="#stats">Find Tweets</button>
-            <span><button id="searchButton" type="button" class="button" ng-href="#stats">Find Tweets</button></span>
+        <div><button id="searchButton" type="button" class="button">Find Tweets</button>
+            <span><button id="statsButton" type="button" class="button" ng-href="#stats">Look at Stats</button></span>
         </div>
     </div>
 
@@ -51,11 +50,13 @@
     <script type="text/javascript" src="js/webflow.7effb2b1c.js"></script>
 
     <script>
-    $('#searchButton').click(function(res){
-        $.ajax({
-            type: 'GET',
-            url: 'http://localhost:3000/findtweets'
-        });
+    $('#searchButton').click(function(){
+        location.href = "http://localhost:3000/search.html"
+    });
+    </script>
+    <script>
+    $('#statsButton').click(function(){
+        location.href = "http://localhost:3000/stats.html"
     });
     </script>
 </body>

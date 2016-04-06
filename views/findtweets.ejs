@@ -51,10 +51,9 @@
     <script type="text/javascript" src="js/webflow.7effb2b1c.js"></script>
 
     <script>
-    $('#searchButton').click(function(res){
-        $.ajax({
-            type: 'GET',
-            url: 'http://localhost:3000/findtweets'
+    $('#searchButton').click(function(){
+        $.get('/search', function(res) {
+            $('#val').text(res);
         });
     });
     </script>

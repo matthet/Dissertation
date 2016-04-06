@@ -1,3 +1,1 @@
-angular.module('dissertation', [
-  'dissertation.controllers'
-]);
+angular.module('dissertation', ['dissertation.controllers']);

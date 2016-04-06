@@ -13,22 +13,29 @@
         <h1 class="hero-heading" data-ix="fade-in-bottom-page-loads" style="opacity: 1; transform: translateX(0px) translateY(0px); transition: opacity 1000ms, transform 1000ms; -webkit-transition: opacity 1000ms, transform 1000ms;">
         <div class="margin-bottom-big">{{rumour}}</div>
         </h1>
-        <h5 class="margin-bottom-big">Tweets received: <span id="val"><%=val%></span></h5>
-        <div><button id="searchButton" type="button" class="button" ng-href="#stats">Find Tweets</button>
-            <span><button id="searchButton" type="button" class="button" ng-href="#stats">Find Tweets</button></span>
-        </div>
+        <button id="impactButton" type="button" class="button" ng-model="impactClicked" ng-click="impactClicked=true">Impact Scores</button>
+        <button id="textButton" type="button" class="button" ng-model="textClicked" ng-click="textClicked=true">Text Features</button>
+        <button id="accountButton" type="button" class="button" ng-model="accountClicked" ng-click="accountClicked=true">Account Features</button>
+
     </div>
 
     <div class="w-section footer">
         <div class="w-container">
             <div class="w-row">
-                <div class="w-col w-col-6 spc">
-                    <h5>impact determination</h5>
-                    <p>We study the impact of rumour messages, in terms of their effect on social media itself. This is impact determined by measures of user engagements, i.e. quantity of retweets and favourites.</p>
-                    <p>We analyse a given rumour tweet object against a set of features related to text composition, evidence provided, and user profile characteristics, in a bid to find common features of impactful rumour tweets.</p>
+                <div class="w-col w-col-4 spc">
+                	<h5>Impact Scores</h5>
+                    <div id="valImpact" ng-show="impactClicked"><%=valImpact%></div>
+                    <span ng-hide="impactClicked">Click Impact Scores button.<span>
                 </div>
-                <div class="w-col w-col-6 spc">
-                    <h5>twitter api</h5><div class="font-size-reg">The Search API searches against a sampling of recent Tweets published in the past 7 days.</div><br><a class="footer-link" href="https://dev.twitter.com/rest/public/search" target="_blank">https://dev.twitter.com/rest/public/search</a>
+                <div class="w-col w-col-4 spc">
+                    <h5>Text Features</h5>
+                    <div id="valText" ng-show="textClicked"><%=valText%></div>
+                    <span ng-hide="textClicked">Click Text Features button.<span>
+                </div>
+                <div class="w-col w-col-4 spc">
+                    <h5>Account Features</h5>
+                    <div id="valAccount" ng-show="accountClicked"><%=valAccount%></div>
+                    <span ng-hide="accountClicked">Click Account Features button.<span>
                 </div>
             </div>
         </div>
@@ -51,10 +58,9 @@
     <script type="text/javascript" src="js/webflow.7effb2b1c.js"></script>
 
     <script>
-    $('#searchButton').click(function(res){
-        $.ajax({
-            type: 'GET',
-            url: 'http://localhost:3000/findtweets'
+    $('#impactButton').click(function(){
+        $.get('/impact', function(res) {
+            $('#valImpact').text(res);
         });
     });
     </script>
