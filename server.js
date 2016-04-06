@@ -36,7 +36,7 @@ var gunz_vasectomy = require('./models/gunz_vasectomy');
 var calvert_leaving = require('./models/calvert_leaving');
 var giant_rat_london = require('./models/giant_rat_london');
 
-var Rumour = require('./models/jenner_pregnant');
+var Rumour = require('./models/rob_blac');
 
 var ss = require('simple-statistics');
 
@@ -69,6 +69,8 @@ var client = new Twitter({
   access_token_key: '4406506943-vbpupRIs13PnkvzJQcyDT77IMiKuyEuWZX0e6IY',
   access_token_secret: 'nXVGLvAlcPT5GNgEEDLe0yvFsXewBY7xZAd94yeDOw5ee'
 });
+
+textBasedFeatureAnalysis();
 
 // Search API.
 
@@ -469,9 +471,9 @@ function writeToFile(file_name, output) {
 
 // Start the Web Server on port 3000.
 
-var server = app.listen(3000, function() {
-  var host = server.address().address;
-  var port = server.address().port;
+// var server = app.listen(3000, function() {
+//   var host = server.address().address;
+//   var port = server.address().port;
 
-  console.log('Server app listening at http://localhost:%s', port);
-});
+//   console.log('Server app listening at http://localhost:%s', port);
+// });
