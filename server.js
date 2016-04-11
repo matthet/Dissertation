@@ -137,35 +137,35 @@ function findGreatestID(callback) {
   });
 }
 
-// // Find rumour hits from messages returned by the Search API.
+// Find rumour hits from messages returned by the Search API.
 
-// function analyseRumourHits(tweets) {
-//   file_string = "";
+function analyseRumourHits(tweets) {
+  file_string = "";
 
-//   for (i = 0; i < tweets.statuses.length; i++) {
-//     tweet = tweets.statuses[i];
-//     tweet_text = JSON.stringify(tweet.text);
+  for (i = 0; i < tweets.statuses.length; i++) {
+    tweet = tweets.statuses[i];
+    tweet_text = JSON.stringify(tweet.text);
 
-//     if ((tweet_text.search(/kylie jenner/i)) && (tweet_text.search(/pregnant/i))){
-//       checkDBandAdd(tweet);
-//     }
-//   }
-// }
+    if ((tweet_text.search(/kylie jenner/i)) && (tweet_text.search(/pregnant/i))){
+      checkDBandAdd(tweet);
+    }
+  }
+}
 
-// // Check DB for tweet received to avoid storing duplicates.
+// Check DB for tweet received to avoid storing duplicates.
 
-// function checkDBandAdd(tweet) {
-//   Rumour.findOne({'id': tweet.id}, function (err, duplicate) {
-//     if (err) return handleError(err);
+function checkDBandAdd(tweet) {
+  Rumour.findOne({'id': tweet.id}, function (err, duplicate) {
+    if (err) return handleError(err);
     
-//     if (duplicate == null) {
-//       db_rumour = parseTweet(tweet);
-//       addToDB(db_rumour);
-//     } else {
-//       console.log('duplicate tweet received');
-//     }
-//   });
-// }
+    if (duplicate == null) {
+      db_rumour = parseTweet(tweet);
+      addToDB(db_rumour);
+    } else {
+      console.log('duplicate tweet received');
+    }
+  });
+}
 
 // // Parse relevant data including impact features from Tweet.
 
