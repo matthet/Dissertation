@@ -64,5 +64,19 @@
         });
     });
     </script>
+    <script>
+    $('#textButton').click(function(){
+        $.get('/text', function(res) {
+            $('#valText').text(res);
+        });
+    });
+    </script>
+    <script>
+    $('#accountButton').click(function(){
+        $.get('/account', function(res) {
+            $('#valAccount').text(res);
+        });
+    });
+    </script>
 </body>
 </html>

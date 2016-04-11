@@ -64,10 +64,30 @@ var client = new Twitter({
 
 // ------------------------------------------- APP functions ------------------------------------------------------------//
 
+// Stats: Impact and Followers 
+
 app.get('/impact', function(req, res) {
   totalMeanImpactAndFollowers(function(impact_stats) {
-    console.log(impact_stats);
+    console.log("Impact stats sent!");
     res.send(impact_stats);
+  });
+});
+
+// Stats: Text Based Features
+
+app.get('/text', function(req, res) {
+  textBasedFeatureAnalysis(function(text_stats) {
+    console.log("Text stats sent!");
+    res.send(text_stats);
+  });
+});
+
+// Stats: Account Based Features
+
+app.get('/account', function(req, res) {
+  accountBasedFeatureAnalysis(function(account_stats) {
+    console.log("Account stats sent!");
+    res.send(account_stats);
   });
 });
 
@@ -363,7 +383,7 @@ function readTweetText() {
 
 // Extract the text based feature data of all tweets in rumour set and write analysis to file.
 
-function textBasedFeatureAnalysis(collection, file_name) {
+function textBasedFeatureAnalysis(callback) {
   have_hashtags = 0;
   have_media = 0;
   have_urls = 0;
@@ -410,12 +430,13 @@ function textBasedFeatureAnalysis(collection, file_name) {
                     'AVERAGE TWEET LENGTH: ' + ss.mean(tweet_lengths);
 
         writeToFile("text_based_features", textBased);
+        callback(textBased);
   });
 }
 
 // Extract the account based feature data of all tweets in rumour set and write analysis to file.
 
-function accountBasedFeatureAnalysis() {
+function accountBasedFeatureAnalysis(callback) {
   accountBased = '';
   total_account_created_years = [];
   total_followers_count = [];
@@ -450,6 +471,7 @@ function accountBasedFeatureAnalysis() {
                        'Num. verified accounts in set: ' + total_verified_accounts; 
 
         writeToFile("account_based_features", accountBased); 
+        callback(accountBased);
   });
 }
 
