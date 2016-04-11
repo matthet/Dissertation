@@ -7,8 +7,8 @@ var cookieParser = require('cookie-parser');
 var http = require('http');
 var fs = require('fs');
 
-// var dbConfig = require('./db');
-// var mongoose = require('mongoose');
+var dbConfig = require('./db');
+var mongoose = require('mongoose');
 
 // var germany_pork = require('./models/germany_pork');
 // var notebook_sequel = require('./models/notebook_sequel');
@@ -41,7 +41,7 @@ var fs = require('fs');
 // var ss = require('simple-statistics');
 
 // // Connect to DB
-// mongoose.connect(dbConfig.url);
+mongoose.connect(dbConfig.url);
 
 // Server config
 var app = express();
