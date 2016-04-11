@@ -246,223 +246,223 @@ function basicStats(sample_set) {
 // T-test: A two-sample location test of the null hypothesis such that the means of two populations are equal.
 // Interested in finding statistical significance in rumour datasets.
 
-// function tTest() {
-//   sample_size = 40;
-//   output = 'Rumour A: kim_divorce, Rumour B: rob_blac\nSample Size: ' + sample_size + '\n\n' ;
+function tTest() {
+  sample_size = 40;
+  output = 'Rumour A: kim_divorce, Rumour B: rob_blac\nSample Size: ' + sample_size + '\n\n' ;
 
-//   retrieveFromDB(kim_divorce, sample_size, function(sample_set0) {
-//     retrieveFromDB(rob_blac, sample_size, function(sample_set1) {
-//       tValue = ss.tTestTwoSample(sample_set0[1], sample_set1[1], 0);
+  retrieveFromDB(kim_divorce, sample_size, function(sample_set0) {
+    retrieveFromDB(rob_blac, sample_size, function(sample_set1) {
+      tValue = ss.tTestTwoSample(sample_set0[1], sample_set1[1], 0);
 
-//       output += 'A indices: ' + sample_set0[0] + '\nB indices: ' + sample_set1[0] + '\n\n';
-//       output += 'T-value: ' + tValue + '\n\n';
-//       output += 'Rumour A Stats: \nImpact Scores: \n' + basicStats(sample_set0[1]) + '\n\nFollower Counts: \n' + basicStats(sample_set0[2]);
-//       output += '\n\nRumour B Stats: \nImpact Scores: \n' + basicStats(sample_set1[1]) + '\n\nFollower Counts: \n' + basicStats(sample_set1[2]); 
+      output += 'A indices: ' + sample_set0[0] + '\nB indices: ' + sample_set1[0] + '\n\n';
+      output += 'T-value: ' + tValue + '\n\n';
+      output += 'Rumour A Stats: \nImpact Scores: \n' + basicStats(sample_set0[1]) + '\n\nFollower Counts: \n' + basicStats(sample_set0[2]);
+      output += '\n\nRumour B Stats: \nImpact Scores: \n' + basicStats(sample_set1[1]) + '\n\nFollower Counts: \n' + basicStats(sample_set1[2]); 
 
-//       writeToFile("output.txt", output);
-//     });
-//   });
-// }
+      writeToFile("output.txt", output);
+    });
+  });
+}
 
-// // Find mean impact score and followers count of complete rumour set excluding verified accounts
+// Find mean impact score and followers count of complete rumour set excluding verified accounts
 
-// function totalMeanImpactAndFollowers(callback) {
-//   impact_set = [];
-//   followers_set = [];
-//   j = 0;
-//   return_string = '';
+function totalMeanImpactAndFollowers(callback) {
+  impact_set = [];
+  followers_set = [];
+  j = 0;
+  return_string = '';
 
-//   Rumour.find({}, 'impact_score followers_count', function (err, dataset) {
-//     for(i = 0; i < dataset.length; i++) { 
+  Rumour.find({}, 'impact_score followers_count', function (err, dataset) {
+    for(i = 0; i < dataset.length; i++) { 
 
-//       impact_score = parseFloat(dataset[i].impact_score);
+      impact_score = parseFloat(dataset[i].impact_score);
 
-//       if (isNaN(impact_score)) {
-//         impact_set[j] = 0;
-//       } else {
-//         impact_set[j] = impact_score;
-//       }
+      if (isNaN(impact_score)) {
+        impact_set[j] = 0;
+      } else {
+        impact_set[j] = impact_score;
+      }
 
-//       followers_set[j] = parseFloat(dataset[i].followers_count);
-//       j += 1;
-//     }
+      followers_set[j] = parseFloat(dataset[i].followers_count);
+      j += 1;
+    }
 
-//     return_string = ('MEAN IMPACT: ' + ss.mean(impact_set).toFixed(2) + '\n\n') +
-//                     ('MEAN FOLLOWERS: ' + ss.mean(followers_set).toFixed(2));
+    return_string = ('MEAN IMPACT: ' + ss.mean(impact_set).toFixed(2) + '\n\n') +
+                    ('MEAN FOLLOWERS: ' + ss.mean(followers_set).toFixed(2));
 
-//     callback(return_string);
-//   });
-// }
+    callback(return_string);
+  });
+}
 
-// // Return the impact scores of sample_size documents from database
+// Return the impact scores of sample_size documents from database
 
-// function retrieveFromDB(collection, sample_size, callback) {
-//   randomIndices = [];
-//   random_sample = [];
-//   rand_impact_scores = [];
-//   rand_follower_counts = [];
-//   j = 0;
+function retrieveFromDB(collection, sample_size, callback) {
+  randomIndices = [];
+  random_sample = [];
+  rand_impact_scores = [];
+  rand_follower_counts = [];
+  j = 0;
 
-//   collection.find({}, 'impact_score followers_count', function (err, dataset) {
+  collection.find({}, 'impact_score followers_count', function (err, dataset) {
     
-//     // Select unique, random indices to pull random tweets from rumour set.
-//     while(randomIndices.length < sample_size){
-//       randomnumber = Math.ceil(Math.random() * (dataset.length - 1))
-//       found = false;
+    // Select unique, random indices to pull random tweets from rumour set.
+    while(randomIndices.length < sample_size){
+      randomnumber = Math.ceil(Math.random() * (dataset.length - 1))
+      found = false;
 
-//       for(i = 0; i < randomIndices.length; i++) {
-//         if(randomIndices[i] == randomnumber) {
-//           found = true;
-//           break
-//         }
-//       }
+      for(i = 0; i < randomIndices.length; i++) {
+        if(randomIndices[i] == randomnumber) {
+          found = true;
+          break
+        }
+      }
 
-//       if(!found)randomIndices[randomIndices.length] = randomnumber;
-//     }
+      if(!found)randomIndices[randomIndices.length] = randomnumber;
+    }
 
-//     for(i = 0; i < randomIndices.length; i++) {
-//       verified = dataset[i].account_verified;
+    for(i = 0; i < randomIndices.length; i++) {
+      verified = dataset[i].account_verified;
 
-//       if (verified == 'true') { 
-//         console.log('excluded verified');
-//       } else {
-//         score = parseFloat(dataset[randomIndices[i]].impact_score);
+      if (verified == 'true') { 
+        console.log('excluded verified');
+      } else {
+        score = parseFloat(dataset[randomIndices[i]].impact_score);
 
-//         if (isNaN(score)) {
-//           rand_impact_scores[j] = 0;
-//         } else {
-//           rand_impact_scores[j] = score;
-//         }
+        if (isNaN(score)) {
+          rand_impact_scores[j] = 0;
+        } else {
+          rand_impact_scores[j] = score;
+        }
 
-//         rand_follower_counts[j] = parseFloat(dataset[randomIndices[i]].followers_count);
-//         j += 1;
-//       }
-//     }
+        rand_follower_counts[j] = parseFloat(dataset[randomIndices[i]].followers_count);
+        j += 1;
+      }
+    }
 
-//     random_sample = [randomIndices, rand_impact_scores, rand_follower_counts];
+    random_sample = [randomIndices, rand_impact_scores, rand_follower_counts];
 
-//     callback(random_sample);
-//   });
-// }
+    callback(random_sample);
+  });
+}
 
-// // ------------------------------------------- Feature analysis -----------------------------------------------------------//
+// ------------------------------------------- Feature analysis -----------------------------------------------------------//
 
-// // Extract the text of all tweets in rumour set and write to file.
+// Extract the text of all tweets in rumour set and write to file.
 
-// function readTweetText() {
-//   tweets = '';
+function readTweetText() {
+  tweets = '';
 
-//   Rumour.find({}, 'text', function (err, dataset) {
-//     for(i = 0; i < dataset.length; i++) {
-//       tweets += ((i+1) + '. ' + dataset[i].text.substring(1, (dataset[i].text.length -1)) + '\n\n');
-//     }
+  Rumour.find({}, 'text', function (err, dataset) {
+    for(i = 0; i < dataset.length; i++) {
+      tweets += ((i+1) + '. ' + dataset[i].text.substring(1, (dataset[i].text.length -1)) + '\n\n');
+    }
 
-//     writeToFile("tweet_texts", tweets);
-//   });
-// }
+    writeToFile("tweet_texts", tweets);
+  });
+}
 
-// // Extract the text based feature data of all tweets in rumour set and write analysis to file.
+// Extract the text based feature data of all tweets in rumour set and write analysis to file.
 
-// function textBasedFeatureAnalysis(collection, file_name) {
-//   have_hashtags = 0;
-//   have_media = 0;
-//   have_urls = 0;
-//   have_user_mentions = 0;
-//   have_word_retweet = 0;
-//   have_all_caps = 0;
-//   have_question_mark = 0;
-//   have_explanation_mark = 0
-//   have_quote = 0;
-//   have_smiling_emoticon = 0;
-//   tweet_lengths = [];
+function textBasedFeatureAnalysis(collection, file_name) {
+  have_hashtags = 0;
+  have_media = 0;
+  have_urls = 0;
+  have_user_mentions = 0;
+  have_word_retweet = 0;
+  have_all_caps = 0;
+  have_question_mark = 0;
+  have_explanation_mark = 0
+  have_quote = 0;
+  have_smiling_emoticon = 0;
+  tweet_lengths = [];
 
-//   textBased = '';
+  textBased = '';
 
-//   Rumour.find({}, 
-//     'text entities_hashtags entities_media entities_urls entities_user_mentions word_retweet all_caps question_mark explanation_mark quote smiling_emoticon', 
-//       function (err, dataset) {
+  Rumour.find({}, 
+    'text entities_hashtags entities_media entities_urls entities_user_mentions word_retweet all_caps question_mark explanation_mark quote smiling_emoticon', 
+      function (err, dataset) {
 
-//         for(i = 0; i < dataset.length; i++) {
-//           if (dataset[i].entities_hashtags == 'true') { have_hashtags += 1; }
-//           if (dataset[i].entities_media == 'true') { have_media += 1; }
-//           if (dataset[i].entities_urls == 'true') { have_urls += 1; }
-//           if (dataset[i].entities_user_mentions == 'true') { have_user_mentions += 1; }
-//           if (dataset[i].word_retweet == 'true') { have_word_retweet += 1; }
-//           if (dataset[i].all_caps == 'true') { have_all_caps += 1; }
-//           if (dataset[i].question_mark == 'true') { have_question_mark += 1; }
-//           if (dataset[i].explanation_mark == 'true') { have_explanation_mark += 1; }
-//           if (dataset[i].quote == 'true') { have_quote += 1; }
-//           if (dataset[i].smiling_emoticon == 'true') { have_smiling_emoticon += 1; }
-//           tweet_lengths[i] = parseFloat(dataset[i].text.length) - 2; // don't count \" characters present due to saving as string in DB
-//         }
+        for(i = 0; i < dataset.length; i++) {
+          if (dataset[i].entities_hashtags == 'true') { have_hashtags += 1; }
+          if (dataset[i].entities_media == 'true') { have_media += 1; }
+          if (dataset[i].entities_urls == 'true') { have_urls += 1; }
+          if (dataset[i].entities_user_mentions == 'true') { have_user_mentions += 1; }
+          if (dataset[i].word_retweet == 'true') { have_word_retweet += 1; }
+          if (dataset[i].all_caps == 'true') { have_all_caps += 1; }
+          if (dataset[i].question_mark == 'true') { have_question_mark += 1; }
+          if (dataset[i].explanation_mark == 'true') { have_explanation_mark += 1; }
+          if (dataset[i].quote == 'true') { have_quote += 1; }
+          if (dataset[i].smiling_emoticon == 'true') { have_smiling_emoticon += 1; }
+          tweet_lengths[i] = parseFloat(dataset[i].text.length) - 2; // don't count \" characters present due to saving as string in DB
+        }
 
-//         textBased = 'TOTAL POPULATION: ' + dataset.length + '\n' +
-//                     'HASHTAGS: ' + have_hashtags + '\n' +
-//                     'MEDIA: ' + have_media + '\n' +
-//                     'URLS: ' + have_urls + '\n' +
-//                     'USER MENTIONS: ' + have_user_mentions + '\n' +
-//                     'WORD RETWEET: ' + have_word_retweet + '\n' +
-//                     'ALL CAPS: ' + have_all_caps + '\n' +
-//                     'QUESTION MARK: ' + have_question_mark + '\n' +
-//                     'EXPLANATION MARK: ' + have_explanation_mark + '\n' +
-//                     'QUOTE: ' + have_quote + '\n' +
-//                     'SMILING EMOTICON: ' + have_smiling_emoticon + '\n' + 
-//                     'AVERAGE TWEET LENGTH: ' + ss.mean(tweet_lengths);
+        textBased = 'TOTAL POPULATION: ' + dataset.length + '\n' +
+                    'HASHTAGS: ' + have_hashtags + '\n' +
+                    'MEDIA: ' + have_media + '\n' +
+                    'URLS: ' + have_urls + '\n' +
+                    'USER MENTIONS: ' + have_user_mentions + '\n' +
+                    'WORD RETWEET: ' + have_word_retweet + '\n' +
+                    'ALL CAPS: ' + have_all_caps + '\n' +
+                    'QUESTION MARK: ' + have_question_mark + '\n' +
+                    'EXPLANATION MARK: ' + have_explanation_mark + '\n' +
+                    'QUOTE: ' + have_quote + '\n' +
+                    'SMILING EMOTICON: ' + have_smiling_emoticon + '\n' + 
+                    'AVERAGE TWEET LENGTH: ' + ss.mean(tweet_lengths);
 
-//         writeToFile("text_based_features", textBased);
-//   });
-// }
+        writeToFile("text_based_features", textBased);
+  });
+}
 
-// // Extract the account based feature data of all tweets in rumour set and write analysis to file.
+// Extract the account based feature data of all tweets in rumour set and write analysis to file.
 
-// function accountBasedFeatureAnalysis() {
-//   accountBased = '';
-//   total_account_created_years = [];
-//   total_followers_count = [];
-//   total_friends_count = [];
-//   total_statuses_count = [];
-//   total_default_profiles = 0;
-//   total_default_profos = 0;
-//   total_verified_accounts = 0;
+function accountBasedFeatureAnalysis() {
+  accountBased = '';
+  total_account_created_years = [];
+  total_followers_count = [];
+  total_friends_count = [];
+  total_statuses_count = [];
+  total_default_profiles = 0;
+  total_default_profos = 0;
+  total_verified_accounts = 0;
 
-//   accountBased = '';
+  accountBased = '';
 
-//   Rumour.find({}, 
-//     'user_createdAt followers_count friends_count statuses_count account_verified default_profile default_profile_image', 
-//       function (err, dataset) {
-//         for(i = 0; i < dataset.length; i++) {
-//           total_account_created_years[i] = parseFloat(dataset[i].user_createdAt.substring(27, 31));
-//           total_followers_count[i] = parseFloat(dataset[i].followers_count);
-//           total_friends_count[i] = parseFloat(dataset[i].friends_count);
-//           total_statuses_count[i] = parseFloat(dataset[i].statuses_count);
-//           if (dataset[i].default_profile == 'true') { total_default_profiles += 1; }
-//           if (dataset[i].default_profile_image == 'true') { total_default_profos += 1; }
-//           if (dataset[i].account_verified == 'true') { total_verified_accounts += 1; }
-//         }
+  Rumour.find({}, 
+    'user_createdAt followers_count friends_count statuses_count account_verified default_profile default_profile_image', 
+      function (err, dataset) {
+        for(i = 0; i < dataset.length; i++) {
+          total_account_created_years[i] = parseFloat(dataset[i].user_createdAt.substring(27, 31));
+          total_followers_count[i] = parseFloat(dataset[i].followers_count);
+          total_friends_count[i] = parseFloat(dataset[i].friends_count);
+          total_statuses_count[i] = parseFloat(dataset[i].statuses_count);
+          if (dataset[i].default_profile == 'true') { total_default_profiles += 1; }
+          if (dataset[i].default_profile_image == 'true') { total_default_profos += 1; }
+          if (dataset[i].account_verified == 'true') { total_verified_accounts += 1; }
+        }
 
-//         accountBased = 'TOTAL POPULATION: ' + dataset.length + '\n' +
-//                        'AVERAGE account creation year: ' + Math.round(ss.mean(total_account_created_years)) + '\n' + 
-//                        'AVERAGE followers count: ' + ss.mean(total_followers_count) + '\n' + 
-//                        'AVERAGE friends count: ' + ss.mean(total_friends_count) + '\n' + 
-//                        'AVERAGE statuses count: ' + ss.mean(total_statuses_count) + '\n' + 
-//                        'Num. default profiles: ' + total_default_profiles + '\n' + 
-//                        'Num. default avatars: ' + total_default_profos + '\n' + 
-//                        'Num. verified accounts in set: ' + total_verified_accounts; 
+        accountBased = 'TOTAL POPULATION: ' + dataset.length + '\n' +
+                       'AVERAGE account creation year: ' + Math.round(ss.mean(total_account_created_years)) + '\n' + 
+                       'AVERAGE followers count: ' + ss.mean(total_followers_count) + '\n' + 
+                       'AVERAGE friends count: ' + ss.mean(total_friends_count) + '\n' + 
+                       'AVERAGE statuses count: ' + ss.mean(total_statuses_count) + '\n' + 
+                       'Num. default profiles: ' + total_default_profiles + '\n' + 
+                       'Num. default avatars: ' + total_default_profos + '\n' + 
+                       'Num. verified accounts in set: ' + total_verified_accounts; 
 
-//         writeToFile("account_based_features", accountBased); 
-//   });
-// }
+        writeToFile("account_based_features", accountBased); 
+  });
+}
 
-// // ------------------------------------------- Helper Functions -----------------------------------------------------------//
+// ------------------------------------------- Helper Functions -----------------------------------------------------------//
 
-// function writeToFile(file_name, output) {
-//   fs.writeFile(file_name, output, function(err) {
-//     if(err) {
-//         return console.log(err);
-//     }
-//     console.log("The file was saved!");
-//   });
-// }
+function writeToFile(file_name, output) {
+  fs.writeFile(file_name, output, function(err) {
+    if(err) {
+        return console.log(err);
+    }
+    console.log("The file was saved!");
+  });
+}
 
 // Start the Web Server on port 3000.
 
