@@ -64,27 +64,27 @@ var client = new Twitter({
 
 // ------------------------------------------- APP functions ------------------------------------------------------------//
 
-// app.get('/impact', function(req, res) {
-//   totalMeanImpactAndFollowers(function(impact_stats) {
-//     console.log(impact_stats);
-//     res.send(impact_stats);
-//   });
-// });
+app.get('/impact', function(req, res) {
+  totalMeanImpactAndFollowers(function(impact_stats) {
+    console.log(impact_stats);
+    res.send(impact_stats);
+  });
+});
 
-// // Search API.
+// Search API.
 
-// app.get('/search', function(req, res) {
-//   findLowestID(function(lowest_id) {
-//     client.get('search/tweets', {q: q, exclude: 'retweets', max_id: lowest_id, count: 100}, function(error, tweets, response){
-//       tweets_received = tweets.statuses.length;
-//       console.log('Tweets received: ' + tweets_received);
-//       res.send(tweets_received.toString());
+app.get('/search', function(req, res) {
+  findLowestID(function(lowest_id) {
+    client.get('search/tweets', {q: q, exclude: 'retweets', max_id: lowest_id, count: 100}, function(error, tweets, response){
+      tweets_received = tweets.statuses.length;
+      console.log('Tweets received: ' + tweets_received);
+      res.send(tweets_received.toString());
 
-//       if (tweets_received != 0) {
-//         analyseRumourHits(tweets);
-//       }
-//     });
-//   });
+      if (tweets_received != 0) {
+        analyseRumourHits(tweets);
+      }
+    });
+  });
 
   // findGreatestID(function(greatest_id) {
   //   client.get('search/tweets', {q: q, exclude: 'retweets', since_id: greatest_id, count: 100}, function(error, tweets, response){
@@ -96,7 +96,7 @@ var client = new Twitter({
   //     }
   //   });
   // });
-// });
+});
 
 // Scan database to find oldest tweet received.
 
