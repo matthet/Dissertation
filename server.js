@@ -74,6 +74,8 @@ app.get('/impact', function(req, res) {
 // Search API.
 
 app.get('/search', function(req, res) {
+  q = "starbucks";
+
   findLowestID(function(lowest_id) {
     client.get('search/tweets', {q: q, exclude: 'retweets', max_id: lowest_id, count: 100}, function(error, tweets, response){
       tweets_received = tweets.statuses.length;
@@ -146,7 +148,7 @@ function analyseRumourHits(tweets) {
     tweet = tweets.statuses[i];
     tweet_text = JSON.stringify(tweet.text);
 
-    if ((tweet_text.search(/kylie jenner/i)) && (tweet_text.search(/pregnant/i))){
+    if ((tweet_text.search(/starbucks/i))){
       checkDBandAdd(tweet);
     }
   }
