@@ -225,21 +225,21 @@ function addToDB(rumour) {
 
 // Mean, median, variance, standard deviation.
 
-// function basicStats(sample_set) {
-//   stats = '';
+function basicStats(sample_set) {
+  stats = '';
 
-//   mean = ss.mean(sample_set);
-//   median = ss.median(sample_set);
-//   variance = ss.variance(sample_set);
-//   standardDev = ss.standardDeviation(sample_set);
+  mean = ss.mean(sample_set);
+  median = ss.median(sample_set);
+  variance = ss.variance(sample_set);
+  standardDev = ss.standardDeviation(sample_set);
 
-//   stats += 'MEAN: ' + mean + '\n';
-//   stats += 'MEDIAN: ' + median + '\n';
-//   stats += 'variance: ' + variance + '\n';
-//   stats += 'standardDeviation: ' + standardDev + '\n';
+  stats += 'MEAN: ' + mean + '\n';
+  stats += 'MEDIAN: ' + median + '\n';
+  stats += 'variance: ' + variance + '\n';
+  stats += 'standardDeviation: ' + standardDev + '\n';
 
-//   return (stats);
-// }
+  return (stats);
+}
 
 // T-test: A two-sample location test of the null hypothesis such that the means of two populations are equal.
 // Interested in finding statistical significance in rumour datasets.
