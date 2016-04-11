@@ -207,19 +207,19 @@ function parseTweet(tweet) {
 
 // Calculate impact score by user engagement measures.
 
-// function calculateImpact(favourites, retweets, followers) {
-//   engagements = ((retweets + favourites) / followers) * 100;
-//   return (engagements);
-// }
+function calculateImpact(favourites, retweets, followers) {
+  engagements = ((retweets + favourites) / followers) * 100;
+  return (engagements);
+}
 
-// // Add rumour to Database.
+// Add rumour to Database.
 
-// function addToDB(rumour) {
-//   rumour.save(function(err, rumour) {
-//     if (err) return console.error(err);
-//     console.log('Tweet added to DB.')
-//   });
-// }
+function addToDB(rumour) {
+  rumour.save(function(err, rumour) {
+    if (err) return console.error(err);
+    console.log('Tweet added to DB.')
+  });
+}
 
 // ------------------------------------------- STATS functions ----------------------------------------------------------//
 
