@@ -56,10 +56,10 @@ app.use(cookieParser());
 app.use('/', express.static('public'));
 
 var client = new Twitter({
-  consumer_key: 'HlNfATf1c9krHIygrXWcP4iOx',
-  consumer_secret: '9vBm0ArMCdZkLX8zd2dEvo9Z1BEJ587N5pAlsCfPEZPFr52N60',
-  access_token_key: '4406506943-vbpupRIs13PnkvzJQcyDT77IMiKuyEuWZX0e6IY',
-  access_token_secret: 'nXVGLvAlcPT5GNgEEDLe0yvFsXewBY7xZAd94yeDOw5ee'
+  consumer_key: '',
+  consumer_secret: '',
+  access_token_key: '',
+  access_token_secret: ''
 });
 
 // ------------------------------------------- APP functions ------------------------------------------------------------//
@@ -68,8 +68,8 @@ var client = new Twitter({
 
 app.get('/impact', function(req, res) {
   totalMeanImpactAndFollowers(function(impact_stats) {
+    res.send(JSON.parse(impact_stats));
     console.log("Impact stats sent!");
-    res.send(impact_stats);
   });
 });
 
@@ -77,8 +77,8 @@ app.get('/impact', function(req, res) {
 
 app.get('/text', function(req, res) {
   textBasedFeatureAnalysis(function(text_stats) {
+    res.send(JSON.parse(text_stats));
     console.log("Text stats sent!");
-    res.send(text_stats);
   });
 });
 
@@ -86,8 +86,8 @@ app.get('/text', function(req, res) {
 
 app.get('/account', function(req, res) {
   accountBasedFeatureAnalysis(function(account_stats) {
+    res.send(JSON.parse(account_stats));
     console.log("Account stats sent!");
-    res.send(account_stats);
   });
 });
 
@@ -290,7 +290,7 @@ function totalMeanImpactAndFollowers(callback) {
   impact_set = [];
   followers_set = [];
   j = 0;
-  return_string = '';
+  result = [];
 
   Rumour.find({}, 'impact_score followers_count', function (err, dataset) {
     for(i = 0; i < dataset.length; i++) { 
@@ -307,10 +307,12 @@ function totalMeanImpactAndFollowers(callback) {
       j += 1;
     }
 
-    return_string = ('MEAN IMPACT: ' + ss.mean(impact_set).toFixed(2) + '\n\n') +
-                    ('MEAN FOLLOWERS: ' + ss.mean(followers_set).toFixed(2));
+    mean_impact = 'MEAN IMPACT: ' + ss.mean(impact_set).toFixed(2);
+    mean_followers = 'MEAN FOLLOWERS: ' + ss.mean(followers_set).toFixed(2);
+    result.push({mean_impact});
+    result.push({mean_followers});
 
-    callback(return_string);
+    callback(JSON.stringify(result));
   });
 }
 
@@ -396,7 +398,7 @@ function textBasedFeatureAnalysis(callback) {
   have_smiling_emoticon = 0;
   tweet_lengths = [];
 
-  textBased = '';
+  result = [];
 
   Rumour.find({}, 
     'text entities_hashtags entities_media entities_urls entities_user_mentions word_retweet all_caps question_mark explanation_mark quote smiling_emoticon', 
@@ -416,21 +418,36 @@ function textBasedFeatureAnalysis(callback) {
           tweet_lengths[i] = parseFloat(dataset[i].text.length) - 2; // don't count \" characters present due to saving as string in DB
         }
 
-        textBased = 'TOTAL POPULATION: ' + dataset.length + '\n' +
-                    'HASHTAGS: ' + have_hashtags + '\n' +
-                    'MEDIA: ' + have_media + '\n' +
-                    'URLS: ' + have_urls + '\n' +
-                    'USER MENTIONS: ' + have_user_mentions + '\n' +
-                    'WORD RETWEET: ' + have_word_retweet + '\n' +
-                    'ALL CAPS: ' + have_all_caps + '\n' +
-                    'QUESTION MARK: ' + have_question_mark + '\n' +
-                    'EXPLANATION MARK: ' + have_explanation_mark + '\n' +
-                    'QUOTE: ' + have_quote + '\n' +
-                    'SMILING EMOTICON: ' + have_smiling_emoticon + '\n' + 
-                    'AVERAGE TWEET LENGTH: ' + ss.mean(tweet_lengths);
+        total_pop = 'TOTAL POPULATION: ' + dataset.length;
+        num_hashtags = 'HASHTAGS: ' + have_hashtags;
+        num_media = 'MEDIA: ' + have_media;
+        num_urls = 'URLS: ' + have_urls;
+        num_mentions = 'USER MENTIONS: ' + have_user_mentions;
+        num_retweet = 'WORD RETWEET: ' + have_word_retweet;
+        num_caps = 'ALL CAPS: ' + have_all_caps;
+        num_q = 'QUESTION MARK: ' + have_question_mark;
+        num_e = 'EXPLANATION MARK: ' + have_explanation_mark;
+        num_quote = 'QUOTE: ' + have_quote;
+        num_smile = 'SMILING EMOTICON: ' + have_smiling_emoticon;
+        av_length = 'AVERAGE TWEET LENGTH: ' + ss.mean(tweet_lengths).toFixed(2);
 
-        writeToFile("text_based_features", textBased);
-        callback(textBased);
+        // textBased = 
+        // writeToFile("text_based_features", textBased);
+
+        result.push({total_pop});
+        result.push({num_hashtags});
+        result.push({num_media});
+        result.push({num_urls});
+        result.push({num_mentions});
+        result.push({num_retweet});
+        result.push({num_caps});
+        result.push({num_q});
+        result.push({num_e});
+        result.push({num_quote});
+        result.push({num_smile});
+        result.push({av_length});
+
+        callback(JSON.stringify(result));
   });
 }
 
@@ -446,7 +463,7 @@ function accountBasedFeatureAnalysis(callback) {
   total_default_profos = 0;
   total_verified_accounts = 0;
 
-  accountBased = '';
+  result = [];
 
   Rumour.find({}, 
     'user_createdAt followers_count friends_count statuses_count account_verified default_profile default_profile_image', 
@@ -461,17 +478,28 @@ function accountBasedFeatureAnalysis(callback) {
           if (dataset[i].account_verified == 'true') { total_verified_accounts += 1; }
         }
 
-        accountBased = 'TOTAL POPULATION: ' + dataset.length + '\n' +
-                       'AVERAGE account creation year: ' + Math.round(ss.mean(total_account_created_years)) + '\n' + 
-                       'AVERAGE followers count: ' + ss.mean(total_followers_count) + '\n' + 
-                       'AVERAGE friends count: ' + ss.mean(total_friends_count) + '\n' + 
-                       'AVERAGE statuses count: ' + ss.mean(total_statuses_count) + '\n' + 
-                       'Num. default profiles: ' + total_default_profiles + '\n' + 
-                       'Num. default avatars: ' + total_default_profos + '\n' + 
-                       'Num. verified accounts in set: ' + total_verified_accounts; 
+        total_pop = 'TOTAL POPULATION: ' + dataset.length;
+        av_accYear = 'Av. account creation year: ' + Math.round(ss.mean(total_account_created_years));
+        av_followers = 'Av. followers count: ' + ss.mean(total_followers_count).toFixed(2);
+        av_friends = 'Av. friends count: ' + ss.mean(total_friends_count).toFixed(2);
+        av_statuses = 'Av. statuses count: ' + ss.mean(total_statuses_count).toFixed(2);
+        num_defPro = 'Num. default profiles: ' + total_default_profiles; 
+        num_defAv = 'Num. default avatars: ' + total_default_profos; 
+        num_ver = 'Num. verified accounts in set: ' + total_verified_accounts; 
 
-        writeToFile("account_based_features", accountBased); 
-        callback(accountBased);
+        //accountBased = 
+        // writeToFile("account_based_features", accountBased); 
+
+        result.push({total_pop});
+        result.push({av_accYear});
+        result.push({av_followers});
+        result.push({av_friends});
+        result.push({av_statuses});
+        result.push({num_defPro});
+        result.push({num_defAv});
+        result.push({num_ver});
+
+        callback(JSON.stringify(result));
   });
 }
 
@@ -487,13 +515,6 @@ function writeToFile(file_name, output) {
 }
 
 // Start the Web Server on port 3000.
-
-// var server = app.listen(3000, function() {
-//   var host = server.address().address;
-//   var port = server.address().port;
-
-//   console.log('Server app listening at http://localhost:%s', port);
-// });
 
 app.listen(process.env.PORT || 3000, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);

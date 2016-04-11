@@ -25,16 +25,35 @@
                 <div class="w-col w-col-4 spc">
                 	<h5>Impact Scores</h5>
                     <div id="valImpact" ng-show="impactClicked"><%=valImpact%></div>
+                    <div id="valFollowers" ng-show="impactClicked"><%=valFollowers%></div>
                     <span ng-hide="impactClicked">Click Impact Scores button.<span>
                 </div>
                 <div class="w-col w-col-4 spc">
                     <h5>Text Features</h5>
-                    <div id="valText" ng-show="textClicked"><%=valText%></div>
+                    <div id="valPop" ng-show="textClicked"><%=valPop%></div>
+                    <div id="valTags" ng-show="textClicked"><%=valTags%></div>
+                    <div id="valMedia" ng-show="textClicked"><%=valMedia%></div>
+                    <div id="valURLs" ng-show="textClicked"><%=valURLs%></div>
+                    <div id="valMentions" ng-show="textClicked"><%=valMentions%></div>
+                    <div id="valRetweet" ng-show="textClicked"><%=valRetweet%></div>
+                    <div id="valCaps" ng-show="textClicked"><%=valCaps%></div>
+                    <div id="valQ" ng-show="textClicked"><%=valQ%></div>
+                    <div id="valE" ng-show="textClicked"><%=valE%></div>
+                    <div id="valQuote" ng-show="textClicked"><%=valQuote%></div>
+                    <div id="valSmile" ng-show="textClicked"><%=valSmile%></div>
+                    <div id="valLength" ng-show="textClicked"><%=valLength%></div>
                     <span ng-hide="textClicked">Click Text Features button.<span>
                 </div>
                 <div class="w-col w-col-4 spc">
                     <h5>Account Features</h5>
-                    <div id="valAccount" ng-show="accountClicked"><%=valAccount%></div>
+                    <div id="valAccPop" ng-show="accountClicked"><%=valAccPop%></div>
+                    <div id="valYear" ng-show="accountClicked"><%=valYear%></div>
+                    <div id="valAccFollowers" ng-show="accountClicked"><%=valAccFollowers%></div>
+                    <div id="valFriends" ng-show="accountClicked"><%=valFriends%></div>
+                    <div id="valStatuses" ng-show="accountClicked"><%=valStatuses%></div>
+                    <div id="valdefPro" ng-show="accountClicked"><%=valdefPro%></div>
+                    <div id="valdefAv" ng-show="accountClicked"><%=valdefAv%></div>
+                    <div id="valVerified" ng-show="accountClicked"><%=valVerified%></div>
                     <span ng-hide="accountClicked">Click Account Features button.<span>
                 </div>
             </div>
@@ -60,21 +79,40 @@
     <script>
     $('#impactButton').click(function(){
         $.get('/impact', function(res) {
-            $('#valImpact').text(res);
+            $('#valImpact').text(res[0].mean_impact);
+            $('#valFollowers').text(res[1].mean_followers);
         });
     });
     </script>
     <script>
     $('#textButton').click(function(){
         $.get('/text', function(res) {
-            $('#valText').text(res);
+            $('#valPop').text(res[0].total_pop);
+            $('#valTags').text(res[1].num_hashtags);
+            $('#valMedia').text(res[2].num_media);
+            $('#valURLs').text(res[3].num_urls);
+            $('#valMentions').text(res[4].num_mentions);
+            $('#valRetweet').text(res[5].num_retweet);
+            $('#valCaps').text(res[6].num_caps);
+            $('#valQ').text(res[7].num_q);
+            $('#valE').text(res[8].num_e);
+            $('#valQuote').text(res[9].num_quote);
+            $('#valSmile').text(res[10].num_smile);
+            $('#valLength').text(res[11].av_length);
         });
     });
     </script>
     <script>
     $('#accountButton').click(function(){
         $.get('/account', function(res) {
-            $('#valAccount').text(res);
+            $('#valAccPop').text(res[0].total_pop);
+            $('#valYear').text(res[1].av_accYear);
+            $('#valAccFollowers').text(res[2].av_followers);
+            $('#valFriends').text(res[3].av_friends);
+            $('#valStatuses').text(res[4].av_statuses);
+            $('#valdefPro').text(res[5].num_defPro);
+            $('#valdefAv').text(res[6].num_defAv);
+            $('#valVerified').text(res[7].num_ver);
         });
     });
     </script>
