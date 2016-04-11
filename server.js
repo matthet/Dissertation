@@ -167,43 +167,43 @@ function checkDBandAdd(tweet) {
   });
 }
 
-// // Parse relevant data including impact features from Tweet.
+// Parse relevant data including impact features from Tweet.
 
-// function parseTweet(tweet) {
-//   var rumour = new Rumour();
+function parseTweet(tweet) {
+  var rumour = new Rumour();
 
-//   rumour.id = JSON.stringify(tweet.id);
-//   rumour.text = JSON.stringify(tweet.text);
+  rumour.id = JSON.stringify(tweet.id);
+  rumour.text = JSON.stringify(tweet.text);
 
-//   // Impact / Engagement
-//   rumour.impact_score = calculateImpact(tweet.favorite_count, tweet.retweet_count, tweet.user.followers_count);
-//   rumour.favorite_count = JSON.stringify(tweet.favorite_count);
-//   rumour.retweet_count = JSON.stringify(tweet.retweet_count);
+  // Impact / Engagement
+  rumour.impact_score = calculateImpact(tweet.favorite_count, tweet.retweet_count, tweet.user.followers_count);
+  rumour.favorite_count = JSON.stringify(tweet.favorite_count);
+  rumour.retweet_count = JSON.stringify(tweet.retweet_count);
 
-//   // Tweet features for analysis
-//   rumour.tweet_location = tweet.place ? JSON.stringify(tweet.place.full_name) : tweet.place;
-//   rumour.tweet_createdAt = JSON.stringify(tweet.created_at);
-//   rumour.entities_hashtags = JSON.stringify(tweet.entities.hashtags) == '[]' ? false : true;
-//   rumour.entities_urls = JSON.stringify(tweet.entities.urls) == '[]' ? false : true;
-//   rumour.entities_user_mentions = JSON.stringify(tweet.entities.user_mentions) == '[]' ? false : true;
-//   rumour.entities_media = tweet.entities.media ? true : false;
-//   rumour.word_retweet = tweet_text.search(/retweet/i) > -1 ? true : false;
-//   rumour.all_caps = tweet_text.localeCompare(tweet_text.toUpperCase()) == 0 ? true : false;
-//   rumour.question_mark = tweet_text.indexOf('?') > -1 ? true : false;
-//   rumour.explanation_mark = tweet_text.indexOf('!') > -1 ? true : false;
-//   rumour.quote = tweet.text.replace(/[^\""]/g, "").length == 2 ? true : false;
-//   rumour.smiling_emoticon = tweet_text.indexOf(':)') > -1 ? true : false;
-//   rumour.default_profile = JSON.stringify(tweet.user.default_profile);
-//   rumour.default_profile_image = JSON.stringify(tweet.user.default_profile_image);
-//   rumour.user_createdAt = JSON.stringify(tweet.user.created_at);
-//   rumour.followers_count = JSON.stringify(tweet.user.followers_count);
-//   rumour.friends_count = JSON.stringify(tweet.user.friends_count);
-//   rumour.statuses_count = JSON.stringify(tweet.user.statuses_count);
-//   rumour.account_location = JSON.stringify(tweet.user.location);
-//   rumour.account_verified = JSON.stringify(tweet.user.verified);
+  // Tweet features for analysis
+  rumour.tweet_location = tweet.place ? JSON.stringify(tweet.place.full_name) : tweet.place;
+  rumour.tweet_createdAt = JSON.stringify(tweet.created_at);
+  rumour.entities_hashtags = JSON.stringify(tweet.entities.hashtags) == '[]' ? false : true;
+  rumour.entities_urls = JSON.stringify(tweet.entities.urls) == '[]' ? false : true;
+  rumour.entities_user_mentions = JSON.stringify(tweet.entities.user_mentions) == '[]' ? false : true;
+  rumour.entities_media = tweet.entities.media ? true : false;
+  rumour.word_retweet = tweet_text.search(/retweet/i) > -1 ? true : false;
+  rumour.all_caps = tweet_text.localeCompare(tweet_text.toUpperCase()) == 0 ? true : false;
+  rumour.question_mark = tweet_text.indexOf('?') > -1 ? true : false;
+  rumour.explanation_mark = tweet_text.indexOf('!') > -1 ? true : false;
+  rumour.quote = tweet.text.replace(/[^\""]/g, "").length == 2 ? true : false;
+  rumour.smiling_emoticon = tweet_text.indexOf(':)') > -1 ? true : false;
+  rumour.default_profile = JSON.stringify(tweet.user.default_profile);
+  rumour.default_profile_image = JSON.stringify(tweet.user.default_profile_image);
+  rumour.user_createdAt = JSON.stringify(tweet.user.created_at);
+  rumour.followers_count = JSON.stringify(tweet.user.followers_count);
+  rumour.friends_count = JSON.stringify(tweet.user.friends_count);
+  rumour.statuses_count = JSON.stringify(tweet.user.statuses_count);
+  rumour.account_location = JSON.stringify(tweet.user.location);
+  rumour.account_verified = JSON.stringify(tweet.user.verified);
 
-//   return (rumour);
-// }
+  return (rumour);
+}
 
 // Calculate impact score by user engagement measures.
 
