@@ -56,10 +56,10 @@ app.use(cookieParser());
 app.use('/', express.static('public'));
 
 var client = new Twitter({
-  consumer_key: '',
-  consumer_secret: '',
-  access_token_key: '',
-  access_token_secret: ''
+  consumer_key: 'HlNfATf1c9krHIygrXWcP4iOx',
+  consumer_secret: '9vBm0ArMCdZkLX8zd2dEvo9Z1BEJ587N5pAlsCfPEZPFr52N60',
+  access_token_key: '4406506943-vbpupRIs13PnkvzJQcyDT77IMiKuyEuWZX0e6IY',
+  access_token_secret: 'nXVGLvAlcPT5GNgEEDLe0yvFsXewBY7xZAd94yeDOw5ee'
 });
 
 // ------------------------------------------- APP functions ------------------------------------------------------------//
