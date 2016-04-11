@@ -100,42 +100,42 @@ app.get('/search', function(req, res) {
 
 // Scan database to find oldest tweet received.
 
-// function findLowestID(callback) {
-//   Rumour.find({}, 'id', function (err, tweet_ids) {
-//     lowest_id = '';
+function findLowestID(callback) {
+  Rumour.find({}, 'id', function (err, tweet_ids) {
+    lowest_id = '';
   
-//     if (tweet_ids.length > 0) {
-//       lowest_id = tweet_ids[0].id;
+    if (tweet_ids.length > 0) {
+      lowest_id = tweet_ids[0].id;
 
-//       for (i = 1; i < tweet_ids.length; i++) {
-//         if (tweet_ids[i].id.localeCompare(lowest_id) == -1){
-//           lowest_id = tweet_ids[i].id;
-//         }
-//       }
-//     }
-//     callback(lowest_id);
-//   });
-// }
+      for (i = 1; i < tweet_ids.length; i++) {
+        if (tweet_ids[i].id.localeCompare(lowest_id) == -1){
+          lowest_id = tweet_ids[i].id;
+        }
+      }
+    }
+    callback(lowest_id);
+  });
+}
 
-// // Scan database to find newest tweet received.
+// Scan database to find newest tweet received.
 
-// function findGreatestID(callback) {
-//   Rumour.find({}, 'id', function (err, tweet_ids) {
-//     greatest_id = '';
+function findGreatestID(callback) {
+  Rumour.find({}, 'id', function (err, tweet_ids) {
+    greatest_id = '';
   
-//     if (tweet_ids.length > 0) {
-//       greatest_id = tweet_ids[0].id;
+    if (tweet_ids.length > 0) {
+      greatest_id = tweet_ids[0].id;
 
-//       for (i = 1; i < tweet_ids.length; i++) {
-//         if (tweet_ids[i].id.localeCompare(greatest_id) == 1){
-//           greatest_id = tweet_ids[i].id;
-//         }
-//       }
-//     }
-//     console.log(greatest_id);
-//     callback(greatest_id);
-//   });
-// }
+      for (i = 1; i < tweet_ids.length; i++) {
+        if (tweet_ids[i].id.localeCompare(greatest_id) == 1){
+          greatest_id = tweet_ids[i].id;
+        }
+      }
+    }
+    console.log(greatest_id);
+    callback(greatest_id);
+  });
+}
 
 // // Find rumour hits from messages returned by the Search API.
 
