@@ -56,10 +56,10 @@ app.use(cookieParser());
 app.use('/', express.static('public'));
 
 var client = new Twitter({
-  consumer_key: 'HlNfATf1c9krHIygrXWcP4iOx',
-  consumer_secret: '9vBm0ArMCdZkLX8zd2dEvo9Z1BEJ587N5pAlsCfPEZPFr52N60',
-  access_token_key: '4406506943-vbpupRIs13PnkvzJQcyDT77IMiKuyEuWZX0e6IY',
-  access_token_secret: 'nXVGLvAlcPT5GNgEEDLe0yvFsXewBY7xZAd94yeDOw5ee'
+  consumer_key: '',
+  consumer_secret: '',
+  access_token_key: '',
+  access_token_secret: ''
 });
 
 // ------------------------------------------- APP functions ------------------------------------------------------------//
@@ -67,9 +67,20 @@ var client = new Twitter({
 // Stats: Impact and Followers 
 
 app.get('/impact', function(req, res) {
-  totalMeanImpactAndFollowers(function(impact_stats) {
-    res.send(JSON.parse(impact_stats));
-    console.log("Impact stats sent!");
+  
+  if (req.query.rumour == "kim_divorce"){
+    var collection = require('./models/kim_divorce');
+  }
+
+  totalMeanImpactAndFollowers(collection, function(impact_stats) {
+    textBasedFeatureAnalysis(collection, function(text_stats) {
+      accountBasedFeatureAnalysis(collection, function(account_stats) {
+        to_send = JSON.parse(impact_stats).concat(JSON.parse(text_stats));
+        to_send = to_send.concat(JSON.parse(account_stats));
+        res.send(to_send);
+        console.log("Stats sent!");
+      });
+    });
   });
 });
 
@@ -119,6 +130,8 @@ app.get('/search', function(req, res) {
   //   });
   // });
 });
+
+// -------------------------------------------- DB functions ------------------------------------------------------------//
 
 // Scan database to find oldest tweet received.
 
@@ -243,6 +256,15 @@ function addToDB(rumour) {
   });
 }
 
+function selectCollection(rumour) {
+  var collection;
+
+  if (rumour == "kim_divorce"){
+    collection = kim_divorce;
+  }
+  return collection;
+}
+
 // ------------------------------------------- STATS functions ----------------------------------------------------------//
 
 // Mean, median, variance, standard deviation.
@@ -286,13 +308,13 @@ function tTest() {
 
 // Find mean impact score and followers count of complete rumour set excluding verified accounts
 
-function totalMeanImpactAndFollowers(callback) {
+function totalMeanImpactAndFollowers(collection, callback) {
   impact_set = [];
   followers_set = [];
   j = 0;
   result = [];
 
-  Rumour.find({}, 'impact_score followers_count', function (err, dataset) {
+  collection.find({}, 'impact_score followers_count', function (err, dataset) {
     for(i = 0; i < dataset.length; i++) { 
 
       impact_score = parseFloat(dataset[i].impact_score);
@@ -385,7 +407,7 @@ function readTweetText() {
 
 // Extract the text based feature data of all tweets in rumour set and write analysis to file.
 
-function textBasedFeatureAnalysis(callback) {
+function textBasedFeatureAnalysis(collection, callback) {
   have_hashtags = 0;
   have_media = 0;
   have_urls = 0;
@@ -400,7 +422,7 @@ function textBasedFeatureAnalysis(callback) {
 
   result = [];
 
-  Rumour.find({}, 
+  collection.find({}, 
     'text entities_hashtags entities_media entities_urls entities_user_mentions word_retweet all_caps question_mark explanation_mark quote smiling_emoticon', 
       function (err, dataset) {
 
@@ -453,7 +475,7 @@ function textBasedFeatureAnalysis(callback) {
 
 // Extract the account based feature data of all tweets in rumour set and write analysis to file.
 
-function accountBasedFeatureAnalysis(callback) {
+function accountBasedFeatureAnalysis(collection, callback) {
   accountBased = '';
   total_account_created_years = [];
   total_followers_count = [];
@@ -465,7 +487,7 @@ function accountBasedFeatureAnalysis(callback) {
 
   result = [];
 
-  Rumour.find({}, 
+  collection.find({}, 
     'user_createdAt followers_count friends_count statuses_count account_verified default_profile default_profile_image', 
       function (err, dataset) {
         for(i = 0; i < dataset.length; i++) {

@@ -8,18 +8,19 @@
   
     <div>
     <link rel="stylesheet" type="text/css" href="css/landing-1.css">
-    <script src="/donations/js/webfont.js"></script>
     <div class="w-section hero-section centered">
         <h1 class="hero-heading" data-ix="fade-in-bottom-page-loads" style="opacity: 1; transform: translateX(0px) translateY(0px); transition: opacity 1000ms, transform 1000ms; -webkit-transition: opacity 1000ms, transform 1000ms;">
-        <div class="margin-bottom-big">{{rumour}}</div>
+        <div class="pad-top-x2 rumour-impact-header"><strong>RUMOUR IMPACT</strong></div>
+        <div class="pad-top">Measurement  &#38 Analysis</div>
         </h1>
-        <div><button id="searchButton" type="button" class="button">Find Tweets</button>
-            <span><button id="statsButton" type="button" class="button" ng-href="#stats">Look at Stats</button></span>
-        </div>
+    </div>
+    <div class="pad-top-x2 margin-buttons">
+        <button id="searchButton" type="button" class="button">Find Tweets</button>
+        <span><button id="statsButton" type="button" class="button" ng-href="#stats">Look at Stats</button></span>
     </div>
 
-    <div class="w-section footer">
-        <div class="w-container">
+    <div class="pad-top-x2 w-section footer">
+        <!-- <div class="w-container">
             <div class="w-row">
                 <div class="w-col w-col-6 spc">
                     <h5>impact determination</h5>
@@ -30,7 +31,7 @@
                     <h5>twitter api</h5><div class="font-size-reg">The Search API searches against a sampling of recent Tweets published in the past 7 days.</div><br><a class="footer-link" href="https://dev.twitter.com/rest/public/search" target="_blank">https://dev.twitter.com/rest/public/search</a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -51,14 +52,14 @@
 
     <script>
     $('#searchButton').click(function(){
-        location.href = "https://rumour-impact.herokuapp.com/search.html"
-        // location.href = "http://localhost:3000/search.html"
+        // location.href = "https://rumour-impact.herokuapp.com/search.html"
+        location.href = "http://localhost:3000/search.html"
     });
     </script>
     <script>
     $('#statsButton').click(function(){
-        location.href = "https://rumour-impact.herokuapp.com/stats.html"
-        // location.href = "http://localhost:3000/stats.html"
+        // location.href = "https://rumour-impact.herokuapp.com/stats.html"
+        location.href = "http://localhost:3000/stats.html"
     });
     </script>
 </body>

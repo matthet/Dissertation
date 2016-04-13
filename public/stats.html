@@ -9,52 +9,116 @@
     <div>
     <link rel="stylesheet" type="text/css" href="css/landing-1.css">
     <script src="/donations/js/webfont.js"></script>
+
     <div class="w-section hero-section centered">
         <h1 class="hero-heading" data-ix="fade-in-bottom-page-loads" style="opacity: 1; transform: translateX(0px) translateY(0px); transition: opacity 1000ms, transform 1000ms; -webkit-transition: opacity 1000ms, transform 1000ms;">
-        <div class="margin-bottom-big">{{rumour}}</div>
+        <div class="pad-top-x2 rumour-impact-header"><strong>RUMOUR IMPACT</strong></div>
+        <div class="pad-top">Measurement  &#38 Analysis</div>
         </h1>
-        <button id="impactButton" type="button" class="button" ng-model="impactClicked" ng-click="impactClicked=true">Impact Scores</button>
-        <button id="textButton" type="button" class="button" ng-model="textClicked" ng-click="textClicked=true">Text Features</button>
-        <button id="accountButton" type="button" class="button" ng-model="accountClicked" ng-click="accountClicked=true">Account Features</button>
+    </div>
 
+    <div class="<div class="w-section section sdfdsfdsf>
+        <table id="rumours">
+          <thead>
+            <tr>
+              <th>Rumour</th>
+              <th>Regular Expression Query</th>
+            </tr>
+          </thead>
+          <tbody ng-model="selected" ng-click="selected=true">
+            <tr id="rumourA">
+              <td><strong>Kim Kardashian and Kanye West are getting divorced</strong></td>
+              <td>kim &#38 kanye &#38 divorce</td>
+            </tr>
+            <tr>
+              <td><strong>Obama signs executive order giving himself a pay increase</strong></td>
+              <td>obama &#38 (pay increase)</td>
+            </tr>
+            <tr>
+              <td><strong>George Soros donated $33 million to fund rioting Ferguson protest groups</strong></td>
+              <td>(george soros) &#38 ferguson</td>
+            </tr>
+            <tr>
+              <td><strong>Gun rights advocate Jamie Gilt shot by child</strong></td>
+              <td>gilt &#38 shot &#38 child</td>
+            </tr>                   
+            <tr>
+              <td><strong>The dangers of Splenda</strong></td>
+              <td>splenda &#38 (unsafe | cancer)</td>
+            </tr>
+            <tr>
+              <td><strong>Germany banned pork because it offends Muslim migrants.</strong></td>
+              <td>germany &#38 ban &#38 pork</td>
+            </tr>
+            <tr>
+              <td><strong>Khloe Kardashian's father?</strong></td>
+              <td>(khloe kardashian) &#38 father</td>
+            </tr>
+            <tr>
+              <td><strong>Kim Kardashian has a body double</strong></td>
+              <td>(kim kardashian) &#38 (body double)</td>
+            </tr>
+            <tr>
+              <td><strong>Jenelle Evans Arrested For Assault</strong></td>
+              <td>(jenelle evans) &#38 arrested</td>
+            </tr>
+            <tr>
+              <td><strong>Kylie Jenner has fake lips</strong></td>
+              <td>(kylie jenner) &#38 (fake lips)</td>
+            </tr>
+            <tr>
+              <td><strong>Harrison Ford endorsed Donald Trump via a photograph in which he held up a campaign sign.</strong></td>
+              <td>(harrison ford) &#38 endorse &#38 trump</td>
+            </tr>
+            <tr>
+              <td><strong>Spaceballs sequel</strong></td>
+              <td>(spaceballs) &#38 sequel</td>
+            </tr>
+            <tr>
+              <td><strong>Rob Kardashian and Blac Chyna are getting married</strong></td>
+              <td>kardashian &#38 chyna &#38 married</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
     </div>
 
     <div class="w-section footer">
         <div class="w-container">
             <div class="w-row">
-                <div class="w-col w-col-4 spc">
-                	<h5>Impact Scores</h5>
-                    <div id="valImpact" ng-show="impactClicked"><%=valImpact%></div>
-                    <div id="valFollowers" ng-show="impactClicked"><%=valFollowers%></div>
-                    <span ng-hide="impactClicked">Click Impact Scores button.<span>
+                <div class="w-col w-col-4 spc" ng-show="selected">
+                	<!-- <button id="impactButton" type="button" class="button" ng-model="impactClicked" ng-click="impactClicked=true" ng-show="selected">Impact Scores</button> -->
+                    <div id="valImpact"><%=valImpact%></div>
+                    <div id="valFollowers"><%=valFollowers%></div>
+                    <!-- <span ng-hide="impactClicked" ng-show="selected">Click Impact Scores button.<span> -->
                 </div>
-                <div class="w-col w-col-4 spc">
-                    <h5>Text Features</h5>
-                    <div id="valPop" ng-show="textClicked"><%=valPop%></div>
-                    <div id="valTags" ng-show="textClicked"><%=valTags%></div>
-                    <div id="valMedia" ng-show="textClicked"><%=valMedia%></div>
-                    <div id="valURLs" ng-show="textClicked"><%=valURLs%></div>
-                    <div id="valMentions" ng-show="textClicked"><%=valMentions%></div>
-                    <div id="valRetweet" ng-show="textClicked"><%=valRetweet%></div>
-                    <div id="valCaps" ng-show="textClicked"><%=valCaps%></div>
-                    <div id="valQ" ng-show="textClicked"><%=valQ%></div>
-                    <div id="valE" ng-show="textClicked"><%=valE%></div>
-                    <div id="valQuote" ng-show="textClicked"><%=valQuote%></div>
-                    <div id="valSmile" ng-show="textClicked"><%=valSmile%></div>
-                    <div id="valLength" ng-show="textClicked"><%=valLength%></div>
-                    <span ng-hide="textClicked">Click Text Features button.<span>
+                <div class="w-col w-col-4 spc" ng-show="selected">
+                    <!-- <button id="textButton" type="button" class="button" ng-model="textClicked" ng-click="textClicked=true" ng-show="selected">Text Features</button> -->
+                    <div id="valPop"><%=valPop%></div>
+                    <div id="valTags"><%=valTags%></div>
+                    <div id="valMedia"><%=valMedia%></div>
+                    <div id="valURLs"><%=valURLs%></div>
+                    <div id="valMentions"><%=valMentions%></div>
+                    <div id="valRetweet"><%=valRetweet%></div>
+                    <div id="valCaps"><%=valCaps%></div>
+                    <div id="valQ"><%=valQ%></div>
+                    <div id="valE"><%=valE%></div>
+                    <div id="valQuote"><%=valQuote%></div>
+                    <div id="valSmile"><%=valSmile%></div>
+                    <div id="valLength"><%=valLength%></div>
+                    <!-- <span ng-hide="textClicked">Click Text Features button.<span> -->
                 </div>
-                <div class="w-col w-col-4 spc">
-                    <h5>Account Features</h5>
-                    <div id="valAccPop" ng-show="accountClicked"><%=valAccPop%></div>
-                    <div id="valYear" ng-show="accountClicked"><%=valYear%></div>
-                    <div id="valAccFollowers" ng-show="accountClicked"><%=valAccFollowers%></div>
-                    <div id="valFriends" ng-show="accountClicked"><%=valFriends%></div>
-                    <div id="valStatuses" ng-show="accountClicked"><%=valStatuses%></div>
-                    <div id="valdefPro" ng-show="accountClicked"><%=valdefPro%></div>
-                    <div id="valdefAv" ng-show="accountClicked"><%=valdefAv%></div>
-                    <div id="valVerified" ng-show="accountClicked"><%=valVerified%></div>
-                    <span ng-hide="accountClicked">Click Account Features button.<span>
+                <div class="w-col w-col-4 spc" ng-show="selected">
+                    <!-- <button id="accountButton" type="button" class="button" ng-model="accountClicked" ng-click="accountClicked=true" ng-show="selected">Account Features</button> -->
+                    <div id="valAccPop"><%=valAccPop%></div>
+                    <div id="valYear"><%=valYear%></div>
+                    <div id="valAccFollowers"><%=valAccFollowers%></div>
+                    <div id="valFriends"><%=valFriends%></div>
+                    <div id="valStatuses"><%=valStatuses%></div>
+                    <div id="valdefPro"><%=valdefPro%></div>
+                    <div id="valdefAv"><%=valdefAv%></div>
+                    <div id="valVerified"><%=valVerified%></div>
+                    <!-- <span ng-hide="accountClicked">Click Account Features button.<span> -->
                 </div>
             </div>
         </div>
@@ -75,6 +139,46 @@
     <script type="text/javascript" src="js/directives.js"></script>
     <script type="text/javascript" src="js/webfont.js"></script>
     <script type="text/javascript" src="js/webflow.7effb2b1c.js"></script>
+
+    <script>
+        $("#rumours tr").click(function() {
+            $(this).addClass('rumour-select').siblings().removeClass('rumour-select');
+        });
+    </script>
+
+    <script>
+        $("#rumourA").click(function() {
+            $.ajax({
+                type: 'GET',
+                url: 'http://localhost:3000/impact',
+                data: {"rumour" : "kim_divorce"},
+                success: function(res) {
+                    $('#valImpact').text(res[0].mean_impact);
+                    $('#valFollowers').text(res[1].mean_followers);
+                    $('#valPop').text(res[2].total_pop);
+                    $('#valTags').text(res[3].num_hashtags);
+                    $('#valMedia').text(res[4].num_media);
+                    $('#valURLs').text(res[5].num_urls);
+                    $('#valMentions').text(res[6].num_mentions);
+                    $('#valRetweet').text(res[7].num_retweet);
+                    $('#valCaps').text(res[8].num_caps);
+                    $('#valQ').text(res[9].num_q);
+                    $('#valE').text(res[10].num_e);
+                    $('#valQuote').text(res[11].num_quote);
+                    $('#valSmile').text(res[12].num_smile);
+                    $('#valLength').text(res[13].av_length);
+                    $('#valAccPop').text(res[14].total_pop);
+                    $('#valYear').text(res[15].av_accYear);
+                    $('#valAccFollowers').text(res[16].av_followers);
+                    $('#valFriends').text(res[17].av_friends);
+                    $('#valStatuses').text(res[18].av_statuses);
+                    $('#valdefPro').text(res[19].num_defPro);
+                    $('#valdefAv').text(res[20].num_defAv);
+                    $('#valVerified').text(res[21].num_ver);
+                }
+            });
+        });
+    </script>
 
     <script>
     $('#impactButton').click(function(){
