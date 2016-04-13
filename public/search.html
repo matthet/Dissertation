@@ -8,96 +8,20 @@
   
     <div>
     <link rel="stylesheet" type="text/css" href="css/landing-1.css">
-    <script src="/donations/js/webfont.js"></script>
     <div class="w-section hero-section centered">
         <h1 class="hero-heading" data-ix="fade-in-bottom-page-loads" style="opacity: 1; transform: translateX(0px) translateY(0px); transition: opacity 1000ms, transform 1000ms; -webkit-transition: opacity 1000ms, transform 1000ms;">
         <div class="pad-top-x2 rumour-impact-header"><strong>RUMOUR IMPACT</strong></div>
         <div class="pad-top">Measurement  &#38 Analysis</div>
+        <div class="pad-top-x2 instruction">Real-time rumour search</div>
         </h1>
     </div>
 
-    <div>
-        <table id="rumours">
-          <thead>
-            <tr>
-              <th>Rumour</th>
-              <th>Regular Expression Query</th>
-            </tr>
-          </thead>
-          <tbody ng-model="selected" ng-click="selected=true">
-            <tr>
-              <td><strong>Kim Kardashian and Kanye West are getting divorced</strong></td>
-              <td>kim &#38 kanye &#38 divorce</td>
-            </tr>
-            <tr>
-              <td><strong>Obama signs executive order giving himself a pay increase</strong></td>
-              <td>obama &#38 (pay increase)</td>
-            </tr>
-            <tr>
-              <td><strong>George Soros donated $33 million to fund rioting Ferguson protest groups</strong></td>
-              <td>(george soros) &#38 ferguson</td>
-            </tr>
-            <tr>
-              <td><strong>Gun rights advocate Jamie Gilt shot by child</strong></td>
-              <td>gilt &#38 shot &#38 child</td>
-            </tr>                   
-            <tr>
-              <td><strong>The dangers of Splenda</strong></td>
-              <td>splenda &#38 (unsafe | cancer)</td>
-            </tr>
-            <tr>
-              <td><strong>Germany banned pork because it offends Muslim migrants.</strong></td>
-              <td>germany &#38 ban &#38 pork</td>
-            </tr>
-            <tr>
-              <td><strong>Khloe Kardashian's father?</strong></td>
-              <td>(khloe kardashian) &#38 father</td>
-            </tr>
-            <tr>
-              <td><strong>Kim Kardashian has a body double</strong></td>
-              <td>(kim kardashian) &#38 (body double)</td>
-            </tr>
-            <tr>
-              <td><strong>Jenelle Evans Arrested For Assault</strong></td>
-              <td>(jenelle evans) &#38 arrested</td>
-            </tr>
-            <tr>
-              <td><strong>Kylie Jenner has fake lips</strong></td>
-              <td>(kylie jenner) &#38 (fake lips)</td>
-            </tr>
-            <tr>
-              <td><strong>Harrison Ford endorsed Donald Trump via a photograph in which he held up a campaign sign.</strong></td>
-              <td>(harrison ford) &#38 endorse &#38 trump</td>
-            </tr>
-            <tr>
-              <td><strong>Spaceballs sequel</strong></td>
-              <td>(spaceballs) &#38 sequel</td>
-            </tr>
-            <tr>
-              <td><strong>Rob Kardashian and Blac Chyna are getting married</strong></td>
-              <td>kardashian &#38 chyna &#38 married</td>
-            </tr>
-          </tbody>
-        </table>
+     <div class="<div class="w-section section sdfdsfdsf>
+        <h5>Enter keywords:</h5>
         <div class="pad-top margin-buttons" ng-show="selected">
             <h5 class="margin-bottom-big" ng-show="received">Tweets received: <span id="val"><%=val%></span></h5>
-        <button id="searchButton" type="button" class="button search-api" ng-model="received" ng-click="received=true">Search API</button>
+            <button id="searchButton" type="button" class="button search-api" ng-model="received" ng-click="received=true">Search API</button>
         </div>
-    </div>
-
-    <div class="pad-top-x2 w-section footer">
-        <!-- <div class="w-container">
-            <div class="w-row">
-                <div class="w-col w-col-6 spc">
-                    <h5>impact determination</h5>
-                    <p>We study the impact of rumour messages, in terms of their effect on social media itself. This is impact determined by measures of user engagements, i.e. quantity of retweets and favourites.</p>
-                    <p>We analyse a given rumour tweet object against a set of features related to text composition, evidence provided, and user profile characteristics, in a bid to find common features of impactful rumour tweets.</p>
-                </div>
-                <div class="w-col w-col-6 spc">
-                    <h5>twitter api</h5><div class="font-size-reg">The Search API searches against a sampling of recent Tweets published in the past 7 days.</div><br><a class="footer-link" href="https://dev.twitter.com/rest/public/search" target="_blank">https://dev.twitter.com/rest/public/search</a>
-                </div>
-            </div>
-        </div> -->
     </div>
     
     <script type="text/javascript" src="js/jquery.min.js"></script>

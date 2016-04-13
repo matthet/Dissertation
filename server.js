@@ -11,30 +11,18 @@ var dbConfig = require('./db');
 var mongoose = require('mongoose');
 
 var germany_pork = require('./models/germany_pork');
-var notebook_sequel = require('./models/notebook_sequel');
 var soros_ferguson = require('./models/soros_ferguson');
 var splenda_unsafe = require('./models/splenda_unsafe');
 var gilt_shot = require('./models/gilt_shot');
-var nazi_submarine = require('./models/nazi_submarine');
-var oprah_pregnant = require('./models/oprah_pregnant');
-var trump_white_tshirts = require('./models/trump_white_tshirts');
 var obama_pay_increase = require('./models/obama_pay_increase');
 var ford_trump = require('./models/ford_trump');
-var pawnstars_arrest = require('./models/pawnstars_arrest');
-var manson_trump = require('./models/manson_trump');
 var spaceballs_sequel = require('./models/spaceballs_sequel');
-var singer_sonja = require('./models/singer_sonja');
 var khloe_father = require('./models/khloe_father');
 var kim_doppelganger = require('./models/kim_doppelganger');
 var rob_blac = require('./models/rob_blac');
 var jenner_lips = require('./models/kylie_jenner_lips');
 var evans_arrested = require('./models/evans_arrested');
-var poppins_sequel = require('./models/mary_poppins_sequel');
-var kim_butt = require('./models/kim_fake_butt');
 var kim_divorce = require('./models/kim_divorce');
-var gunz_vasectomy = require('./models/gunz_vasectomy');
-var calvert_leaving = require('./models/calvert_leaving');
-var giant_rat_london = require('./models/giant_rat_london');
 
 var Rumour = require('./models/jenner_pregnant');
 
@@ -67,10 +55,9 @@ var client = new Twitter({
 // Stats: Impact and Followers 
 
 app.get('/impact', function(req, res) {
-  
-  if (req.query.rumour == "kim_divorce"){
-    var collection = require('./models/kim_divorce');
-  }
+
+  model = './models/' + req.query.rumour;
+  collection = require(model);
 
   totalMeanImpactAndFollowers(collection, function(impact_stats) {
     textBasedFeatureAnalysis(collection, function(text_stats) {
@@ -311,6 +298,8 @@ function tTest() {
 function totalMeanImpactAndFollowers(collection, callback) {
   impact_set = [];
   followers_set = [];
+  total_impact = 0;
+  total_followers = 0;
   j = 0;
   result = [];
 
@@ -321,16 +310,25 @@ function totalMeanImpactAndFollowers(collection, callback) {
 
       if (isNaN(impact_score)) {
         impact_set[j] = 0;
+        total_impact += 0;
       } else {
         impact_set[j] = impact_score;
+        total_impact += impact_score;
       }
 
-      followers_set[j] = parseFloat(dataset[i].followers_count);
+      num_followers = parseFloat(dataset[i].followers_count);
+      followers_set[j] = num_followers;
+      total_followers += num_followers;
       j += 1;
     }
 
+    total_impact = 'TOTAL IMPACT: ' + total_impact.toFixed(2);
+    total_followers = 'TOTAL FOLLOWERS: ' + total_followers.toFixed(2);
     mean_impact = 'MEAN IMPACT: ' + ss.mean(impact_set).toFixed(2);
     mean_followers = 'MEAN FOLLOWERS: ' + ss.mean(followers_set).toFixed(2);
+
+    result.push({total_impact});
+    result.push({total_followers});
     result.push({mean_impact});
     result.push({mean_followers});
 
