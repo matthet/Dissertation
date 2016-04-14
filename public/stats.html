@@ -155,6 +155,26 @@
             </table>
         </div>
     </div>
+
+    <div class="w-section footer">
+        <div class="w-container">
+            <div class="w-row">
+                <div class="w-col w-col-4 spc">
+                    <h5>impact</h5>
+                    <p>The impact of rumours on social media itself. Measurement in terms of an impact score. Analysis investigating text-based and <br> account-based features.</p>
+                </div>
+                <div class="w-col w-col-4 spc">
+                    <h5>useful links</h5><a class="footer-link" href="https://dev.twitter.com/rest/public/search" target="_blank">Twitter Search API</a><a class="footer-link">Suspendisse nisl elit</a><a class="footer-link" >Dellentesque habitant morbi</a><a class="footer-link" >Etiam sollicitudin ipsum</a></div>
+                <div class="w-col w-col-4">
+                    <h5>social</h5>
+                    <div class="w-clearfix footer-link-wrapper"><img class="info-icon" src="img/54d24d5fa59e05340ae1f70b_social-18.svg" width="20"><a class="footer-link with-icon" href="">Twitter</a></div>
+                    <div class="w-clearfix footer-link-wrapper"><img class="info-icon" src="img/54d24d2ebba289360a8cc447_social-03.svg" width="20"><a class="footer-link with-icon" href="">Facebook</a></div>
+                    <div class="w-clearfix footer-link-wrapper"><img class="info-icon" src="img/54d24d470d5fbeb671afdfbe_social-11.svg" width="20"><a class="footer-link with-icon" href="">Pinterest</a></div>
+                    <div class="w-clearfix footer-link-wrapper"><img class="info-icon" src="img/54d24d360d5fbeb671afdfb9_social-06.svg" width="20"><a class="footer-link with-icon" href="">Google</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/webflow.7effb2b1c.js"></script>
@@ -246,7 +266,7 @@
         function setVals(rumour) {
             $.ajax({
                 type: 'GET',
-                url: 'http://localhost:3000/impact',
+                url: 'http://localhost:3000/stats',
                 data: {"rumour" : rumour},
                 success: function(res) {
                     $('#valTotalImpact').text(res[0].total_impact);

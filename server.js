@@ -24,11 +24,11 @@ var jenner_lips = require('./models/kylie_jenner_lips');
 var evans_arrested = require('./models/evans_arrested');
 var kim_divorce = require('./models/kim_divorce');
 
-var Rumour = require('./models/jenner_pregnant');
+var Rumour = require('./models/planet_destroy_earth');
 
 var ss = require('simple-statistics');
 
-// // Connect to DB
+// Connect to DB
 mongoose.connect(dbConfig.url);
 
 // Server config
@@ -50,11 +50,13 @@ var client = new Twitter({
   access_token_secret: ''
 });
 
+searchAndAdd();
+
 // ------------------------------------------- APP functions ------------------------------------------------------------//
 
-// Stats: Impact and Followers 
+// Stats: Impact, Text-Based, Account-Based
 
-app.get('/impact', function(req, res) {
+app.get('/stats', function(req, res) {
 
   model = './models/' + req.query.rumour;
   collection = require(model);
@@ -71,34 +73,54 @@ app.get('/impact', function(req, res) {
   });
 });
 
-// Stats: Text Based Features
-
-app.get('/text', function(req, res) {
-  textBasedFeatureAnalysis(function(text_stats) {
-    res.send(JSON.parse(text_stats));
-    console.log("Text stats sent!");
-  });
-});
-
-// Stats: Account Based Features
-
-app.get('/account', function(req, res) {
-  accountBasedFeatureAnalysis(function(account_stats) {
-    res.send(JSON.parse(account_stats));
-    console.log("Account stats sent!");
-  });
-});
-
-// Search API.
+// Live Rumour find and Impact score
 
 app.get('/search', function(req, res) {
-  q = "starbucks";
+  total_impact = 0;
+  result = [];
 
+  q = req.query.q;
+  console.log(q);
+
+  client.get('search/tweets', {q: q, exclude: 'retweets', count: 100}, function(error, tweets, response) {
+    tweets_received = tweets.statuses.length;
+    console.log('Tweets received: ' + tweets_received);
+
+    for (i = 0; i < tweets.statuses.length; i++) {
+      tweet = tweets.statuses[i];
+
+      impact_score = calculateImpact(tweet.favorite_count, tweet.retweet_count, tweet.user.followers_count);
+
+      if (isNaN(impact_score)) {
+        total_impact += 0;
+      } else {
+        total_impact += impact_score;
+      }
+    }
+
+    received = 'TWEETS RECEIVED: ' + tweets_received;
+    total = 'TOTAL IMPACT: ' + total_impact.toFixed(2);
+    mean = 'MEAN IMPACT: ' + (total_impact / tweets_received).toFixed(2);
+
+    result.push({received});
+    result.push({total});
+    result.push({mean});
+    res.send(JSON.parse(JSON.stringify(result)));
+  });
+});
+
+// -------------------------------------------- DB functions ------------------------------------------------------------//
+
+// Tara: Search API.
+
+function searchAndAdd () {
+
+  q = "new planet destroy earth";
+  
   findLowestID(function(lowest_id) {
     client.get('search/tweets', {q: q, exclude: 'retweets', max_id: lowest_id, count: 100}, function(error, tweets, response){
       tweets_received = tweets.statuses.length;
       console.log('Tweets received: ' + tweets_received);
-      res.send(tweets_received.toString());
 
       if (tweets_received != 0) {
         analyseRumourHits(tweets);
@@ -116,9 +138,7 @@ app.get('/search', function(req, res) {
   //     }
   //   });
   // });
-});
-
-// -------------------------------------------- DB functions ------------------------------------------------------------//
+}
 
 // Scan database to find oldest tweet received.
 
@@ -168,7 +188,7 @@ function analyseRumourHits(tweets) {
     tweet = tweets.statuses[i];
     tweet_text = JSON.stringify(tweet.text);
 
-    if ((tweet_text.search(/starbucks/i))){
+    if ((tweet_text.search(/new planet/i)) && (tweet_text.search(/destroy earth/i))){
       checkDBandAdd(tweet);
     }
   }
