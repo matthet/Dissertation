@@ -1,0 +1,30 @@
+T-Value: 2.0245259271067626
+Sample Size: 40
+DF: 78
+Two-tailed P value: 0.0468
+Statistically different
+
+soros_ferguson
+Followers: 292
+Friends: 178
+Statuses: 99898
+Verified: 0
+Includes Hashtags: 6
+Includes Media: 3
+Includes User Mentions: 6
+Includes URLs: 36
+Includes word 'retweet': 0
+Av. tweet length: 103.225
+
+
+rob_blac
+Followers: 5148
+Friends: 4659
+Statuses: 3537
+Verified: 1
+Includes Hashtags: 12
+Includes Media: 11
+Includes User Mentions: 6
+Includes URLs: 39
+Includes word 'retweet': 0
+Av. tweet length: 127.25

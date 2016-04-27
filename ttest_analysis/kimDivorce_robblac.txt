@@ -1,0 +1,29 @@
+T-Value: 2.3603873774083293
+Sample Size: 40
+DF: 78
+Two-tailed P value: 0.0207
+Statistically different
+
+Rumour A: kim_divorce
+Followers: 365
+Friends: 926
+Statuses: 16310
+Verified: 0
+Includes Hashtags: 8
+Includes Media: 19
+Includes User Mentions: 1
+Includes URLs: 39
+Includes word 'retweet': 1
+Av. tweet length: 125.5
+
+Rumour B: rob_blac
+Followers: 222
+Friends: 19
+Statuses: 12068
+Verified: 0
+Includes Hashtags: 9
+Includes Media: 11
+Includes User Mentions: 6
+Includes URLs: 39
+Includes word 'retweet': 0
+Av. tweet length: 129.9

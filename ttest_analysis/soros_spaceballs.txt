@@ -1,0 +1,30 @@
+T-Value: 2.274874206679005
+Sample Size: 40
+DF: 78
+Two-tailed P value: 0.0468
+Statistically different
+
+soros_ferguson
+Followers: 965
+Friends: 881
+Statuses: 16697
+Verified: 0
+Includes Hashtags: 4
+Includes Media: 3
+Includes User Mentions: 8
+Includes URLs: 38
+Includes word 'retweet': 0
+Av. tweet length: 103.8
+
+
+spaceballs_sequel
+Followers: 95
+Friends: 264
+Statuses: 1674
+Verified: 0
+Includes Hashtags: 1
+Includes Media: 0
+Includes User Mentions: 0
+Includes URLs: 34
+Includes word 'retweet': 0
+Av. tweet length: 99.1

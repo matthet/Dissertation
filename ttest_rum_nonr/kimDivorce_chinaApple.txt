@@ -1,0 +1,27 @@
+T-Value: 1.5292007433440997
+Sample Size: 40
+
+kim_divorce
+Followers: 9423
+Friends: 132
+Statuses: 14136
+Verified: 0
+Includes Hashtags: 9
+Includes Media: 14
+Includes User Mentions: 5
+Includes URLs: 39
+Includes word 'retweet': 1
+Av. tweet length: 118.75
+
+
+china_apple
+Followers: 45
+Friends: 2
+Statuses: 35287
+Verified: 2
+Includes Hashtags: 12
+Includes Media: 5
+Includes User Mentions: 6
+Includes URLs: 39
+Includes word 'retweet': 0
+Av. tweet length: 110.375

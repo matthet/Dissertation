@@ -1,0 +1,30 @@
+T-Value: 2.3406089276879767
+Sample Size: 40
+DF: 78
+Two-tailed P value: 0.0218
+Statistically different
+
+obama_pay_increase
+Followers: 132
+Friends: 327
+Statuses: 2050
+Verified: 0
+Includes Hashtags: 7
+Includes Media: 3
+Includes User Mentions: 14
+Includes URLs: 26
+Includes word 'retweet': 0
+Av. tweet length: 120.075
+
+
+rob_blac
+Followers: 68
+Friends: 202
+Statuses: 579
+Verified: 1
+Includes Hashtags: 9
+Includes Media: 6
+Includes User Mentions: 4
+Includes URLs: 39
+Includes word 'retweet': 0
+Av. tweet length: 130.725

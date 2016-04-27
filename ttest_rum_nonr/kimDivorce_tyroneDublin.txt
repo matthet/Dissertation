@@ -1,0 +1,27 @@
+T-Value: 1.4938085404220245
+Sample Size: 40
+
+kim_divorce
+Followers: 752
+Friends: 1761
+Statuses: 1764
+Verified: 0
+Includes Hashtags: 14
+Includes Media: 18
+Includes User Mentions: 3
+Includes URLs: 39
+Includes word 'retweet': 3
+Av. tweet length: 120.95
+
+
+tyrone_dublin
+Followers: 334
+Friends: 256
+Statuses: 239432
+Verified: 1
+Includes Hashtags: 5
+Includes Media: 3
+Includes User Mentions: 0
+Includes URLs: 38
+Includes word 'retweet': 0
+Av. tweet length: 71.9

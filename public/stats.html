@@ -96,25 +96,25 @@
               </thead>
               <tbody >
                 <tr>
-                    <td id="valTotalImpact"><%=valTotalImpact%></td>
+                    <td id="valImpPop"><%=valImpPop%></td>
                     <td id="valPop"><%=valPop%></td>
                     <td id="valAccPop"><%=valAccPop%></td>
-                </tr>
+                </tr>   
                 <tr>
-                    <td id="valTotalFollowers"><%=valTotalFollowers%></td>
+                    <td id="valTotalImpact"><%=valTotalImpact%></td>
                     <td id="valTags"><%=valTags%></td>
                     <td id="valYear"><%=valYear%></td>
-                </tr>
+                </tr>                
                 <tr>
                     <td id="valMeanImpact"><%=valMeanImpact%></td>
                     <td id="valMedia"><%=valMedia%></td>
-                    <td id="valAccFollowers"><%=valAccFollowers%></td>
+                    <td id="valAccFollowers"><%=valAccFollowers%></div></td>
                 </tr>
                 <tr>
-                    <td id="valMeanFollowers"><%=valMeanFollowers%></td>
+                    <td></td>
                     <td id="valURLs"><%=valURLs%></td>
-                    <td id="valFriends"><%=valFriends%></td>
-                </tr>                   
+                    <td id="valFriends"><%=valdefPro%></div></td>
+                </tr>
                 <tr>
                     <td></td>
                     <td id="valMentions"><%=valMentions%></td>
@@ -142,10 +142,6 @@
                 <tr>
                     <td></td>
                     <td id="valQuote"><%=valQuote%></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td id="valSmile"><%=valSmile%></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -269,30 +265,29 @@
                 url: 'http://localhost:3000/stats',
                 data: {"rumour" : rumour},
                 success: function(res) {
-                    $('#valTotalImpact').text(res[0].total_impact);
-                    $('#valTotalFollowers').text(res[1].total_followers);
+                    $('#valImpPop').text(res[0].total_pop);
+                    $('#valTotalImpact').text(res[1].total_impact);
                     $('#valMeanImpact').text(res[2].mean_impact);
-                    $('#valMeanFollowers').text(res[3].mean_followers);
-                    $('#valPop').text(res[4].total_pop);
-                    $('#valTags').text(res[5].num_hashtags);
-                    $('#valMedia').text(res[6].num_media);
-                    $('#valURLs').text(res[7].num_urls);
-                    $('#valMentions').text(res[8].num_mentions);
-                    $('#valRetweet').text(res[9].num_retweet);
-                    $('#valCaps').text(res[10].num_caps);
-                    $('#valQ').text(res[11].num_q);
-                    $('#valE').text(res[12].num_e);
-                    $('#valQuote').text(res[13].num_quote);
-                    $('#valSmile').text(res[14].num_smile);
-                    $('#valLength').text(res[15].av_length);
-                    $('#valAccPop').text(res[16].total_pop);
-                    $('#valYear').text(res[17].av_accYear);
-                    $('#valAccFollowers').text(res[18].av_followers);
-                    $('#valFriends').text(res[19].av_friends);
-                    $('#valStatuses').text(res[20].av_statuses);
-                    $('#valdefPro').text(res[21].num_defPro);
-                    $('#valdefAv').text(res[22].num_defAv);
-                    $('#valVerified').text(res[23].num_ver);
+                    $('#valPop').text(res[3].total_pop);
+                    $('#valTags').text(res[4].num_hashtags);
+                    $('#valMedia').text(res[5].num_media);
+                    $('#valURLs').text(res[6].num_urls);
+                    $('#valMentions').text(res[7].num_mentions);
+                    $('#valRetweet').text(res[8].num_retweet);
+                    $('#valCaps').text(res[9].num_caps);
+                    $('#valQ').text(res[10].num_q);
+                    $('#valE').text(res[11].num_e);
+                    $('#valQuote').text(res[12].num_quote);
+                    $('#valSmile').text(res[13].num_smile);
+                    $('#valLength').text(res[14].av_length);
+                    $('#valAccPop').text(res[15].total_pop);
+                    $('#valYear').text(res[16].av_accYear);
+                    $('#valAccFollowers').text(res[17].av_followers);
+                    $('#valFriends').text(res[18].av_friends);
+                    $('#valStatuses').text(res[19].av_statuses);
+                    $('#valdefPro').text(res[20].num_defPro);
+                    $('#valdefAv').text(res[21].num_defAv);
+                    $('#valVerified').text(res[22].num_ver);
                 }
             });
         }

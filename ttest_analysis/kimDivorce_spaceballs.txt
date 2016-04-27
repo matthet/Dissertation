@@ -1,0 +1,30 @@
+T-Value: 2.2339103325906096
+Sample Size: 40
+DF: 78
+Two-tailed P value: 0.0286
+Statistically different
+
+kim_divorce
+Followers: 752
+Friends: 1761
+Statuses: 1764
+Verified: 0
+Includes Hashtags: 12
+Includes Media: 12
+Includes User Mentions: 5
+Includes URLs: 39
+Includes word 'retweet': 2
+Av. tweet length: 119.475
+
+
+spaceballs_sequel
+Followers: 113
+Friends: 242
+Statuses: 1366
+Verified: 0
+Includes Hashtags: 0
+Includes Media: 0
+Includes User Mentions: 2
+Includes URLs: 31
+Includes word 'retweet': 0
+Av. tweet length: 99.7

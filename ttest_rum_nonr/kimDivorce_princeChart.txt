@@ -1,0 +1,27 @@
+T-Value: 1.0308404268256852
+Sample Size: 40
+
+kim_divorce
+Followers: 752
+Friends: 1761
+Statuses: 1764
+Verified: 0
+Includes Hashtags: 10
+Includes Media: 18
+Includes User Mentions: 1
+Includes URLs: 39
+Includes word 'retweet': 4
+Av. tweet length: 118.45
+
+
+prince_chart
+Followers: 116
+Friends: 53
+Statuses: 130655
+Verified: 1
+Includes Hashtags: 11
+Includes Media: 0
+Includes User Mentions: 0
+Includes URLs: 38
+Includes word 'retweet': 0
+Av. tweet length: 95.925
