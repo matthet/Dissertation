@@ -90,7 +90,7 @@
               <thead>
                 <tr>
                   <th>Impact Stats</th>
-                  <th>Text-Based Features</th>
+                  <th>Message-Based Features</th>
                   <th>Account-Based Features</th>
                 </tr>
               </thead>
@@ -111,17 +111,17 @@
                     <td id="valAccFollowers"><%=valAccFollowers%></div></td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td id="valImpRetweets"><%=valImpRetweets%></td>
                     <td id="valURLs"><%=valURLs%></td>
                     <td id="valFriends"><%=valdefPro%></div></td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td id="valImpFaves"><%=valImpFaves%></td>
                     <td id="valMentions"><%=valMentions%></td>
                     <td id="valStatuses"><%=valStatuses%></div></td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td id="valSdImpact"><%=valSdImpact%></td>
                     <td id="valRetweet"><%=valRetweet%></td>
                     <td id="valdefPro"><%=valdefPro%></div></td>
                 </tr>
@@ -268,26 +268,29 @@
                     $('#valImpPop').text(res[0].total_pop);
                     $('#valTotalImpact').text(res[1].total_impact);
                     $('#valMeanImpact').text(res[2].mean_impact);
-                    $('#valPop').text(res[3].total_pop);
-                    $('#valTags').text(res[4].num_hashtags);
-                    $('#valMedia').text(res[5].num_media);
-                    $('#valURLs').text(res[6].num_urls);
-                    $('#valMentions').text(res[7].num_mentions);
-                    $('#valRetweet').text(res[8].num_retweet);
-                    $('#valCaps').text(res[9].num_caps);
-                    $('#valQ').text(res[10].num_q);
-                    $('#valE').text(res[11].num_e);
-                    $('#valQuote').text(res[12].num_quote);
-                    $('#valSmile').text(res[13].num_smile);
-                    $('#valLength').text(res[14].av_length);
-                    $('#valAccPop').text(res[15].total_pop);
-                    $('#valYear').text(res[16].av_accYear);
-                    $('#valAccFollowers').text(res[17].av_followers);
-                    $('#valFriends').text(res[18].av_friends);
-                    $('#valStatuses').text(res[19].av_statuses);
-                    $('#valdefPro').text(res[20].num_defPro);
-                    $('#valdefAv').text(res[21].num_defAv);
-                    $('#valVerified').text(res[22].num_ver);
+                    $('#valSdImpact').text(res[3].sd_impact);
+                    $('#valImpRetweets').text(res[4].retweets);
+                    $('#valImpFaves').text(res[5].faves);
+                    $('#valPop').text(res[6].total_pop);
+                    $('#valTags').text(res[7].num_hashtags);
+                    $('#valMedia').text(res[8].num_media);
+                    $('#valURLs').text(res[9].num_urls);
+                    $('#valMentions').text(res[10].num_mentions);
+                    $('#valRetweet').text(res[11].num_retweet);
+                    $('#valCaps').text(res[12].num_caps);
+                    $('#valQ').text(res[13].num_q);
+                    $('#valE').text(res[14].num_e);
+                    $('#valQuote').text(res[15].num_quote);
+                    $('#valSmile').text(res[16].num_smile);
+                    $('#valLength').text(res[17].av_length);
+                    $('#valAccPop').text(res[18].total_pop);
+                    $('#valYear').text(res[19].av_accYear);
+                    $('#valAccFollowers').text(res[20].av_followers);
+                    $('#valFriends').text(res[21].av_friends);
+                    $('#valStatuses').text(res[22].av_statuses);
+                    $('#valdefPro').text(res[23].num_defPro);
+                    $('#valdefAv').text(res[24].num_defAv);
+                    $('#valVerified').text(res[25].num_ver);
                 }
             });
         }

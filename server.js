@@ -270,19 +270,21 @@ function addToDB(rumour) {
 
 // ------------------------------------------- STATS functions ----------------------------------------------------------//
 
+tTest();
+
 // T-test: A two-sample location test of the null hypothesis such that the means of two populations are equal.
 // Interested in finding statistical significance in rumour datasets.
 
 function tTest() {
   sample_size = 40;
 
-  retrieveFromDB(kim_divorce, sample_size, function(sample_set0) {
-    retrieveFromDB(china_apple, sample_size, function(sample_set1) {
+  retrieveFromDB(evans_arrested, sample_size, function(sample_set0) {
+    retrieveFromDB(tyrone_dublin, sample_size, function(sample_set1) {
       tValue = ss.tTestTwoSample(sample_set0[0], sample_set1[0], 0);
       console.log(tValue);
 
-      outputA = buildOutputFile("kim_divorce", sample_set0);
-      outputB = buildOutputFile("china_apple", sample_set1);
+      outputA = buildOutputFile("evans_arrested", sample_set0);
+      outputB = buildOutputFile("tyrone_dublin", sample_set1);
       output = "T-Value: " + tValue + '\n' + "Sample Size: " + sample_size + '\n\n' + outputA + '\n\n' + outputB;
       writeToFile("file.txt", output);
     });
@@ -291,7 +293,8 @@ function tTest() {
 
 // Mean, median, variance, standard deviation.
 
-function basicStats(sample_set) {
+function basicStats() {
+  sample_set = [3,8,11,11,11,28,34,40,55,62,77,85,98,100,101,109,124,131,142,183,184,217,287,334,594,596];
   stats = '';
 
   mean = ss.mean(sample_set);
@@ -304,23 +307,25 @@ function basicStats(sample_set) {
   stats += 'variance: ' + variance + '\n';
   stats += 'standardDeviation: ' + standardDev + '\n';
 
-  return (stats);
+  console.log(stats);
 }
 
 // Find mean impact score and followers count of complete rumour set excluding verified accounts
 
 function totalMeanImpactAndFollowers(collection, callback) {
   impact_set = [];
-  followers_set = [];
   total_impact = 0;
-  total_followers = 0;
+  total_retweets = 0;
+  total_faves = 0;
   j = 0;
   result = [];
 
   collection.find({}, 'retweet_count favorite_count', function (err, dataset) {
     for(i = 0; i < dataset.length; i++) { 
 
-      impact_score = parseFloat(dataset[i].favorite_count) + parseFloat(dataset[i].retweet_count);
+      num_faves = parseFloat(dataset[i].favorite_count);
+      num_retweets = parseFloat(dataset[i].retweet_count);
+      impact_score = num_faves + num_retweets;
 
       if (isNaN(impact_score)) {
         impact_set[j] = 0;
@@ -330,19 +335,24 @@ function totalMeanImpactAndFollowers(collection, callback) {
         total_impact += impact_score;
       }
 
-      num_followers = parseFloat(dataset[i].followers_count);
-      followers_set[j] = num_followers;
-      total_followers += num_followers;
+      total_retweets += num_retweets;
+      total_faves += num_faves;
       j += 1;
     }
 
     total_pop = 'TOTAL POPULATION: ' + dataset.length;
     total_impact = 'TOTAL IMPACT: ' + total_impact.toFixed(2);
     mean_impact = 'MEAN IMPACT: ' + ss.mean(impact_set).toFixed(2); 
+    sd_impact = 'stDev IMPACT: ' + ss.standardDeviation(impact_set).toFixed(2); 
+    retweets = 'RETWEETS: ' + total_retweets;
+    faves = 'FAVOURITES: ' + total_faves;
 
     result.push({total_pop});
     result.push({total_impact});
     result.push({mean_impact});
+    result.push({sd_impact});
+    result.push({retweets});
+    result.push({faves});
 
     callback(JSON.stringify(result));
   });
@@ -365,7 +375,7 @@ function retrieveFromDB(collection, sample_size, callback) {
   total_retweet = 0;
   total_length = 0;
 
-  collection.find({}, 'text favorite_count retweet_count followers_count friends_count statuses_count account_verified entities_hashtags entities_media entities_urls entities_user_mentions word_retweet', function (err, dataset) {
+  collection.find({}, 'text favorite_count retweet_count followers_count friends_count statuses_count account_verified entities_hashtags entities_media entities_urls entities_user_mentions question_mark', function (err, dataset) {
     
     // Select unique, random indices to pull random tweets from rumour set.
     while(randomIndices.length < sample_size){
@@ -571,6 +581,6 @@ function buildOutputFile (rumour, sample_set) {
 
 // Start the Web Server on port 3000.
 
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
+// app.listen(process.env.PORT || 3000, function(){
+//   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+// });

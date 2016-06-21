@@ -1,0 +1,27 @@
+T-Value: 1.3859209915641375
+Sample Size: 40
+
+evans_arrested
+Followers: 169
+Friends: 1082
+Statuses: 171
+Verified: 3
+Includes Hashtags: 14
+Includes Media: 21
+Includes User Mentions: 2
+Includes URLs: 38
+Includes word 'retweet': 0
+Av. tweet length: 113.775
+
+
+tyrone_dublin
+Followers: 2604
+Friends: 485
+Statuses: 305417
+Verified: 3
+Includes Hashtags: 8
+Includes Media: 2
+Includes User Mentions: 1
+Includes URLs: 39
+Includes word 'retweet': 0
+Av. tweet length: 75.7

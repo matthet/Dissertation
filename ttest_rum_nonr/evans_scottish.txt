@@ -1,0 +1,27 @@
+T-Value: 1.7286929674426406
+Sample Size: 40
+
+evans_arrested
+Followers: 13782
+Friends: 278
+Statuses: 30093
+Verified: 1
+Includes Hashtags: 14
+Includes Media: 13
+Includes User Mentions: 1
+Includes URLs: 39
+Includes word 'retweet': 0
+Av. tweet length: 102.85
+
+
+scottish_power
+Followers: 5266
+Friends: 2685
+Statuses: 738684
+Verified: 2
+Includes Hashtags: 9
+Includes Media: 2
+Includes User Mentions: 2
+Includes URLs: 38
+Includes word 'retweet': 0
+Av. tweet length: 101.225

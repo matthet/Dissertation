@@ -1,0 +1,27 @@
+T-Value: 1.3056499865202096
+Sample Size: 40
+
+obama_pay_increase
+Followers: 90
+Friends: 271
+Statuses: 417
+Verified: 0
+Includes Hashtags: 5
+Includes Media: 2
+Includes User Mentions: 15
+Includes URLs: 20
+Includes word 'retweet': 0
+Av. tweet length: 120.7
+
+
+tyrone_dublin
+Followers: 52380
+Friends: 1763
+Statuses: 11233
+Verified: 1
+Includes Hashtags: 7
+Includes Media: 3
+Includes User Mentions: 0
+Includes URLs: 39
+Includes word 'retweet': 0
+Av. tweet length: 73.8

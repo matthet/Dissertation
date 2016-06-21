@@ -1,0 +1,27 @@
+T-Value: 1.2511401318407827
+Sample Size: 40
+
+kim_divorce
+Followers: 728
+Friends: 393
+Statuses: 6491
+Verified: 0
+Includes Hashtags: 11
+Includes Media: 15
+Includes User Mentions: 3
+Includes URLs: 40
+Includes word 'retweet': 0
+Av. tweet length: 122.95
+
+
+scottish_power
+Followers: 6
+Friends: 66
+Statuses: 88
+Verified: 2
+Includes Hashtags: 7
+Includes Media: 1
+Includes User Mentions: 3
+Includes URLs: 37
+Includes word 'retweet': 0
+Av. tweet length: 92.85

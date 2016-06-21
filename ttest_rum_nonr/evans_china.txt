@@ -1,0 +1,27 @@
+T-Value: 0.5710800330787134
+Sample Size: 40
+
+evans_arrested
+Followers: 2030
+Friends: 4998
+Statuses: 15677
+Verified: 2
+Includes Hashtags: 7
+Includes Media: 15
+Includes User Mentions: 1
+Includes URLs: 39
+Includes word 'retweet': 0
+Av. tweet length: 95.4
+
+
+china_apple
+Followers: 6795
+Friends: 3058
+Statuses: 109785
+Verified: 1
+Includes Hashtags: 10
+Includes Media: 10
+Includes User Mentions: 4
+Includes URLs: 40
+Includes word 'retweet': 0
+Av. tweet length: 112.375

@@ -1,0 +1,27 @@
+T-Value: 1.1839943898855125
+Sample Size: 40
+
+obama_pay_increase
+Followers: 65
+Friends: 66
+Statuses: 484
+Verified: 1
+Includes Hashtags: 4
+Includes Media: 2
+Includes User Mentions: 18
+Includes URLs: 25
+Includes word 'retweet': 0
+Av. tweet length: 117.175
+
+
+scottish_power
+Followers: 110
+Friends: 15
+Statuses: 206737
+Verified: 4
+Includes Hashtags: 8
+Includes Media: 2
+Includes User Mentions: 1
+Includes URLs: 35
+Includes word 'retweet': 0
+Av. tweet length: 99.575

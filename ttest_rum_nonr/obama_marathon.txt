@@ -1,0 +1,27 @@
+T-Value: -0.5388050431849258
+Sample Size: 40
+
+obama_pay_increase
+Followers: 5377
+Friends: 5747
+Statuses: 16368
+Verified: 1
+Includes Hashtags: 7
+Includes Media: 3
+Includes User Mentions: 12
+Includes URLs: 28
+Includes word 'retweet': 0
+Av. tweet length: 113.95
+
+
+marathon_space
+Followers: 282
+Friends: 242
+Statuses: 48292
+Verified: 4
+Includes Hashtags: 11
+Includes Media: 8
+Includes User Mentions: 6
+Includes URLs: 40
+Includes word 'retweet': 0
+Av. tweet length: 111.35

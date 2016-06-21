@@ -1,0 +1,27 @@
+T-Value: 2.3946346908928193
+Sample Size: 40
+
+evans_arrested
+Followers: 793
+Friends: 916
+Statuses: 85613
+Verified: 1
+Includes Hashtags: 10
+Includes Media: 17
+Includes User Mentions: 5
+Includes URLs: 39
+Includes word 'retweet': 0
+Av. tweet length: 105.3
+
+
+kim_doppelganger
+Followers: 260
+Friends: 231
+Statuses: 4097
+Verified: 1
+Includes Hashtags: 4
+Includes Media: 11
+Includes User Mentions: 3
+Includes URLs: 36
+Includes word 'retweet': 0
+Av. tweet length: 121.8
